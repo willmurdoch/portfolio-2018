@@ -1,16 +1,121 @@
 [
   {
     "title": "Brownstein Group",
-    "content": "A redesign of Brownstein Group's website, I programmed the front-end and back-end of the site. Lots of animations.",
-    "link": "http://www.brownsteingroup.com"
+    "content": "A redesign of Brownstein Group's website, I built this site off of Wordpress. The site has multiple levels of parallaxing animations on every page to help bring complexity to the typography-based layout.",
+    "link": "http://www.brownsteingroup.com",
+    "desktop": "images/work/bg_desktop.jpg",
+    "mobile": "images/work/bg_mobile.jpg"
+  },
+  {
+    "title": "NOVA by Saint-Gobain",
+    "content": "A new site for Saint-Gobain's external ventures team aimed at sustainable startups. I built this site using Drupal as the content management system.",
+    "link": "https://www.nova-saint-gobain.com/",
+    "desktop": "images/work/nova_desktop.jpg",
+    "mobile": "images/work/nova_mobile.jpg"
+  },
+  {
+    "title": "WonderBall",
+    "content": "After Frankford Candy aquired the WonderBall license, they needed a new website to go along with it. I built this site off of Wordpress, working with Brownstein Group's video department to integrate stop motion animation to showcase different varieties of the product.",
+    "link": "http://www.wonderballcandy.com/",
+    "desktop": "images/work/wonderball_desktop.jpg",
+    "mobile": "images/work/wonderball_mobile.jpg"
   },
   {
     "title": "National Lacrosse League",
     "content": "A complete redesign and rebuild of the NLL website. I programmed the front-end and most of the back-end of this site in Wordpress. It uses the PointStreak API to pull in live stats, games, and other info using JSON feeds accessed by PHP.",
-    "link": "http://www.nll.com/"
+    "link": "http://www.nll.com/",
+    "desktop": "images/work/nll_desktop.jpg",
+    "mobile": "images/work/nll_mobile.jpg"
+  },
+  {
+    "title": "Georgia Swarm",
+    "content": "After finishing the NLL site, one of the teams in the league, the Georgia Swarm, wanted a site built with a similar look and feel. I built it as a child theme of the NLL site, adding tons of options to allow any additional teams to easily make their own versions.",
+    "link": "http://www.georgiaswarm.com/",
+    "desktop": "images/work/swarm_desktop.jpg",
+    "mobile": "images/work/swarm_mobile.jpg"
   },
   {
     "title": "SageGlass",
-    "content":  "A complete re-branding of SageGlass, a type of glass that you can tint on demand. This site was designed to showcase various features of SageGlass, using video and CSS animations to simulate the product. I programmed the front-end and added to/revised the back-end, which is built on Drupal."
+    "content":  "A complete re-branding of SageGlass, a type of glass that you can tint on demand. This site was designed to showcase various features of SageGlass, using video and CSS animations to simulate the product. I programmed the front-end and added to/revised the back-end, which is built on Drupal.",
+    "link": "https://www.sageglass.com",
+    "desktop": "images/work/sageglass_desktop.jpg",
+    "mobile": "images/work/sageglass_mobile.jpg"
+  },
+  {
+    "title": "Sorona",
+    "content":  "Sorona creates unique synthetic fabrics for all kinds of uses. I built this site using HTML/CSS, using font sizes to influence the distance travelled in keyframes so the animations could be both extremely lightweight and varied at the same time. This was deployed through the Eloqua platform.",
+    "link": "http://sorona.com/",
+    "desktop": "images/work/sorona_desktop.jpg",
+    "mobile": "images/work/sorona_mobile.jpg"
+  },
+  {
+    "title": "DuPont Intexar",
+    "content": "A new product line from DuPont, Intexar creates technology used by clothing manufacturers to provide functionalities like heating and health monitoring. I lead development on the site, which was built for the Eloqua platform.",
+    "link": "http://electronicmaterials.dupont.com/intexar-heat",
+    "desktop": "images/work/intexar_desktop.jpg",
+    "mobile": "images/work/intexar_mobile.jpg"
+  },
+  {
+    "title": "IKEA LED Challenge",
+    "content": "A game developed to show how much energy you can save by switching to LED bulbs, the LED challenge was released as part of a sustainability drive at IKEA. My team at BG built this as a web app using pure JavScript.",
+    "link": "http://www.taketheledchallenge.com/",
+    "desktop": "images/work/ledchallenge_desktop.jpg",
+    "mobile": "images/work/ledchallenge_mobile.jpg"
+  },
+  {
+    "title": "Mural Finder",
+    "content": "A web app developed for the Mural Arts Foundation to help people find the murals all over Philly. This app was built with Ruby on Rails - I worked on the Google Maps integration and layouts.",
+    "link": "https://map.muralarts.org/",
+    "desktop": "images/work/muralarts_desktop.jpg",
+    "mobile": "images/work/muralarts_mobile.jpg"
+  },
+  {
+    "title": "The Philadelphia Citizen",
+    "content": "A site that highlights issues in Philadelphia and what the community can do to address them. I lead the front end programming, animation, and interactivity seen throughout the site.",
+    "link": "http://thephiladelphiacitizen.org/",
+    "desktop": "images/work/citizen_desktop.jpg",
+    "mobile": "images/work/citizen_mobile.jpg"
+  },
+  {
+    "title": "Oh Mo He Didn't",
+    "content": "An attempt to raise Movember funds by a folically challenged coworker. I programmed this site, which won Best in Show at the 2014 ADDYs.",
+    "link": "http://ohmohedidnt.com/",
+    "desktop": "images/work/ohmo_desktop.jpg",
+    "mobile": "images/work/ohmo_mobile.jpg"
+  },
+  {
+    "title": "A Vague Christmas",
+    "content": "A Christmas card for the Vague family, I animated and programmed this elaborate Christmas experience.",
+    "link": "http://vaguechristmas.com/",
+    "desktop": "images/work/vague_desktop.jpg",
+    "mobile": "images/work/vague_mobile.jpg"
+  },
+  {
+    "title": "Western Union Payments",
+    "content": "An informational site for Western Union's bill payment services. I built this site using ExpressionEngine.",
+    "link": "https://payments.westernunion.com/",
+    "desktop": "images/work/payments_desktop.jpg",
+    "mobile": "images/work/payments_mobile.jpg"
+  },
+  {
+    "title": "Spirit of the Virginia",
+    "content": "An interactive storybook built for the iPad using rich 3D animation, I did 3D modelling and animation for various scenes as well as the associated website.",
+    "link": "https://vimeo.com/44011045",
+    "desktop": "images/work/sotv_desktop.jpg",
+    "mobile": "images/work/sotv_mobile.jpg"
+  },
+  {
+    "title": "CoZara",
+    "content": "A website for the University City Japanese restaurant coZara, I built this site as a from-scratch Wordpress theme.",
+    "link": "http://cozaraphilly.com/",
+    "desktop": "images/work/cozara_desktop.jpg",
+    "mobile": "images/work/cozara_mobile.jpg"
+  },
+  {
+    "title": "Philadelphia Federal Credit Union",
+    "content": "A redesign of Philadelphia Federal Credit Union's website. I handled the majority of the front-end programming, animations, and interactivity.",
+    "link": "https://www.pfcu.com/",
+    "desktop": "images/work/pfcu_desktop.jpg",
+    "mobile": "images/work/pfcu_mobile.jpg"
   }
 ]
