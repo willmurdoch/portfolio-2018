@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Brownstein Group",
+    "content": "A redesign of Brownstein Group's website, I programmed the front-end and back-end of the site. Lots of animations.",
+    "link": "http://www.brownsteingroup.com"
+  },
+  {
+    "title": "National Lacrosse League",
+    "content": "A complete redesign and rebuild of the NLL website. I programmed the front-end and most of the back-end of this site in Wordpress. It uses the PointStreak API to pull in live stats, games, and other info using JSON feeds accessed by PHP.",
+    "link": "http://www.nll.com/"
+  },
+  {
+    "title": "SageGlass",
+    "content":  "A complete re-branding of SageGlass, a type of glass that you can tint on demand. This site was designed to showcase various features of SageGlass, using video and CSS animations to simulate the product. I programmed the front-end and added to/revised the back-end, which is built on Drupal."
+  }
+]
