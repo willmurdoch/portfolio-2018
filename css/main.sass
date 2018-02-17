@@ -1,9 +1,13 @@
 //Mixins
 @mixin gradient($color1, $color2, $angle)
-  background: $color1
+  background: $wmColor1
   background: -moz-linear-gradient($angle, $color1 0%, $color2 100%)
   background: -webkit-linear-gradient($angle, $color1 0%,$color2 100%)
   background: linear-gradient($angle, $color1 0%,$color2 100%)
+
+//Colors
+$wmBlack: #0e0e0e
+$wmColor1: #ffc878
 
 //Breakpoints
 $mobile: 800px
@@ -20,7 +24,7 @@ body
   height: 100%
   @include gradient(#ffffff, #f1f1f1, 45deg)
   font-family: Arial, sans-serif
-  color: #0e0e0e
+  color: $wmBlack
   overflow-x: hidden
   overflow-y: scroll
 
@@ -35,17 +39,32 @@ p, a
   font-size: 1rem
 p
   margin: 0 0 1rem
-
+#wrapper
+  position: relative
+  width: 100%
+  height: 100%
+  overflow: hidden
 .cta
   display: table
   padding: 0.65em 1em
-  background: #FFF
-  color: #000
+  background: $wmColor1
+  border: 2px solid $wmBlack
+  color: $wmBlack
   text-transform: uppercase
   font-weight: 600
   margin: 2.5rem 0 0
   text-decoration: none
+  transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out
+  &:hover
+    background: $wmBlack
+    color: $wmColor1
+    border-color: $wmColor1
 
+@keyframes spin
+  from
+    transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg)
+  to
+    transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(360deg)
 
 //Project entries
 .project
@@ -55,30 +74,77 @@ p
   margin: 20vh auto 50vh
   font-size: 0
   display: table
+  &:last-of-type
+    margin-bottom: 0
+    padding-bottom: 12rem
+  @media (max-width: $mobile)
+    margin: 10vh auto 0
+  .circle
+    display: block
+    position: absolute
+    top: 50%
+    width: 45%
+    padding-bottom: 45%
+    border-radius: 100%
+    background: rgba($wmColor1, 0.2)
+    z-index: 0
+    backface-visibility: hidden
+    perspective: 1000
+    transform-origin: 50% 49%
+    transform: translateX(-50%) translateY(-50%) translateZ(0)
+    animation: spin 3s linear infinite
+  &:nth-child(odd) .circle
+    left: 40%
+  &:nth-child(even) .circle
+    left: 60%
   h3
     margin: 0
+    text-transform: uppercase
     &:after
       content: ''
       position: relative
       display: block
       width: 40px
       height: 6px
-      background: red
+      background: $wmColor1
       margin: 1rem 0
   .textWrap, .imageWrap
+    cursor: pointer
     display: inline-block
     vertical-align: middle
+    position: relative
+    z-index: 1
+    img:hover
+      border-color: $wmColor1
   .textWrap
     width: 40%
     max-width: 450px
     padding-right: 4rem
+    @media (max-width: $mobile)
+      width: 90%
+      max-width: 90%
+      padding-right: 0
+    .count
+      font-size: 1rem
+      font-weight: 900
+      position: absolute
+      color: $wmColor1
+      left: -2rem
+      top: 0
+      @media (max-width: $mobile)
+        left: 0
+        position: relative
   .imageWrap
     width: calc(100% - 450px)
     position: relative
     @media (max-width: 1125px)
       width: 60%
+    @media (max-width: $mobile)
+      width: 90%
+      margin-top: 2rem
     img
       max-width: 100%
+      border: 2px solid #888
       height: auto
       display: block
       margin: 0 auto
@@ -87,6 +153,7 @@ p
       image-rendering: -webkit-optimize-contrast
       image-rendering: crisp-edges
       -ms-interpolation-mode: nearest-neighbor
+      transition: border-color 0.1s ease-out
     .desktop, .mobile
       backface-visibility: hidden
       perspective: 1000
@@ -118,6 +185,8 @@ p
         direction: ltr
         padding-right: 0
         padding-left: 4rem
+        .count
+          left: 2rem
       .imageWrap
         .mobile
           right: unset

@@ -35,7 +35,7 @@
     "mobile": "images/work/sage_mobile.jpg"
   },
   {
-    "title": "Sorona",
+    "title": "DuPont Sorona",
     "description":  "Sorona creates unique synthetic fabrics for all kinds of uses. I built this site using HTML/CSS, using font sizes to influence the distance travelled in keyframes so the animations could be both extremely lightweight and varied at the same time. This was deployed through the Eloqua platform.",
     "link": "http://sorona.com/",
     "desktop": "images/work/sorona_desktop.jpg",

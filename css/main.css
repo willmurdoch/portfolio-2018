@@ -11,7 +11,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #ffc878;
   background: -moz-linear-gradient(45deg, #ffffff 0%, #f1f1f1 100%);
   background: -webkit-linear-gradient(45deg, #ffffff 0%, #f1f1f1 100%);
   background: linear-gradient(45deg, #ffffff 0%, #f1f1f1 100%);
@@ -41,15 +41,39 @@ p {
   margin: 0 0 1rem;
 }
 
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .cta {
   display: table;
   padding: 0.65em 1em;
-  background: #FFF;
-  color: #000;
+  background: #ffc878;
+  border: 2px solid #0e0e0e;
+  color: #0e0e0e;
   text-transform: uppercase;
   font-weight: 600;
   margin: 2.5rem 0 0;
   text-decoration: none;
+  transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
+}
+
+.cta:hover {
+  background: #0e0e0e;
+  color: #ffc878;
+  border-color: #ffc878;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) rotate(360deg);
+  }
 }
 
 .project {
@@ -61,8 +85,44 @@ p {
   display: table;
 }
 
+.project:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 12rem;
+}
+
+@media (max-width: 800px) {
+  .project {
+    margin: 10vh auto 0;
+  }
+}
+
+.project .circle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  padding-bottom: 45%;
+  border-radius: 100%;
+  background: rgba(255, 200, 120, 0.2);
+  z-index: 0;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform-origin: 50% 49%;
+  transform: translateX(-50%) translateY(-50%) translateZ(0);
+  animation: spin 3s linear infinite;
+}
+
+.project:nth-child(odd) .circle {
+  left: 40%;
+}
+
+.project:nth-child(even) .circle {
+  left: 60%;
+}
+
 .project h3 {
   margin: 0;
+  text-transform: uppercase;
 }
 
 .project h3:after {
@@ -71,19 +131,50 @@ p {
   display: block;
   width: 40px;
   height: 6px;
-  background: red;
+  background: #ffc878;
   margin: 1rem 0;
 }
 
 .project .textWrap, .project .imageWrap {
+  cursor: pointer;
   display: inline-block;
   vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+.project .textWrap img:hover, .project .imageWrap img:hover {
+  border-color: #ffc878;
 }
 
 .project .textWrap {
   width: 40%;
   max-width: 450px;
   padding-right: 4rem;
+}
+
+@media (max-width: 800px) {
+  .project .textWrap {
+    width: 90%;
+    max-width: 90%;
+    padding-right: 0;
+  }
+}
+
+.project .textWrap .count {
+  font-size: 1rem;
+  font-weight: 900;
+  position: absolute;
+  color: #ffc878;
+  left: -2rem;
+  top: 0;
+}
+
+@media (max-width: 800px) {
+  .project .textWrap .count {
+    left: 0;
+    position: relative;
+  }
 }
 
 .project .imageWrap {
@@ -97,8 +188,16 @@ p {
   }
 }
 
+@media (max-width: 800px) {
+  .project .imageWrap {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+
 .project .imageWrap img {
   max-width: 100%;
+  border: 2px solid #888;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -107,6 +206,7 @@ p {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
+  transition: border-color 0.1s ease-out;
 }
 
 .project .imageWrap .desktop, .project .imageWrap .mobile {
@@ -154,6 +254,9 @@ p {
     direction: ltr;
     padding-right: 0;
     padding-left: 4rem;
+  }
+  .project:nth-of-type(even) .textWrap .count {
+    left: 2rem;
   }
   .project:nth-of-type(even) .imageWrap .mobile {
     right: unset;
