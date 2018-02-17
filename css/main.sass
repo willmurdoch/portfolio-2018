@@ -1,3 +1,6 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,500,700')
+
 //Mixins
 @mixin gradient($color1, $color2, $angle)
   background: $wmColor1
@@ -7,7 +10,7 @@
 
 //Colors
 $wmBlack: #0e0e0e
-$wmColor1: #ffc878
+$wmColor1: #945253
 
 //Breakpoints
 $mobile: 800px
@@ -22,13 +25,16 @@ body
   margin: 0
   width: 100%
   height: 100%
-  @include gradient(#ffffff, #f1f1f1, 45deg)
-  font-family: Arial, sans-serif
+  @include gradient(#e1e1e1, #fff, -45deg)
+  font-family: 'Nunito', Arial, sans-serif
   color: $wmBlack
   overflow-x: hidden
   overflow-y: scroll
 
 //Text formatting
+h1, h2, h3, h4
+  font-weight: 900
+  line-height: 1em
 h1
   font-size: 4rem
 h2
@@ -39,6 +45,7 @@ p, a
   font-size: 1rem
 p
   margin: 0 0 1rem
+  font-weight: 500
 #wrapper
   position: relative
   width: 100%
@@ -47,18 +54,35 @@ p
 .cta
   display: table
   padding: 0.65em 1em
-  background: $wmColor1
-  border: 2px solid $wmBlack
+  border: 2px solid $wmColor1
   color: $wmBlack
   text-transform: uppercase
-  font-weight: 600
+  font-weight: 900
   margin: 2.5rem 0 0
   text-decoration: none
   transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out
   &:hover
-    background: $wmBlack
+    background: rgba($wmColor1, 0.5)
+
+@keyframes shrinkText
+  0%
+    letter-spacing: 0
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    letter-spacing: -1em
+    opacity: 0
+
+header
+  text-align: justify
+  h1
+    font-size: 4rem
+    text-transform: uppercase
+    margin: 1rem
     color: $wmColor1
-    border-color: $wmColor1
+    span
+      animation: shrinkText 1s 1s ease-in forwards
 
 @keyframes spin
   from
@@ -86,7 +110,7 @@ p
     width: 45%
     padding-bottom: 45%
     border-radius: 100%
-    background: rgba($wmColor1, 0.2)
+    background: rgba($wmColor1, 0.4)
     z-index: 0
     backface-visibility: hidden
     perspective: 1000
@@ -94,9 +118,9 @@ p
     transform: translateX(-50%) translateY(-50%) translateZ(0)
     animation: spin 3s linear infinite
   &:nth-child(odd) .circle
-    left: 40%
-  &:nth-child(even) .circle
     left: 60%
+  &:nth-child(even) .circle
+    left: 40%
   h3
     margin: 0
     text-transform: uppercase
@@ -109,7 +133,6 @@ p
       background: $wmColor1
       margin: 1rem 0
   .textWrap, .imageWrap
-    cursor: pointer
     display: inline-block
     vertical-align: middle
     position: relative
@@ -147,6 +170,7 @@ p
       border: 2px solid #888
       height: auto
       display: block
+      cursor: pointer
       margin: 0 auto
       image-rendering: -moz-crisp-edges
       image-rendering:   -o-crisp-edges

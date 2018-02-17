@@ -56,6 +56,13 @@
     "mobile": "images/work/muralarts_mobile.jpg"
   },
   {
+    "title": "IKEA LED Challenge",
+    "description": "A game developed to show how much energy you can save by switching to LED bulbs. This was released in tandem with IKEA's sustainability month. I programmed the gameplay and animations for this mobile and desktop compatible game.",
+    "link": "http://www.taketheledchallenge.com/",
+    "desktop": "images/work/led_desktop.jpg",
+    "mobile": "images/work/led_mobile.jpg"
+  },
+  {
     "title": "The Philadelphia Citizen",
     "description": "A site that highlights issues in Philadelphia and what the community can do to address them. I lead the front end programming, animation, and interactivity seen throughout the site.",
     "link": "http://thephiladelphiacitizen.org/",
@@ -74,6 +81,13 @@
     "link": "https://payments.westernunion.com/",
     "desktop": "images/work/payments_desktop.jpg",
     "mobile": "images/work/payments_mobile.jpg"
+  },
+  {
+    "title": "Verlasso",
+    "description": "A site designed to showcase how Verlasso has a unique and sustainable system for farming their salmon. I programmed this in its entirety with smartphones and tablets as the intended medium.",
+    "link": "http://www.taketheledchallenge.com/",
+    "desktop": "images/work/verlasso_desktop.jpg",
+    "mobile": "images/work/verlasso_mobile.jpg"
   },
   {
     "title": "CoZara",

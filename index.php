@@ -13,6 +13,9 @@
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <header>
+    <h1>W<span>ill </span>M<span>urdoch</span></h1>
+  </header>
   <div id="wrapper">
     <section id="projects">
       <?php

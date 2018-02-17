@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,500,700");
 * {
   box-sizing: border-box;
 }
@@ -11,14 +12,19 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background: #ffc878;
-  background: -moz-linear-gradient(45deg, #ffffff 0%, #f1f1f1 100%);
-  background: -webkit-linear-gradient(45deg, #ffffff 0%, #f1f1f1 100%);
-  background: linear-gradient(45deg, #ffffff 0%, #f1f1f1 100%);
-  font-family: Arial, sans-serif;
+  background: #945253;
+  background: -moz-linear-gradient(-45deg, #e1e1e1 0%, #fff 100%);
+  background: -webkit-linear-gradient(-45deg, #e1e1e1 0%, #fff 100%);
+  background: linear-gradient(-45deg, #e1e1e1 0%, #fff 100%);
+  font-family: 'Nunito', Arial, sans-serif;
   color: #0e0e0e;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+  line-height: 1em;
 }
 
 h1 {
@@ -39,6 +45,7 @@ p, a {
 
 p {
   margin: 0 0 1rem;
+  font-weight: 500;
 }
 
 #wrapper {
@@ -51,20 +58,46 @@ p {
 .cta {
   display: table;
   padding: 0.65em 1em;
-  background: #ffc878;
-  border: 2px solid #0e0e0e;
+  border: 2px solid #945253;
   color: #0e0e0e;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 900;
   margin: 2.5rem 0 0;
   text-decoration: none;
   transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
 }
 
 .cta:hover {
-  background: #0e0e0e;
-  color: #ffc878;
-  border-color: #ffc878;
+  background: rgba(148, 82, 83, 0.5);
+}
+
+@keyframes shrinkText {
+  0% {
+    letter-spacing: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    letter-spacing: -1em;
+    opacity: 0;
+  }
+}
+
+header {
+  text-align: justify;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  color: #945253;
+}
+
+header h1 span {
+  animation: shrinkText 1s 1s ease-in forwards;
 }
 
 @keyframes spin {
@@ -103,7 +136,7 @@ p {
   width: 45%;
   padding-bottom: 45%;
   border-radius: 100%;
-  background: rgba(255, 200, 120, 0.2);
+  background: rgba(148, 82, 83, 0.4);
   z-index: 0;
   backface-visibility: hidden;
   perspective: 1000;
@@ -113,11 +146,11 @@ p {
 }
 
 .project:nth-child(odd) .circle {
-  left: 40%;
+  left: 60%;
 }
 
 .project:nth-child(even) .circle {
-  left: 60%;
+  left: 40%;
 }
 
 .project h3 {
@@ -131,12 +164,11 @@ p {
   display: block;
   width: 40px;
   height: 6px;
-  background: #ffc878;
+  background: #945253;
   margin: 1rem 0;
 }
 
 .project .textWrap, .project .imageWrap {
-  cursor: pointer;
   display: inline-block;
   vertical-align: middle;
   position: relative;
@@ -144,7 +176,7 @@ p {
 }
 
 .project .textWrap img:hover, .project .imageWrap img:hover {
-  border-color: #ffc878;
+  border-color: #945253;
 }
 
 .project .textWrap {
@@ -165,7 +197,7 @@ p {
   font-size: 1rem;
   font-weight: 900;
   position: absolute;
-  color: #ffc878;
+  color: #945253;
   left: -2rem;
   top: 0;
 }
@@ -200,6 +232,7 @@ p {
   border: 2px solid #888;
   height: auto;
   display: block;
+  cursor: pointer;
   margin: 0 auto;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
