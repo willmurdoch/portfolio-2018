@@ -35,11 +35,15 @@
           <div class="imageWrap">
             <?php if(isset($project['desktop'])): ?>
               <div class="desktop">
-                <img src="<?php echo $project['desktop']; ?>" alt="<?php echo $project['title'] ?> Desktop Preview" />
+                <div class="device">
+                  <span class="base"></span>
+                </div>
+                <img class="work" src="<?php echo $project['desktop']; ?>" alt="<?php echo $project['title'] ?> Desktop Preview" />
               </div>
             <?php endif; if(isset($project['mobile'])): ?>
               <div class="mobile">
-                <img src="<?php echo $project['mobile']; ?>" alt="<?php echo $project['title'] ?> Mobile Preview" />
+                <div class="device"></div>
+                <img class="work" src="<?php echo $project['mobile']; ?>" alt="<?php echo $project['title'] ?> Mobile Preview" />
               </div>
             <?php endif; ?>
           </div>
