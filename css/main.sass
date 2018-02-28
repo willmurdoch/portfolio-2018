@@ -28,6 +28,8 @@ $mobile: 800px
   box-sizing: border-box
 html
   font-size: 18px
+  @media (max-width: $mobile)
+    font-size: 16px
 body
   position: relative
   margin: 0
@@ -120,7 +122,7 @@ header
   @media (max-width: $mobile)
     margin: 10vh auto 0
   .circle
-    display: block
+    display: none
     position: absolute
     top: 50%
     width: 65%
@@ -137,6 +139,8 @@ header
     left: 110%
   &:nth-child(even) .circle
     left: 0%
+  &:nth-child(3n+1) .circle
+    display: block
   h3
     margin: 0
     color: $wmColor1
@@ -184,7 +188,7 @@ header
       margin-top: 2rem
     .work
       max-width: 100%
-      border: 2px solid #333
+      border: 2px solid #111
       height: auto
       display: block
       cursor: pointer
@@ -204,7 +208,7 @@ header
     .desktop
       transform: scale(1)
       .device
-        background: #333
+        background: #111
         width: 107.5%
         height: 115%
         top: -7.5%
@@ -224,6 +228,8 @@ header
           border-radius: 0px 0px 5px 5px
           background: #d1d6db
           z-index: 2
+          @media (max-width: $mobile)
+            padding-bottom: 4%
           &:after
             +pseudoStart
             top: unset
@@ -238,7 +244,7 @@ header
             @media (max-width: $tablet)
               border-top: 12px solid #80858a
             @media (max-width: $mobile)
-              border-top: 10px solid #80858a
+              border-top: 6px solid #80858a
       &.in
         transform: scale(1.1)
     .desktop.out
@@ -249,7 +255,7 @@ header
         bottom: -2rem
     .mobile
       position: absolute
-      right: -4rem
+      right: -5%
       bottom: -1rem
       width: 285px
       max-width: 25%
@@ -280,6 +286,6 @@ header
       .imageWrap
         .mobile
           right: unset
-          left: -4rem
+          left: -5%
           &.out
             transform: translateX(-110%) scale(0.8)

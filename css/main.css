@@ -7,6 +7,12 @@ html {
 	font-size: 18px;
 }
 
+@media (max-width: 800px) {
+	html {
+		font-size: 16px;
+	}
+}
+
 body {
 	position: relative;
 	margin: 0;
@@ -139,7 +145,7 @@ header h1 span {
 }
 
 .project .circle {
-	display: block;
+	display: none;
 	position: absolute;
 	top: 50%;
 	width: 65%;
@@ -160,6 +166,10 @@ header h1 span {
 
 .project:nth-child(even) .circle {
 	left: 0%;
+}
+
+.project:nth-child(3n+1) .circle {
+	display: block;
 }
 
 .project h3 {
@@ -239,7 +249,7 @@ header h1 span {
 
 .project .imageWrap .work {
 	max-width: 100%;
-	border: 2px solid #333;
+	border: 2px solid #111;
 	height: auto;
 	display: block;
 	cursor: pointer;
@@ -267,7 +277,7 @@ header h1 span {
 }
 
 .project .imageWrap .desktop .device {
-	background: #333;
+	background: #111;
 	width: 107.5%;
 	height: 115%;
 	top: -7.5%;
@@ -299,6 +309,12 @@ header h1 span {
 	z-index: 2;
 }
 
+@media (max-width: 800px) {
+	.project .imageWrap .desktop .device .base {
+		padding-bottom: 4%;
+	}
+}
+
 .project .imageWrap .desktop .device .base:after {
 	content: '';
 	position: absolute;
@@ -325,7 +341,7 @@ header h1 span {
 
 @media (max-width: 800px) {
 	.project .imageWrap .desktop .device .base:after {
-		border-top: 10px solid #80858a;
+		border-top: 6px solid #80858a;
 	}
 }
 
@@ -345,7 +361,7 @@ header h1 span {
 
 .project .imageWrap .mobile {
 	position: absolute;
-	right: -4rem;
+	right: -5%;
 	bottom: -1rem;
 	width: 285px;
 	max-width: 25%;
@@ -391,7 +407,7 @@ header h1 span {
 	}
 	.project:nth-of-type(even) .imageWrap .mobile {
 		right: unset;
-		left: -4rem;
+		left: -5%;
 	}
 	.project:nth-of-type(even) .imageWrap .mobile.out {
 		transform: translateX(-110%) scale(0.8);
