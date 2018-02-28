@@ -35,6 +35,7 @@
           <div class="imageWrap">
             <?php if(isset($project['desktop'])): ?>
               <div class="desktop">
+                <div class="shine"></div>
                 <div class="device">
                   <span class="base"></span>
                 </div>
@@ -42,6 +43,7 @@
               </div>
             <?php endif; if(isset($project['mobile'])): ?>
               <div class="mobile">
+                <div class="shine"></div>
                 <div class="device"></div>
                 <img class="work" src="<?php echo $project['mobile']; ?>" alt="<?php echo $project['title'] ?> Mobile Preview" />
               </div>

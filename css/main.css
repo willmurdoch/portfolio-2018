@@ -126,7 +126,7 @@ header h1 span {
 
 .project {
 	position: relative;
-	width: calc(95% - 2rem);
+	width: calc(90% - 2rem);
 	max-width: 1400px;
 	margin: 20vh auto 50vh;
 	font-size: 0;
@@ -138,9 +138,15 @@ header h1 span {
 	padding-bottom: 12rem;
 }
 
+@media (max-width: 1100px) {
+	.project {
+		margin: 20vh auto 20vh;
+	}
+}
+
 @media (max-width: 800px) {
 	.project {
-		margin: 10vh auto 0;
+		margin: 5rem auto 10rem;
 	}
 }
 
@@ -194,8 +200,10 @@ header h1 span {
 	z-index: 1;
 }
 
-.project .textWrap img:hover, .project .imageWrap img:hover {
-	border-color: #009874;
+@media (min-width: 800px) {
+	.project .textWrap img:hover, .project .imageWrap img:hover {
+		border-color: #009874;
+	}
 }
 
 .project .textWrap {
@@ -207,7 +215,9 @@ header h1 span {
 @media (max-width: 800px) {
 	.project .textWrap {
 		width: 90%;
-		max-width: 90%;
+		max-width: 500px;
+		display: block;
+		margin: 0 auto;
 		padding-right: 0;
 	}
 }
@@ -234,6 +244,11 @@ header h1 span {
 	padding: 0 5%;
 }
 
+.project .imageWrap img {
+	position: relative;
+	z-index: 2;
+}
+
 @media (max-width: 1125px) {
 	.project .imageWrap {
 		width: 60%;
@@ -242,8 +257,10 @@ header h1 span {
 
 @media (max-width: 800px) {
 	.project .imageWrap {
-		width: 90%;
-		margin-top: 2rem;
+		width: 95%;
+		left: -2.5%;
+		display: block;
+		margin: 4rem auto 0;
 	}
 }
 
@@ -272,8 +289,57 @@ header h1 span {
 	position: absolute;
 }
 
+.project .imageWrap .shine {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	pointer-events: none;
+}
+
+.project .imageWrap .shine:after {
+	content: '';
+	position: absolute;
+	display: block;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	background: #FFF;
+	width: 75%;
+	padding-bottom: 75%;
+	left: unset;
+	transform-origin: top right;
+	transform: rotate(45deg);
+	z-index: 3;
+}
+
 .project .imageWrap .desktop {
 	transform: scale(1);
+}
+
+.project .imageWrap .desktop .shine {
+	width: 107.5%;
+	height: 123%;
+	top: -7.5%;
+	left: -3.5%;
+	border-radius: 30px 30px 0 0;
+}
+
+.project .imageWrap .desktop .shine:after {
+	top: -5%;
+	right: -55%;
+	opacity: 0.1;
+}
+
+@media (max-width: 1100px) {
+	.project .imageWrap .desktop .shine {
+		border-radius: 20px 20px 0 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.project .imageWrap .desktop .shine {
+		border-radius: 10px 10px 0 0;
+	}
 }
 
 .project .imageWrap .desktop .device {
@@ -366,6 +432,34 @@ header h1 span {
 	width: 285px;
 	max-width: 25%;
 	transform-origin: 50% 20%;
+}
+
+.project .imageWrap .mobile .shine {
+	width: 105%;
+	height: 120%;
+	left: -2.5%;
+	top: -10%;
+	border-radius: 30px;
+}
+
+.project .imageWrap .mobile .shine:after {
+	top: -15%;
+	right: -85%;
+	width: 150%;
+	padding-bottom: 130%;
+	opacity: 0.05;
+}
+
+@media (max-width: 1100px) {
+	.project .imageWrap .mobile .shine {
+		border-radius: 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.project .imageWrap .mobile .shine {
+		border-radius: 10px;
+	}
 }
 
 .project .imageWrap .mobile .device {
