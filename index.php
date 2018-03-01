@@ -14,9 +14,19 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <header>
-    <h1>W<span>ill </span>M<span>urdoch</span></h1>
+    <div class="scaler">
+      <h1>Will <br />Murdoch</h1>
+      <h3>developer &bull; animator &bull; designer</h3>
+    </div>
+    <div class="stars">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+    </div>
   </header>
   <div id="wrapper">
+
     <section id="projects">
       <?php
       $json = file_get_contents('projects.json');
@@ -29,7 +39,7 @@
             <h3><?php echo $project['title']; ?></h3>
             <p><?php echo $project['description']; ?></p>
             <?php if(isset($project['link'])): ?>
-              <a class="cta" href="<?php echo $project['link']; ?>" target="_blank">Visit Site</a>
+              <a class="cta" href="<?php echo $project['link']; ?>" target="_blank"><p>Visit Site</p><span><p>Visit Site</p></span></a>
             <?php endif; ?>
           </div>
           <div class="imageWrap">
@@ -53,6 +63,10 @@
         </article>
       <?php endforeach; ?>
     </section>
+    <a href="#" id="btt"><span>&#8679;</span> top</a>
+    <footer>
+      <p>© 2018 Will Murdoch. Proprietary code is licensed under&nbsp;<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.</p>
+    </footer>
   </div>
 
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
