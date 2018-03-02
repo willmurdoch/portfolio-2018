@@ -158,6 +158,31 @@ header
     animation: slideIn 0.4s 0.1s ease-out forwards
     @media (max-width: $mobile)
       font-size: 1.25rem
+  .linkage
+    position: fixed
+    width: 200px
+    height: 200px
+    top: 0
+    right: 0
+    background: $wmColor1
+    border-radius: 100%
+    text-align: center
+    a
+      position: relative
+      z-index: 1
+      display: inline-block
+      vertical-align: middle
+  .email, .linkedin
+    height: 40px
+    width: 40px
+    margin-top: 25px
+  .email
+    background: url('../images/email.php?color=#{rgba(#FFF, 0.99)}') center no-repeat
+    background-size: contain
+  .linkedin
+    background: url('../images/linkedin.php?color=#{rgba(#FFF, 0.99)}') center no-repeat
+    background-size: contain
+    height: 20px
 
 #wrapper
   position: relative
@@ -172,7 +197,7 @@ header
   height: 100%
   top: 0
   left: 0
-  z-index: 1
+  z-index: 0
   opacity: 0.1
   .stripe
     display: inline-block
