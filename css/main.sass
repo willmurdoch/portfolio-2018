@@ -15,7 +15,6 @@ $honeysuckle: #db4f70
 $turquoise: #45b4a8
 $mimosa: #efbd57
 
-
 $wmColor1: $tangerine
 
 ::selection
@@ -36,7 +35,7 @@ $wmColor1: $tangerine
   top: 0
   left: 0
 @function extrude($color, $steps)
-  $val: 0px 0px $color, 0px 0px 1px #{$color}, 0px 0px 2px #{$color}
+  $val: 0px 0px $color, 0px 0px 2px #{$color}, 0px 0px 5px #{$color}
   @for $i from 1 through $steps
     $val: #{$val}, #{-$i}px #{$i}px #{$color}
   @return $val
@@ -197,6 +196,7 @@ header
     outline: 3px solid $wmColor1
     outline-offset: -3px
 
+$titleExtrudes: 4
 #projects
   position: relative
   z-index: 1
@@ -447,6 +447,8 @@ header
   color: $wmColor1
   text-decoration: none
   font-weight: 900
+  position: relative
+  z-index: 2
   span
     position: relative
     display: inline-block
@@ -461,6 +463,8 @@ footer
   padding-bottom: 1rem
   border-bottom: 4px solid $wmColor1
   float: left
+  position: relative
+  z-index: 2
   p
     width: 90%
     display: block
