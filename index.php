@@ -1,3 +1,19 @@
+<?php
+function slugify($text){
+  $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+  $text = preg_replace('~[^-\w]+~', '', $text);
+  $text = trim($text, '-');
+  $text = preg_replace('~-+~', '-', $text);
+  $text = strtolower($text);
+  if(empty($text)){
+    return 'n-a';
+  }
+  return $text;
+}
+
+$colors = array('ultraviolet', )
+?>
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -9,39 +25,30 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="tangerine">
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <header>
-    <div class="scaler">
-      <h1>Will <br />Murdoch</h1>
-      <h3>developer &bull; animator &bull; designer</h3>
-    </div>
-    <div class="stars">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <div id="stars4"></div>
-    </div>
-  </header>
   <div id="wrapper">
-
+    <div class="stripes">
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+      <div class="stripe"></div>
+    </div>
+    <header>
+      <div class="scaler">
+        <h1>Will <br />Murdoch</h1>
+        <h3>developer &bull; animator &bull; designer</h3>
+      </div>
+    </header>
     <section id="projects">
       <?php
       $json = file_get_contents('projects.json');
       $projects = json_decode($json, true);
       $count = 0;
       foreach($projects as $project): ?>
-        <article class="project">
-          <div class="textWrap">
-            <span class="count"><?php $count++; if($count < 10) echo '0'.$count; else echo $count; ?></span>
-            <h3><?php echo $project['title']; ?></h3>
-            <p><?php echo $project['description']; ?></p>
-            <?php if(isset($project['link'])): ?>
-              <a class="cta" href="<?php echo $project['link']; ?>" target="_blank"><p>Visit Site</p><span><p>Visit Site</p></span></a>
-            <?php endif; ?>
-          </div>
+        <article id="<?php echo slugify($project['title']); ?>" class="project">
           <div class="imageWrap">
             <?php if(isset($project['desktop'])): ?>
               <div class="desktop">
@@ -57,6 +64,14 @@
                 <div class="device"></div>
                 <img class="work" src="<?php echo $project['mobile']; ?>" alt="<?php echo $project['title'] ?> Mobile Preview" />
               </div>
+            <?php endif; ?>
+          </div>
+          <div class="textWrap">
+            <span class="count"><?php $count++; if($count < 10) echo '0'.$count; else echo $count; ?></span>
+            <h3><?php echo $project['title']; ?></h3>
+            <p><?php echo $project['description']; ?></p>
+            <?php if(isset($project['link'])): ?>
+              <a class="cta" href="<?php echo $project['link']; ?>" target="_blank"><p>Visit Site</p><span><p>Visit Site</p></span></a>
             <?php endif; ?>
           </div>
           <span class="circle"></span>
