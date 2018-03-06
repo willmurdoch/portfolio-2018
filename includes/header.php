@@ -21,7 +21,7 @@
         <h3>developer &bull; animator &bull; designer</h3>
       </div>
       <div class="linkage">
-        <a href="" class="linkedin"></a>
+        <a href="https://www.linkedin.com/in/will-murdoch-59823725" target="_blank" class="linkedin"></a>
         <a href="mailto:willmdev@gmail.com" class="email"></a>
       </div>
     </header>
