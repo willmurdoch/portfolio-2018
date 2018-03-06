@@ -1,35 +1,35 @@
 [
   {
     "title": "Brownstein Group",
-    "description": "A redesign of Brownstein Group's website, I built this site off of Wordpress. The site has multiple levels of parallaxing animations on every page to help bring complexity to the typography-based layout.",
+    "description": "A redesign of Brownstein Group's website, I developed this as a custom Wordpress theme that allows for lots of flexibility. It emphasises typography and basic geometry instead of relying on images to make interesting layouts.",
     "link": "http://www.brownsteingroup.com",
     "desktop": "images/work/bg_desktop.jpg",
     "mobile": "images/work/bg_mobile.jpg"
   },
   {
     "title": "NOVA by Saint-Gobain",
-    "description": "A new site for Saint-Gobain's external ventures team aimed at sustainable startups. I built this site using Drupal as the description management system.",
+    "description": "A new site for Saint-Gobain's external ventures team aimed at sustainable startups. I built this site in Drupal, using modular templates I created to allow new pages to be made quickly with lots of different configurations.",
     "link": "https://www.nova-saint-gobain.com/",
     "desktop": "images/work/nova_desktop.jpg",
     "mobile": "images/work/nova_mobile.jpg"
   },
   {
     "title": "Wonder Ball",
-    "description": "After Frankford Candy aquired the WonderBall license, they needed a new website to go along with it. I built this site off of Wordpress, working with Brownstein Group's video department to integrate stop motion animation to showcase different varieties of the product.",
+    "description": "After Frankford Candy brought back Wonder Ball, they needed a new website to go along with it. I built this with Wordpress, collaborating with Brownstein Group's video production team to integrate stop motion animation to showcase different varieties of the product.",
     "link": "http://www.wonderballcandy.com/",
     "desktop": "images/work/wonderball_desktop.jpg",
     "mobile": "images/work/wonderball_mobile.jpg"
   },
   {
     "title": "National Lacrosse League",
-    "description": "A complete redesign and rebuild of the NLL website. I programmed the front-end and most of the back-end of this site in Wordpress. It uses the PointStreak API to pull in live stats, games, and other info using JSON feeds accessed by PHP.",
+    "description": "A complete redesign and rebuild of the NLL website. I made this site using Wordpress, collaborating with PointStreak Technologies to integrate live stats for players, games, and teams.",
     "link": "http://www.nll.com/",
     "desktop": "images/work/nll_desktop.jpg",
     "mobile": "images/work/nll_mobile.jpg"
   },
   {
     "title": "SageGlass",
-    "description":  "A complete re-branding of SageGlass, a type of glass that you can tint on demand. This site was designed to showcase various features of SageGlass, using video and CSS animations to simulate the product. I programmed the front-end and added to/revised the back-end, which is built on Drupal.",
+    "description":  "SageGlass is a type of glass that you can tint on demand. This site was designed to simulate the features of their products, using background video and CSS animations. I programmed the layouts, and collaborated with another developer to tie it into the Drupal platform.",
     "link": "https://www.sageglass.com",
     "desktop": "images/work/sage_desktop.jpg",
     "mobile": "images/work/sage_mobile.jpg"
@@ -85,15 +85,9 @@
   {
     "title": "Verlasso",
     "description": "A site designed to showcase how Verlasso has a unique and sustainable system for farming their salmon. I programmed this in its entirety with smartphones and tablets as the intended medium.",
-    "link": "http://www.taketheledchallenge.com/",
+    "link": "http://staging.brownsteingroup.com/clients/verlasso/",
     "desktop": "images/work/verlasso_desktop.jpg",
     "mobile": "images/work/verlasso_mobile.jpg"
-  },
-  {
-    "title": "CoZara",
-    "description": "A website for the University City Japanese restaurant coZara, I built this site as a from-scratch Wordpress theme.",
-    "link": "http://cozaraphilly.com/",
-    "desktop": "images/work/cozara_desktop.jpg"
   },
   {
     "title": "Philadelphia Federal Credit Union",
@@ -101,5 +95,11 @@
     "link": "https://www.pfcu.com/",
     "desktop": "images/work/pfcu_desktop.jpg",
     "mobile": "images/work/pfcu_mobile.jpg"
+  },
+  {
+    "title": "CoZara",
+    "description": "A website for the University City Japanese restaurant coZara, I built this site as a from-scratch Wordpress theme.",
+    "link": "http://cozaraphilly.com/",
+    "desktop": "images/work/cozara_desktop.jpg"
   }
 ]
