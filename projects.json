@@ -1,7 +1,35 @@
 [
   {
+    "title": "Saint-Gobain Careers",
+    "description": "A site built for recruiting talent at Saint-Gobain's North American division. This site was a custom WordPress build, using Swagger and Google Maps APIs to create an interactive map to filter through listings.",
+    "link": "https://careers.saint-gobain-northamerica.com/",
+    "desktop": "images/work/sgcareers_desktop.jpg",
+    "mobile": "images/work/sgcareers_mobile.jpg"
+  },
+  {
+    "title": "BG Holiday Ad-Lib",
+    "description": "A madlib-style game based on agency life, done as self-promotion for Brownstein Group. This is a custom web app I built in PHP.",
+    "link": "http://happyholidaysfrom.brownstein.group",
+    "desktop": "images/work/mablib-desktop.jpg",
+    "mobile": "images/work/mablib-mobile.png"
+  },
+  {
+    "title": "Giant Heirloom Market",
+    "description": "A microsite built to promote Giant's Heirloom Market. I built this site using flexible content in WordPress to allow completely new page types to be built without new code.",
+    "link": "https://www.heirloommarket.com/",
+    "desktop": "images/work/heirloom_desktop.jpg",
+    "mobile": "images/work/heirloom_mobile.jpg"
+  },
+  {
+    "title": "Xfinity Mobile Phone Cleanse",
+    "description": "A site built for Xfinity to promote healthier smartphone habits. I built this site as static HTML/CSS using JSON to easily manage content.",
+    "link": "https://www.xfinity.com/mobile/landing/phone-cleanse",
+    "desktop": "images/work/phone_cleanse_desktop.jpg",
+    "mobile": "images/work/phone_cleanse_mobile.jpg"
+  },
+  {
     "title": "Brownstein Group",
-    "description": "A redesign of Brownstein Group's website, I developed this as a custom Wordpress theme that allows for lots of flexibility. It emphasises typography and basic geometry instead of relying on images to make interesting layouts.",
+    "description": "A redesign of Brownstein Group's website, I developed this as a custom WordPress theme that allows for lots of flexibility. It emphasises typography and basic geometry instead of relying on images to make interesting layouts.",
     "link": "http://www.brownsteingroup.com",
     "desktop": "images/work/bg_desktop.jpg",
     "mobile": "images/work/bg_mobile.jpg"
@@ -15,14 +43,14 @@
   },
   {
     "title": "Wonder Ball",
-    "description": "After Frankford Candy brought back Wonder Ball, they needed a new website to go along with it. I built this with Wordpress, collaborating with Brownstein Group's video production team to integrate stop motion animation to showcase different varieties of the product.",
+    "description": "After Frankford Candy brought back Wonder Ball, they needed a new website to go along with it. I built this with WordPress, collaborating with Brownstein Group's video production team to integrate stop motion animation to showcase different varieties of the product.",
     "link": "http://www.wonderballcandy.com/",
     "desktop": "images/work/wonderball_desktop.jpg",
     "mobile": "images/work/wonderball_mobile.jpg"
   },
   {
     "title": "National Lacrosse League",
-    "description": "A complete redesign and rebuild of the NLL website. I made this site using Wordpress, collaborating with PointStreak Technologies to integrate live stats for players, games, and teams.",
+    "description": "A complete redesign and rebuild of the NLL website. I made this site using WordPress, collaborating with PointStreak Technologies to integrate live stats for players, games, and teams.",
     "link": "http://www.nll.com/",
     "desktop": "images/work/nll_desktop.jpg",
     "mobile": "images/work/nll_mobile.jpg"
@@ -76,18 +104,11 @@
     "desktop": "images/work/vague_desktop.jpg"
   },
   {
-    "title": "Western Union Payments",
+    "title": "Speedpay",
     "description": "An informational site for Western Union's bill payment services. I built this site using ExpressionEngine.",
     "link": "https://payments.westernunion.com/",
     "desktop": "images/work/payments_desktop.jpg",
     "mobile": "images/work/payments_mobile.jpg"
-  },
-  {
-    "title": "Verlasso",
-    "description": "A site designed to showcase how Verlasso has a unique and sustainable system for farming their salmon. I programmed this in its entirety with smartphones and tablets as the intended medium.",
-    "link": "http://staging.brownsteingroup.com/clients/verlasso/",
-    "desktop": "images/work/verlasso_desktop.jpg",
-    "mobile": "images/work/verlasso_mobile.jpg"
   },
   {
     "title": "Philadelphia Federal Credit Union",
@@ -95,11 +116,5 @@
     "link": "https://www.pfcu.com/",
     "desktop": "images/work/pfcu_desktop.jpg",
     "mobile": "images/work/pfcu_mobile.jpg"
-  },
-  {
-    "title": "CoZara",
-    "description": "A website for the University City Japanese restaurant coZara, I built this site as a from-scratch Wordpress theme.",
-    "link": "http://cozaraphilly.com/",
-    "desktop": "images/work/cozara_desktop.jpg"
   }
 ]
