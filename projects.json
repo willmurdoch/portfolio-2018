@@ -1,30 +1,33 @@
 [
   {
+    "title": "DuPont Smart Materials",
+    "description": "A site built for DuPont to highlight their line of smart furniture. Since we had no photography to work with, the site focuses on animation to provide visual interest. In addition to CSS3 and JS animation, this site also uses physics-based particle animation.",
+    "link": "http://electronicmaterials.dupont.com/Smart-Materials",
+    "desktop": "images/work/smartmats_desktop.png",
+    "desktop_video": "images/work/smartmats_desktop.mp4",
+    "mobile": "images/work/smartmats_mobile.png"
+  },
+  {
     "title": "Saint-Gobain Careers",
     "description": "A site built for recruiting talent at Saint-Gobain's North American division. This site was a custom WordPress build, using Swagger and Google Maps APIs to create an interactive map to filter through listings.",
     "link": "https://careers.saint-gobain-northamerica.com/",
     "desktop": "images/work/sgcareers_desktop.jpg",
+    "desktop_video": "images/work/sgcareers_desktop.mp4",
     "mobile": "images/work/sgcareers_mobile.jpg"
   },
   {
     "title": "BG Holiday Ad-Lib",
     "description": "A madlib-style game based on agency life, done as self-promotion for Brownstein Group. This is a custom web app I built in PHP.",
     "link": "http://happyholidaysfrom.brownstein.group",
-    "desktop": "images/work/mablib-desktop.jpg",
-    "mobile": "images/work/mablib-mobile.png"
-  },
-  {
-    "title": "Giant Heirloom Market",
-    "description": "A microsite built to promote Giant's Heirloom Market. I built this site using flexible content in WordPress to allow completely new page types to be built without new code.",
-    "link": "https://www.heirloommarket.com/",
-    "desktop": "images/work/heirloom_desktop.jpg",
-    "mobile": "images/work/heirloom_mobile.jpg"
+    "desktop": "images/work/mablib_desktop.jpg",
+    "mobile": "images/work/mablib_mobile.png"
   },
   {
     "title": "Xfinity Mobile Phone Cleanse",
     "description": "A site built for Xfinity to promote healthier smartphone habits. I built this site as static HTML/CSS using JSON to easily manage content.",
     "link": "https://www.xfinity.com/mobile/landing/phone-cleanse",
     "desktop": "images/work/phone_cleanse_desktop.jpg",
+    "desktop_video": "images/work/phone_cleanse_desktop.mp4",
     "mobile": "images/work/phone_cleanse_mobile.jpg"
   },
   {
@@ -35,17 +38,11 @@
     "mobile": "images/work/bg_mobile.jpg"
   },
   {
-    "title": "NOVA by Saint-Gobain",
-    "description": "A new site for Saint-Gobain's external ventures team aimed at sustainable startups. I built this site in Drupal, using modular templates I created to allow new pages to be made quickly with lots of different configurations.",
-    "link": "https://www.nova-saint-gobain.com/",
-    "desktop": "images/work/nova_desktop.jpg",
-    "mobile": "images/work/nova_mobile.jpg"
-  },
-  {
     "title": "Wonder Ball",
     "description": "After Frankford Candy brought back Wonder Ball, they needed a new website to go along with it. I built this with WordPress, collaborating with Brownstein Group's video production team to integrate stop motion animation to showcase different varieties of the product.",
     "link": "http://www.wonderballcandy.com/",
     "desktop": "images/work/wonderball_desktop.jpg",
+    "desktop_video": "images/work/wonderball_desktop.mp4",
     "mobile": "images/work/wonderball_mobile.jpg"
   },
   {
@@ -98,15 +95,9 @@
     "mobile": "images/work/citizen_mobile.jpg"
   },
   {
-    "title": "A Vague Christmas",
-    "description": "A Christmas card for the Vague family, I animated and programmed this elaborate Christmas experience.",
-    "link": "http://vaguechristmas.com/",
-    "desktop": "images/work/vague_desktop.jpg"
-  },
-  {
     "title": "Speedpay",
     "description": "An informational site for Western Union's bill payment services. I built this site using ExpressionEngine.",
-    "link": "https://payments.westernunion.com/",
+    "link": "https://speedpay.com/",
     "desktop": "images/work/payments_desktop.jpg",
     "mobile": "images/work/payments_mobile.jpg"
   },

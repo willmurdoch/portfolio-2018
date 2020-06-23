@@ -7,7 +7,11 @@
   <title>Will Murdoch</title>
   <meta name="description" content="I make things for the web.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -18,7 +22,7 @@
     <header>
       <div class="scaler">
         <h1>Will <br />Murdoch</h1>
-        <h3>developer &bull; animator &bull; designer</h3>
+        <h3>creative technologist</h3>
       </div>
       <div class="linkage">
         <a href="https://www.linkedin.com/in/will-murdoch-59823725" target="_blank" class="linkedin"></a>

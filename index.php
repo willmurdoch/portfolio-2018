@@ -9,17 +9,29 @@
       <div class="imageWrap">
         <?php if(isset($project['desktop'])): ?>
           <div class="desktop">
-            <div class="shine"></div>
-            <div class="device">
-              <span class="base"></span>
+            <div class="clickWrap">
+              <div class="shine"></div>
+              <div class="device">
+                <span class="base"></span>
+              </div>
+              <?php
+              if (isset($project['desktop_video'])){ ?>
+                <video poster="<?php echo $project['desktop']; ?>" class="work" playsinline loop muted>
+                  <source src="<?php echo $project['desktop_video']; ?>" type="video/mp4">
+                </video>
+              <?php }
+              else{ ?>
+                <img class="work" src="<?php echo $project['desktop']; ?>" alt="" />
+              <?php } ?>
             </div>
-            <img class="work" src="<?php echo $project['desktop']; ?>" alt="<?php echo $project['title'] ?> Desktop Preview" />
           </div>
         <?php endif; if(isset($project['mobile'])): ?>
           <div class="mobile">
-            <div class="shine"></div>
-            <div class="device"></div>
-            <img class="work" src="<?php echo $project['mobile']; ?>" alt="<?php echo $project['title'] ?> Mobile Preview" />
+            <div class="clickWrap">
+              <div class="shine"></div>
+              <div class="device"></div>
+              <img class="work" src="<?php echo $project['mobile']; ?>" alt="" />
+            </div>
           </div>
         <?php endif; ?>
       </div>

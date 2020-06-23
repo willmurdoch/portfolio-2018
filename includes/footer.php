@@ -1,6 +1,6 @@
     <a href="#" id="btt"><span>&#8679;</span> top</a>
     <footer>
-      <p>© 2018 Will Murdoch. Proprietary code is licensed under&nbsp;<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.</p>
+      <p>© <?php echo date("Y"); ?> Will Murdoch. Proprietary code is licensed under&nbsp;<a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.</p>
     </footer>
     <div class="stripes">
       <div class="stripe"></div>
