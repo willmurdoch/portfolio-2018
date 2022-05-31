@@ -1,19 +1,25 @@
 [
   {
+    "title": "Mural Arts Wall Ball",
+    "description": "An invitation built for a Mural Arts event. This site was created using a combination of Adobe Animate and custom JavaScript to allow users to scroll through animations.",
+    "link": "work/wallball/",
+    "desktop": "images/work/wallball_desktop.png",
+    "mobile": "images/work/wallball_mobile.png"
+  },
+  {
+    "title": "ACI Customer Adoption Portal",
+    "description": "A microsite built for ACI Worldwide to promote customer adoption. This was created as a series of landing pages using custom HTML/CSS/JS within the Marketo platform.",
+    "link": "work/customer-adoption/",
+    "desktop": "images/work/customer_adoption_desktop.jpg",
+    "mobile": "images/work/customer_adoption_mobile.png"
+  },
+  {
     "title": "DuPont Smart Materials",
     "description": "A site built for DuPont to highlight their line of smart furniture. Since we had no photography to work with, the site focuses on animation to provide visual interest. In addition to CSS3 and JS animation, this site also uses physics-based particle animation.",
-    "link": "http://electronicmaterials.dupont.com/Smart-Materials",
+    "link": "work/smart-materials/",
     "desktop": "images/work/smartmats_desktop.png",
     "desktop_video": "images/work/smartmats_desktop.mp4",
     "mobile": "images/work/smartmats_mobile.png"
-  },
-  {
-    "title": "Saint-Gobain Careers",
-    "description": "A site built for recruiting talent at Saint-Gobain's North American division. This site was a custom WordPress build, using Swagger and Google Maps APIs to create an interactive map to filter through listings.",
-    "link": "https://careers.saint-gobain-northamerica.com/",
-    "desktop": "images/work/sgcareers_desktop.jpg",
-    "desktop_video": "images/work/sgcareers_desktop.mp4",
-    "mobile": "images/work/sgcareers_mobile.jpg"
   },
   {
     "title": "BG Holiday Ad-Lib",
@@ -31,16 +37,9 @@
     "mobile": "images/work/phone_cleanse_mobile.jpg"
   },
   {
-    "title": "Brownstein Group",
-    "description": "A redesign of Brownstein Group's website, I developed this as a custom WordPress theme that allows for lots of flexibility. It emphasises typography and basic geometry instead of relying on images to make interesting layouts.",
-    "link": "http://www.brownsteingroup.com",
-    "desktop": "images/work/bg_desktop.jpg",
-    "mobile": "images/work/bg_mobile.jpg"
-  },
-  {
     "title": "Wonder Ball",
     "description": "After Frankford Candy brought back Wonder Ball, they needed a new website to go along with it. I built this with WordPress, collaborating with Brownstein Group's video production team to integrate stop motion animation to showcase different varieties of the product.",
-    "link": "http://www.wonderballcandy.com/",
+    "link": "work/wonderball/",
     "desktop": "images/work/wonderball_desktop.jpg",
     "desktop_video": "images/work/wonderball_desktop.mp4",
     "mobile": "images/work/wonderball_mobile.jpg"
@@ -48,44 +47,30 @@
   {
     "title": "National Lacrosse League",
     "description": "A complete redesign and rebuild of the NLL website. I made this site using WordPress, collaborating with PointStreak Technologies to integrate live stats for players, games, and teams.",
-    "link": "http://www.nll.com/",
+    "link": "work/nll/",
     "desktop": "images/work/nll_desktop.jpg",
     "mobile": "images/work/nll_mobile.jpg"
   },
   {
     "title": "SageGlass",
     "description":  "SageGlass is a type of glass that you can tint on demand. This site was designed to simulate the features of their products, using background video and CSS animations. I programmed the layouts, and collaborated with another developer to tie it into the Drupal platform.",
-    "link": "https://www.sageglass.com",
+    "link": "work/sageglass/",
     "desktop": "images/work/sage_desktop.jpg",
     "mobile": "images/work/sage_mobile.jpg"
   },
   {
     "title": "DuPont Sorona",
     "description":  "Sorona creates unique synthetic fabrics for all kinds of uses. I built this site using HTML/CSS, using font sizes to influence the distance travelled in keyframes so the animations could be both extremely lightweight and varied at the same time. This was deployed through the Eloqua platform.",
-    "link": "http://sorona.com/",
+    "link": "work/sorona/",
     "desktop": "images/work/sorona_desktop.jpg",
     "mobile": "images/work/sorona_mobile.jpg"
   },
   {
     "title": "DuPont Intexar",
     "description": "A new product line from DuPont, Intexar creates technology used by clothing manufacturers to provide functionalities like heating and health monitoring. I lead development on the site, which was built for the Eloqua platform.",
-    "link": "http://electronicmaterials.dupont.com/intexar-heat",
+    "link": "work/intexar/heat.html",
     "desktop": "images/work/intexar_desktop.jpg",
     "mobile": "images/work/intexar_mobile.jpg"
-  },
-  {
-    "title": "Mural Finder",
-    "description": "A web app developed for the Mural Arts Foundation to help people find the murals all over Philly. This app was built with Ruby on Rails - I worked on the Google Maps integration and layouts.",
-    "link": "https://map.muralarts.org/",
-    "desktop": "images/work/muralarts_desktop.jpg",
-    "mobile": "images/work/muralarts_mobile.jpg"
-  },
-  {
-    "title": "IKEA LED Challenge",
-    "description": "A game developed to show how much energy you can save by switching to LED bulbs. This was released in tandem with IKEA's sustainability month. I programmed the gameplay and animations for this mobile and desktop compatible game.",
-    "link": "http://www.taketheledchallenge.com/",
-    "desktop": "images/work/led_desktop.jpg",
-    "mobile": "images/work/led_mobile.jpg"
   },
   {
     "title": "The Philadelphia Citizen",
@@ -93,13 +78,6 @@
     "link": "http://thephiladelphiacitizen.org/",
     "desktop": "images/work/citizen_desktop.jpg",
     "mobile": "images/work/citizen_mobile.jpg"
-  },
-  {
-    "title": "Speedpay",
-    "description": "An informational site for Western Union's bill payment services. I built this site using ExpressionEngine.",
-    "link": "https://speedpay.com/",
-    "desktop": "images/work/payments_desktop.jpg",
-    "mobile": "images/work/payments_mobile.jpg"
   },
   {
     "title": "Philadelphia Federal Credit Union",

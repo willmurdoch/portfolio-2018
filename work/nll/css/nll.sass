@@ -1,0 +1,2897 @@
+/*Main Stylesheet*/
+@import 'bootwill.sass'
+
+//Global image path for migration purposes
+$root: '../assets/'
+
+//Fonts
+@font-face
+  font-family: 'Heroic'
+  src: url(#{$root}fonts/heroiccondensed.woff) format('woff'), url(#{$root}fonts/heroiccondensed.woff2) format('woff2')
+  font-weight: 500
+@font-face
+  font-family: 'Heroic'
+  src: url(#{$root}fonts/heroiccondensed-light.woff) format('woff'), url(#{$root}fonts/heroiccondensed-light.woff2) format('woff2')
+  font-weight: 300
+@font-face
+  font-family: 'Heroic'
+  src: url(#{$root}fonts/heroiccondensed-bold.woff) format('woff'), url(#{$root}fonts/heroiccondensed-bold.woff2) format('woff2')
+  font-weight: 700
+@font-face
+  font-family: 'Clock'
+  src: url(#{$root}fonts/digital-7-webfont.woff) format('woff'), url(#{$root}fonts/digital-7-webfont.woff2) format('woff2')
+
+//Colors
+
+//red
+$bc1: #8e292e
+$bc1_dark: #58131f
+
+//silver
+$bc2: #cbcacc
+$bc2_dark: #979a9d
+
+//gray
+$bc3: #bfbfbf
+$bc3_dark: #231f20
+
+//dark gray
+$bc4: #56565a
+$bc4_dark: #2b3034
+
+//Breakpoints
+$lowHeight: 600px
+$mobile: 700px
+$portrait: 800px
+$tablet: 1023px
+
+//Animations
+=cornerBorder
+  &:before, &:after
+    +pseudoStart
+    width: 0px
+    height: 0px
+    z-index: 5
+    transition: width 0.3s ease-out 0s, height 0.3s ease-out 0s, border-color 0.3s 0.1s
+  &:before
+    top: 0
+    right: 0
+    border-top: 10px solid transparent
+    border-right: 10px solid transparent
+  &:after
+    bottom: 0
+    left: 0
+    border-bottom: 10px solid transparent
+    border-left: 10px solid transparent
+  &:hover
+    &:before, &:after
+      width: 100%
+      height: 100%
+      border-color: $bc1
+      transition: width 0.3s ease-out 0s, height 0.3s ease-out 0s, border-color 0s 0s
+
+//Right Arrow for CTAs
+=bigArrow
+  span
+    font-size: 2rem
+    line-height: 0.5em
+    left: 0.25rem
+    display: inline-block
+    vertical-align: top
+    position: relative
+    transition: left 0.2s ease-out
+  &:hover
+    span
+      left: 0.75rem
+
+//General pseudo stuff
+=pseudoStart
+  content: ''
+  display: block
+  position: absolute
+
+//Global declarations
+html
+  font-size: 18px
+  @media (max-width: 1190px)
+    font-size: 16px
+  @media (max-width: 1100px)
+    font-size: 14px
+  @media (max-height: 700px)
+    font-size: 16px
+
+body
+  background: $bc3_dark
+  font-family: "arvo", serif
+  margin: 0
+  overflow-y: scroll
+
+select::-ms-expand
+  display: none
+
+//Content max width
+.story-content-container
+  max-width: 1190px
+  margin: 0 auto
+
+//Nav
+$socialWidth: 20px
+.navbar
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  z-index: 10
+  box-shadow: 0px 0px 30px rgba(35,31,32,0.2)
+  .top-bar
+    background: $bc3_dark
+    width: 100%
+    float: left
+    position: relative
+    z-index: 2
+    box-shadow: 0px 0px 20px #838384
+  .social
+    position: relative
+    display: table
+    white-space: nowrap
+    float: right
+    margin-top: 12px
+    a
+      display: inline-block
+      width: $socialWidth
+      height: $socialWidth
+      background-image: url(#{$root}header/header_social.png)
+      background-repeat: no-repeat
+      transition: opacity 0.2s ease-out
+      &:hover
+        opacity: 0.7
+      &.instagram
+        background-position: 0 0
+      &.facebook
+        background-position: -21px 0
+        margin: 0 0.5rem
+      &.twitter
+        background-position: -42px 0
+
+  .topBarWrap
+    width: 98%
+    max-width: 1150px
+    margin: 5px auto
+    display: table
+    .logoWrap
+      width: calc(50% - 50px)
+      display: flex
+      flex-flow: row nowrap
+      .logo
+        width: 23%
+        @media (max-width:1190px)
+          width: 21%
+        img
+          display: block
+          margin: 0 auto
+          width: auto
+          max-height: 45px
+    .logoWrap.left
+      float: left
+    .logoWrap.right
+      float: right
+    .logo
+      width: 100%
+      text-align: center
+      display: block
+      float: left
+  .login
+    position: absolute
+    top: 0
+    right: 0
+    margin: 0.5rem
+    color: #FFF
+    cursor: pointer
+
+.score-feed
+  max-width: 1190px
+  width: 95%
+  position: relative
+  display: block
+  margin: -4rem auto 2rem
+  font-size: 0
+  z-index: 5
+  @media (max-width:$mobile)
+    margin-top: 1rem
+    width: 100%
+    margin-bottom: 10px
+  .scores-wrap
+    display: inline-block
+    vertical-align: middle
+    width: calc(100% - 100px)
+    @media (max-width: $mobile)
+      width: 100%
+    margin: 0
+  .scores-all
+    display: block
+    overflow: hidden
+    width: 100%
+    white-space: nowrap
+    @media (max-width: $mobile)
+      overflow: auto
+      -webkit-overflow-scrolling: touch
+    .table-wrap
+      display: inline-block
+      width: 150px
+      @media (max-width:1190px)
+        width: calc(24vw - 25px - 13px)
+      @media (max-width: 900px)
+        width: calc(30vw - 16px - 15px)
+      @media (max-width: 600px)
+        width: 130px
+      margin: 0 0 0 5px
+      &:first-child
+        margin-left: 5px
+      &:last-child
+        margin-right: 5px
+
+  table
+    background: $bc1_dark
+    color: #FFF
+    border: 0
+    outline: 0
+    width: 100%
+    border-spacing: 0
+    table-layout: fixed
+    th
+      background: $bc1
+      padding: 10px 15px
+    tr:first-of-type
+      margin-bottom: 10px
+    th, td
+      line-height: 1em
+      &:nth-of-type(2)
+        text-align: right
+    td
+      line-height: 1rem
+      padding: 5px 15px
+    tr:nth-child(2)
+      td
+        padding-top: 0.9rem
+    tr:last-of-type
+      td
+        padding-bottom: 0.9rem
+    &.past
+      background: #262626
+      th
+        background: #404040
+    th,td
+      width: 50%
+      text-align: left
+      font-size: 0.7rem
+    tr.winner
+      font-weight: 900
+
+//Icons
+.icon
+  background-position: top right
+  background-repeat: no-repeat
+  background-size: contain
+  width: 25px
+  height: 25px
+  -webkit-backface-visibility: hidden
+  transition: all 0.2s ease-out
+  &.play
+    background-image: url("#{$root}btn/play.php?color=#{rgba($bc2_dark, 0.99)}")
+  &.article
+    background-image: url("#{$root}btn/article.php?color=#{rgba($bc2_dark, 0.99)}")
+  &.alarm
+    background-image: url("#{$root}btn/alarm.php?color=#{rgba($bc2_dark, 0.99)}")
+.score-arrow
+  width: 50px
+  height: 6.1rem
+  text-align: center
+  font-size: 4rem
+  line-height: 5.25rem
+  font-family: sans-serif
+  background: $bc2
+  vertical-align: middle
+  display: inline-block
+  cursor: pointer
+  transition: background 0.3s ease-out
+  @media (max-width: $mobile)
+    display: none
+  &:hover
+    background: $bc2_dark
+  &[arrow-disabled]
+    background: #8c8c8c
+    cursor: default
+.main-nav-bar
+  background: $bc2
+  text-align: center
+  padding: 0
+  width: 100%
+  float: left
+  .tag-menus
+    width: calc(100% - 5rem)
+    max-width: calc(1190px - 5rem)
+    position: relative
+  .logo
+    position: absolute
+    top: 10px
+    left: 50%
+    transform: translateX(-50%)
+    transition: all 0.2s ease-out
+    img
+      max-width: 9vw
+    a
+      background: transparent
+      padding: 0
+      transition: all 0.3 s ease-out
+      img
+        display: block
+      &:hover
+        filter: grayscale(100%)
+        background: transparent
+  h6
+    font-size: 0.9rem
+    margin: 0
+    font-weight: 900
+    text-transform: uppercase
+    @media (max-width: 1000px)
+      font-size: 1.2vw
+    @media (max-width: 700px)
+      font-size: 1.1vw
+    &:nth-child(-n+5)
+      float: left
+      width: auto
+      padding: 0 1%
+    &:nth-child(n+6)
+      float: right
+      width: auto
+      padding: 0 3%
+    &:nth-child(1)
+      float: none
+      width: auto
+      position: fixed
+      z-index: 3
+      @media (max-width:1100px)
+        width: 100px
+  a
+    background: $bc2
+    color: $bc3_dark
+    text-decoration: none
+    padding: 0.85rem 1.1em
+    display: inline-block
+    transition: background 0.2s ease-out, color 0.2s ease-out
+    &:hover, &.active
+      background: $bc2_dark
+      color: #FFF
+  h6.tagActive
+    a
+      background: $bc2_dark
+      color: #FFF
+  .tag-menus, .search
+    display: inline-block
+    vertical-align: middle
+.navi-search
+  width: 1rem
+  height: 1rem
+  margin-left: 1rem
+  background: url(#{$root}btn/search-field-icon.svg) no-repeat center
+  background-size: contain
+  cursor: pointer
+  @media (max-width:1000px)
+    margin-left: 1vw
+.navi-search-close
+  background: url(#{$root}btn/exit-close.svg)
+.desktop-nav
+  @media (max-width:$mobile)
+    display: none
+.mobile-nav
+  display: none
+  width: 100%
+  height: 60px
+  background: $bc2
+  position: absolute
+  top: 0
+  text-align: center
+  transition: height 0.3s ease-out, background 0.3s ease-out
+  .mobile-burger
+    position: absolute
+    left: 10px
+    cursor: pointer
+    top: 50%
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    .button
+      width: 24px
+      height: 18px
+      position: relative
+      span
+        left: 0
+        position: absolute
+        width: 100%
+        border-radius: 5px
+        height: 4px
+        background: $bc3_dark
+        &:nth-child(1)
+          top: 0
+        &:nth-child(2)
+          top: 50%
+          transform: translateY(-50%)
+          -webkit-transform: translateY(-50%)
+        &:nth-child(3)
+          bottom: 0
+    p
+      margin: 0 0 0 6px
+      font-weight: 900
+    p, .button
+      display: inline-block
+      vertical-align: middle
+  .mobile-search
+    position: absolute
+    right: 10px
+    top: 50%
+    background-size: contain
+    transform: translateY(-50%)
+    height: 1.5rem
+    width: 1.5rem
+    -webkit-transform: translateY(-50%)
+  .mobile-logo
+    width: 58px
+    height: 60px
+    margin-top: 4px
+    display: inline-block
+    transition: width 0.3s ease-out
+    img
+      max-width: 100%
+  @media (max-width:$mobile)
+    display: block
+.mobile-menu
+  width: 0
+  position: fixed
+  height: 100vh
+  top: 0
+  left: 0
+  display: block
+  z-index: 100
+  background: transparent
+  overflow: auto
+  transition: width 0s 0.3s
+  .mobile-menu-wrap
+    width: calc(100% - 3rem)
+    border-right: 5px solid $bc2
+    background: $bc1
+    overflow: auto
+    height: 100vh
+    top: 0
+    left: -100vw
+    transition: left 0.4s ease-out
+    position: absolute
+    -webkit-overflow-scrolling: touch
+  .mobile-close
+    color: #FFF
+    margin: 0
+    padding: 1.25rem 1rem
+    text-align: left
+    background: $bc1_dark
+    .close-btn
+      font-size: 1.5rem
+      margin-right: 0.5rem
+    .close-btn, p
+      display: inline-block
+      vertical-align: middle
+      font-weight: 900
+    p
+      margin: 0
+      font-size: 1.2rem
+  h6
+    margin: 0
+    padding: 0
+    a
+      display: block
+      width: calc(100% - 5rem)
+      text-align: left
+      background: $bc1
+      color: #FFF
+      text-decoration: none
+      font-size: 1.5rem
+      line-height: 1em
+      font-weight: 900
+      padding: 2rem 2.5rem
+      border-bottom: 1px solid rgba(255,255,255,0.5)
+  &[style]
+    width: 100%
+    background: rgba(0,0,0,0.5)
+    transition: width 0s 0s
+    .mobile-menu-wrap
+      left: 0
+[collapsed]
+  .mobile-nav
+    background: #231f20
+    height: 45px
+    .mobile-logo
+      width: 48px
+      height: 50px
+      filter: saturate(0%)
+      -webkit-filter: saturate(0%)
+      -ms-filter: saturate(0%)
+      -moz-filter: saturate(0%)
+    .mobile-search
+      filter: brightness(6) saturate(0%)
+      -webkit-filter: brightness(6) saturate(0%)
+      -ms-filter: brightness(6) saturate(0%)
+      -moz-filter: brightness(6) saturate(0%)
+    .mobile-burger
+      .button
+        span
+          background: $bc3
+      p
+        color: $bc3
+//Search
+.search-overflow-hidden
+  overflow-y: scroll
+  .content
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+.search-results
+  color: #FFF
+  text-align: center
+  line-height: 3rem
+.searchfeed
+  .article-outer-container
+    max-width: 1000px
+    margin: 0 auto
+.search-backing
+  position: relative
+  width: 100%
+  min-height: calc(100vh - 5.2rem)
+  display: block
+  padding-top: 94px
+  left: 0
+  z-index: 5
+  opacity: 0
+  transition: opacity 0.5s ease-out
+  background: rgba(0,0,0,0.8)
+  @media (max-width:$mobile)
+    min-height: calc(100vh - 5rem)
+    padding-top: 80px
+  [ng-repeat*="batch"]
+    width: 100%
+    float: left
+    margin-top: 0rem
+  .search-bar-inner-container
+    margin-top: -4rem
+    width: 100%
+    transition: margin-top 0.3s ease-out
+  .search-input
+    position: relative
+    float: left
+    text-align: center
+    width: 100%
+  .search-icon, input
+    display: inline-block
+    vertical-align: middle
+  .search-icon
+    width: 2rem
+    height: 2rem
+    background-image: url(#{$root}btn/search.svg)
+    background-repeat: no-repeat
+    background-position: center
+    position: relative
+    cursor: pointer
+  input[type="text"]
+    color: #FFF
+    background: transparent
+    border: 0
+    width: calc(30% - 2rem)
+    min-width: calc(240px - 2rem)
+    padding: 0.5rem
+    border-bottom: 1px solid #FFF
+    outline: 0
+    @media (max-width:$tablet)
+      width: calc(65% - 2rem)
+.search-result-container
+  display: block
+  max-width: 1100px
+  width: 95%
+  margin: 0 auto
+  height: auto!important
+.search-bar-main-container
+  position: absolute
+  height: 0
+  top: 0
+  width: 100%
+  left: 0
+  z-index: 0
+  overflow: hidden
+  transition: z-index 0s ease-out 0.5s, height 0s ease-out 0.5s
+  &:not(.closed)
+    z-index: 6
+    height: auto
+    transition: z-index 0s ease-out 0s, height 0s ease-out 0s
+    .search-content
+      position: relative
+      top: 4rem
+      display: none
+      width: 90%
+      max-width: 1024px
+      margin: 0 auto
+    .search-backing
+      opacity: 1
+      padding-bottom: 5rem
+      .search-bar-inner-container
+        margin-top: 4rem
+        @media (max-width:$mobile)
+          margin-top: 1rem
+
+.topBorder
+  position: absolute
+  background-image: url('#{$root}backgrounds/border_top.png')
+  background-repeat: repeat-x
+  width: 100%
+  height: 7px
+  top: 5.3rem
+  left: 0
+  z-index: 3
+  @media (max-width:$mobile)
+    display: none
+
+.content
+  margin-top: 5.2rem
+  z-index: 1
+  @media (max-width:$mobile)
+    margin-top: 30px
+
+//Homepage Hero Space
+section
+  position: relative
+  float: left
+  display: block
+
+.bottomBorder
+  &:after
+    +pseudoStart
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 23px
+    opacity: 0.3
+    background-image: url(#{$root}backgrounds/bottomBorder_stripes.png)
+    background-position: 0px 0px
+
+//Homepage Hero Space
+$steps: 10
+$size: 145.8
+@keyframes flickerStrip
+  0%
+    transform: scaleX(1)
+    background-position: 50% 0vw
+  @for $i from 1 to $steps - 1
+    $mySpot: -($size/$steps)*$i
+    $myScale: 1+(random(3)/11)
+    #{$i*10}%
+      transform: scaleX($myScale)
+      background-position: 50% #{$mySpot}vw
+  100%
+    transform: scaleX(1)
+    background-position: 50% #{-$size}vw
+
+.bigHero
+  width: 100%
+  height: calc(90vh - 91px)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  text-align: center
+  padding-bottom: 21px
+  overflow: hidden
+  font-family: 'Heroic'
+  font-size: 1rem
+  min-height: 450px
+  @media (max-height:$lowHeight)
+    font-size: 2.5vh
+  @media (max-height:450px)
+    font-size: 12px
+  @media (max-width:$mobile)
+    display: none
+  .title
+    &:before, &:after
+      +pseudoStart
+      background-size: contain
+      width: 100%
+  .mover
+    position: absolute
+    width: 100%
+    top: 0
+    height: 100%
+    background: url(#{$root}hero/rivalry/movement.png) repeat-y
+    background-size: 30vw
+    z-index: 1
+    opacity: 0.75
+    background-position: 50% 0%
+    animation: flickerStrip 8s linear infinite
+  .headline
+    display: inline-block
+    position: relative
+    max-width: 50%
+    top: 50%
+    transform: translateY(-70%)
+    z-index: 2
+    img
+      display: block
+      max-width: 100%
+      max-height: 40vh
+      pointer-events: none
+      @media (max-height:700px)
+        max-height: 225px
+      @media (max-height:450px)
+        max-height: 200px
+      margin: 0 auto
+    .leftDets, .rightDets
+      position: absolute
+      color: #FFF
+      font-weight: 900
+      text-shadow: 0px 0px 20px rgba(35,31,32,0.5)
+      span
+        font-weight: 100
+      p, h3
+        margin: 0
+    .leftDets
+      text-align: right
+      white-space: nowrap
+      font-size: 3em
+      font-weight: 900
+      text-transform: uppercase
+      line-height: 1em
+      @media (max-width: 570px)
+        font-size: 8vw
+      @media (max-width:$mobile)
+        font-size: 10vw
+      span
+        color: $bc2
+    .rightDets
+      text-align: left
+      font-size: 2em
+      font-weight: 900
+      white-space: nowrap
+      text-transform: uppercase
+      br
+        display: none
+      @media (max-height: 700px)
+        font-size: 1.5rem
+      @media (max-width: 570px)
+        font-size: 4vw
+        br
+          display: block
+      @media (max-width:$mobile)
+        font-size: 6vw
+      span
+        text-transform: none
+      .sponsor
+        font-family: 'Arvo'
+        font-style: italic
+        font-size: 0.45em
+        font-weight: 100
+        position: relative
+        a
+          display: inline-block
+          img
+            height: 1em
+            width: auto
+            margin-left: 0.1em
+
+      a.cta
+        display:  table
+        font-family: 'Arvo'
+        background: $bc1
+        color: #FFF
+        text-decoration: none
+        padding: 0.5em 1.5em
+        box-shadow: 0px 0px 20px rgba(35,31,32,0.2)
+        margin: 1em 0
+        width: auto
+        text-shadow: none
+        text-transform: uppercase
+        font-size: 0.5em
+        line-height: 1.2em
+        position: relative
+        padding-right: 2em
+        transition: background 0.2s ease-out
+        button
+          appearance: none
+          -webkit-appearance: none
+          -moz-appearance: none
+          -ms-appearance: none
+          border: 0
+          outline: 0
+          position: absolute
+          right: 0
+          transform: translate(50%, -50%)
+          -webkit-transform: translate(50%, -50%)
+          border-radius: 100%
+          top: 50%
+          height: 2.5em
+          width: 2.5em
+          display: inline-block
+          background-color: $bc2
+          span.alarm
+            position: absolute
+            top: 0
+            left: 0
+            display: block
+            width: 65%
+            height: 65%
+            left: 17.5%
+            top: 17.5%
+            background-image: url("#{$root}btn/alarm.php?color=#{rgba($bc3_dark, 0.99)}")
+        &:hover
+          background: $bc1_dark
+          span.alarm
+            animation: alarm 0.2s forwards infinite
+
+    &.rivalry
+      .title:before
+        height: 100vh
+        bottom: calc(100% - 2px)
+        background-image: url(#{$root}hero/rivalry/rivalry_topLine.png)
+      .title:after
+        top: 100%
+        height: 50vh
+        background-image: url(#{$root}hero/rivalry/rivalry_bottomLine.png)
+        background-repeat: no-repeat
+      .leftDets, .rightDets
+        top: 110%
+      .leftDets
+        right: 70%
+      .rightDets
+        left: 55%
+    &.today
+      left: -5%
+      top: 40%
+      @media (max-width:$mobile)
+        left: 0
+      .title:before
+        width: 100vw
+        height: 100%
+        right: 100%
+        top: 0
+        background-image: url(#{$root}hero/today/today_leftLine.png)
+      .title:after
+        top: calc(100% - 2px)
+        height: 50vh
+        background-image: url(#{$root}hero/today/today_bottomLine.png)
+        background-repeat: no-repeat
+      .leftDets, .rightDets
+        top: 130%
+      .leftDets
+        right: 58%
+      .rightDets
+        left: 58%
+
+//Homepage wrapper
+.thumbnail-left-container
+  max-width: 1190px
+  width: 95%
+  margin: 0 auto
+  font-size: 0
+
+//Article wrapper
+.single-article
+  background: #f2f2f2
+  padding-top: 2rem
+  border-top: 70px solid $bc3
+  border-bottom: 280px solid $bc3_dark
+  &.about-page
+    border-bottom: 10px solid $bc3_dark
+    .story-content-container
+      margin-bottom: 8rem
+  @media (max-width:$mobile)
+    border-bottom: 0px
+  .story-description
+    blockquote
+      p
+        font-size: 1em
+        line-height: 1.1em
+        margin: 0 auto
+        padding: 0
+        width: 100%
+      & + p
+        width: 100%
+        margin: 0 auto 3rem
+  blockquote
+    max-width: 830px
+    display: block
+    margin: 5rem auto 2rem
+    text-align: center
+    line-height: 1em
+    font-weight: 900
+    font-size: 2.3rem
+    position: relative
+    @media (max-width:$mobile)
+      font-size: 1.5rem
+    &:before
+      +pseudoStart
+      top: -1rem
+      width: 130px
+      left: calc(50% - 65px)
+      height: 5px
+      background: $bc2
+    & + p
+      text-align: center
+      margin-bottom: 4rem
+      color: $bc3
+  .list-component.video
+    display: block
+    padding: 1rem 0
+  .story-description
+    max-width: 90%
+    margin: 0 auto
+    @media (max-width:$mobile)
+      max-width: 100%
+  .list-component-body, .list-component.picture, .list-component.video
+    max-width: 100%
+    margin: 0 auto
+  .story-editorial-copy-container
+    width: 100%
+    margin: 0 auto
+  .header-image
+    width: 100%
+    img
+      width: 100%
+      @media (max-width:$mobile)
+        max-width: 90%
+        margin-left: 5%
+    & + .story-editorial-copy-container
+      .title-container
+        margin-top: -6rem
+        @media (max-width:$mobile)
+          margin-top: 0
+          padding-top: 1rem
+  .list-component-picture
+    margin-top: 1rem
+    display: inline-block
+    max-width: 65%
+    @media (max-width:1100px)
+      max-width: 55%
+    @media (max-width:$mobile)
+      max-width: 100%
+      width: 100%
+    img
+      display: block
+      margin-bottom: 0.5rem
+      max-width: 100%
+  .list-component-attribution
+    display: inline-block
+    margin-bottom: 1rem
+    font-size: 0.8rem
+    font-style: italic
+    width: 60%
+    @media (max-width:1024px)
+      width: 55%
+    @media (max-width:$mobile)
+      width: 100%
+  .boxxspring-embed.boxxspring-embed-boxxspring, .boxxspring-embed.boxxspring-embed-dailymotion, .boxxspring-embed.boxxspring-embed-ooyala, .boxxspring-embed.boxxspring-embed-snappytv, .boxxspring-embed.boxxspring-embed-ustream, .boxxspring-embed.boxxspring-embed-vimeo, .boxxspring-video
+    //padding-bottom: 40%
+  .atomic-video-components
+    margin-bottom: -2rem
+    transition: margin-bottom 0.3s ease-out
+    transform: translateY(0)
+    @media (max-width:$mobile)
+      margin-bottom: 0
+    @media (min-width:$mobile+1)
+      &:hover + .story-editorial-copy-container .title-container
+        transform: translateY(2rem)
+  .right-sidebar
+    float: right
+    width: 33%
+    max-width: 320px
+    margin-left: 70px
+    margin-bottom: 2rem
+    @media (max-width: $mobile)
+      width: calc(100% - 10px)
+      max-width: calc(100% - 10px)
+      margin: 0 auto
+      float: none
+  .story-description
+    p
+      font-size: 1rem
+      line-height: 1.5em
+      max-width: 1000px
+      width: 90%
+      margin: 0 0 1rem
+      @media (max-width:$mobile)
+        margin: 0 auto 1rem
+    & > p:first-of-type:first-letter
+      font-size: 5.3rem
+      text-transform: uppercase
+      font-weight: 900
+      display: inline-block
+      vertical-align: top
+      position: relative
+      float: left
+      margin: 1.5rem 0.5rem 1.5rem 0
+  .story-content-container
+    margin: -60px auto -160px
+    width: 95%
+    @media (max-width:$mobile)
+      margin-bottom: -1rem
+  .title-container
+    width: calc(90% - 2rem)
+    max-width: calc(1024px - 2rem)
+    padding: 2rem
+    text-align: center
+    background: #f2f2f2
+    margin: 0 auto
+    position: relative
+    transition: all 0.2s ease-out
+    .tag-container
+      width: 100%
+      text-align: center
+      .story-tag
+        display: inline-block
+        margin: 0 0.5rem
+      a
+        font-size: 1rem
+        color: $bc3
+        text-decoration: none
+        transition: color 0.2s ease-out
+        &:hover
+          color: $bc3_dark
+    h2
+      text-transform: uppercase
+      font-weight: 900
+      font-size: 3.3rem
+      position: relative
+      margin-bottom: 1.5rem
+      margin-top: 1rem
+      line-height: 1em
+      @media (max-width:$mobile)
+        font-size: 1.4rem
+      &:after
+        +pseudoStart
+        width: 130px
+        height: 5px
+        bottom: -2rem
+        left: calc(50% - 65px)
+        background: $bc3_dark
+  .author-date-sharing
+    display: flex
+    width: 100%
+    max-width: 950px
+    margin: 0 auto 2rem
+    text-align: center
+    @media (max-width:$mobile)
+      display: block
+    a
+      color: $bc1
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    .social-icons
+      width: 33%
+      display: flex
+      @media (max-width:$mobile)
+        width: 100%
+        display: block
+        margin-top: 1.5rem
+      a
+        width: 30px
+        height: 30px
+    .author, .published-date, [ng-controller="SocialSharingController"]
+      width: 33%
+.right-thumbs
+  .post-thumbnail-container
+    margin-top: -10px
+    width: calc(100% - 10px)
+  .thumbnail-outer-container, .featured-inner-container, .sidebar-thumbnail, .story-thumbnail-container
+    width: calc(100% - 10px)
+    padding-bottom: 60%
+    @media (max-width:$mobile)
+      display: none
+.sidebar-standings
+  width: calc(100% - 16px)
+  border-left: 6px solid $bc4
+  text-align: left
+  background: #FFF
+  margin: 0 5px 5px
+  @media (max-width: $mobile)
+    margin: 2rem auto 5px
+    display: none
+  .standings-header
+    background: $bc3_dark
+    padding: 1rem 0
+    text-align: center
+    margin-bottom: 1rem
+    p
+      color: #FFF
+      margin: 0
+      text-transform: uppercase
+      font-weight: 900
+      font-size: 1.3rem
+  .linkage
+    background: $bc3
+    padding: 1rem 0
+    text-align: center
+    margin-top: 1rem
+    a
+      color: $bc3_dark
+      text-transform: uppercase
+      font-weight: 900
+      margin-left: -0.5rem
+      text-decoration: none
+      &:hover
+        span
+          left: 1rem
+      span
+        font-size: 2rem
+        line-height: 0.5em
+        display: inline-block
+        vertical-align: top
+        position: relative
+        transition: left 0.2s ease-out
+        left: 0.5rem
+  table
+    width: 100%
+    table-layout: fixed
+    padding: 0 1.5rem
+    margin: 0
+    border-spacing: 0
+    position: relative
+    p
+      margin: 0
+  table:not(.table-label)
+    tr
+      th,td
+        &:nth-child(1), &:nth-child(3), &:nth-child(4)
+          width: 12.5%
+        &:nth-child(2)
+          width: 50%
+      td
+        padding: 0.5rem 0
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          width: 100%
+          height: 1px
+          background: #d7d7d7
+          left: 0
+          bottom: 0
+        &:first-child
+          &:after
+            left: 40%
+        &:last-child
+          &:after
+            width: 20%
+      &:last-child
+        td:after
+          display: none
+  .table-label
+    p
+      color: $bc1
+      margin-top: 0.3rem
+.social-icons
+  a
+    width: 39px
+    height: 35px
+    cursor: pointer
+    display: inline-block
+    background-image: url(#{$root}btn/social-sprites.png)
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    transition: opacity 0.3s ease-out
+    &:hover
+      opacity: 0.7
+    &:not(:first-child)
+      margin-left: 1rem
+    &.facebook-share
+      background-image: url(#{$root}btn/icon-facebook.png)
+    &.twitter-share
+      background-image: url(#{$root}btn/icon-twitter.png)
+    &.reddit-share
+      background-image: url(#{$root}btn/icon-reddit.png)
+    &.email-share
+      background-image: url(#{$root}btn/icon-mail.png)
+    &.print
+      background-image: url(#{$root}btn/icon-print.png)
+.article-footer
+  width: 100%
+  max-width: 1080px
+  display: table
+  margin: 3rem 0 2rem
+  .attribution-and-tag-container, .sponsor
+    float: right
+    margin-top: 1rem
+    .attribution-header
+      text-transform: uppercase
+      font-weight: 900
+    a
+      color: $bc1
+      text-decoration: none
+      font-size: 0.9rem
+      &:hover
+        text-decoration: underline
+  .article-footer-left, .article-footer-right
+    width: 49%
+    @media (max-width:$mobile)
+      width: 90%
+      margin-left: 5%
+    .label
+      font-weight: 900
+      text-transform: uppercase
+      display: block
+      margin-bottom: 0.5rem
+  .article-footer-left
+    float: left
+  .article-footer-right
+    width: 100%
+    max-width: 400px
+    margin-bottom: 2rem
+    float: right
+    text-align: right
+    @media (max-width:$mobile)
+      width: auto
+      margin-right: 5%
+  .tag-container
+    width: 100%
+    a
+      font-size: 0.9rem
+      color: $bc1
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    .story-tag
+      display: inline-block
+      &:not(first-of-type)
+        margin-left: 0.25rem
+.fb-comments-container
+  max-width: 100%
+  margin-top: 1rem
+.more-like
+  width: 100%
+  float: left
+.more-like-text
+  text-align: left
+  font-weight: 900
+  float: left
+  display: inline-block
+  font-size: 1.66rem
+  margin: 3rem 2rem 1.5rem
+  text-transform: uppercase
+  @media (max-width:$mobile)
+    text-align: center
+    margin: 0 auto 1.5rem
+.story-subhead
+  width: 90%
+  max-width: 770px
+  font-style: italic
+  text-align: center
+  margin: 0 auto 4rem
+  @media (max-width:$mobile)
+    margin-bottom: 2rem
+  p
+    font-size: 1rem
+    margin: 0
+    line-height: 1.5em
+
+
+//About Content
+.about-content
+  +buildGrid((30)(70), 20px, 0)
+  font-size: 0
+  @media (max-width: $tablet)
+    width: 100%
+    margin: 0 auto
+  .about-sidebar, .about-text
+    font-size: 1rem
+    display: inline-block
+    vertical-align: top
+  .about-sidebar
+    color: $bc1
+    @media (max-width:$mobile)
+      margin-bottom: 1rem
+    &.w30
+      @media (max-width:$tablet)
+        width: calc(30% - 40px)
+        .title
+          a
+            font-size: 1.1rem
+          p
+            font-size: 0.8rem
+      @media (max-width:$mobile)
+        width: calc(100% - 40px)
+    .about-nav-section
+      margin: 1rem 0
+    .chapter, .title
+      display: inline-block
+      vertical-align: top
+    .chapter
+      font-size: 1.8rem
+      width: 1rem
+      font-weight: 900
+      margin-top: 0.5rem
+      margin-right: 0.5rem
+      float: left
+    .title
+      float: none
+      display: block
+      overflow: hidden
+      a
+        font-size: 1.3rem
+        font-weight: 700
+        padding: 0.5rem 0.5rem
+        color: $bc1
+        display: block
+        text-decoration: none
+      p
+        font-size: 1rem
+        font-weight: 100
+        margin: 0
+      &:hover
+        background: $bc1
+        font-style: italic
+        a
+          color: #FFF
+    ul
+      list-style-type: none
+      padding-left: 1.5rem
+      width: calc(100% - 1.5rem)
+      margin: 0.25rem 0 0
+      @media (max-width:$mobile)
+        display: none
+      li
+        display: block
+      a
+        color: $bc1
+        float: none
+        overflow: hidden
+        text-decoration: none
+        padding: 0.5rem 0 0.5rem 1.5rem
+        display: block
+        font-weight: 600
+        &:hover
+          background: $bc1
+          color: #FFF
+          font-style: italic
+  .filterSearch
+    text-align: left
+  .about-text
+    h2
+      font-size: 1.2rem
+      margin: 0 auto 1.5rem
+    p
+      line-height: 1.5rem
+  .about-section:not(:first-child)
+    &:before
+      +pseudoStart
+      position: relative
+      width: 100px
+      height: 5px
+      background: #231f20
+      margin: 2rem 0
+  .about-related-videos
+    +buildGrid((25), 5px, 0)
+    font-size: 0
+    .about-video
+      font-size: 1rem
+      display: inline-block
+      vertical-align: top
+      background: #231f20
+      color: #FFF
+      height: 0
+      padding-bottom: calc(25% - 10px)
+      position: relative
+      cursor: pointer
+      @media (max-width:$mobile)
+        padding-bottom: calc(50% - 10px)
+        margin-bottom: 10px
+      &:before
+        +pseudoStart
+        background-image: url(#{$root}btn/cta_play.png)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 30%
+        background-color: $bc2
+        border-radius: 100%
+        left: calc(50% - 35px)
+        top: calc(50% - 35px)
+        width: 70px
+        height: 70px
+      .textWrap
+        position: absolute
+        bottom: 0.75rem
+        left: 0.75rem
+        p
+          margin: 0
+          font-weight: 700
+          font-size: 1rem
+          line-height: 1em
+        span
+          font-size: 14px
+
+//Homepage tiles and breakpoints
+.thumbnail-outer-container, .featured-inner-container, .sidebar-thumbnail, .story-thumbnail-container
+  display: inline-block
+  vertical-align: top
+  width: calc(25% - 10px)
+  height: 0
+  padding-bottom: calc(25% - 10px)
+  margin: 5px
+  font-size: 1rem
+  position: relative
+  background: $bc1_dark
+  overflow: hidden
+  text-align: left
+  a.story-thumbnail
+    display: block
+    position: absolute
+    height: 100%
+    width: 100%
+    +cornerBorder
+  .home-thumbnail-container
+    position: absolute
+    width: 100%
+    height: 100%
+  &:empty
+    display: none
+  .icon-container
+    position: absolute
+    background: #FFF
+    transform-origin: center
+    transform: rotate(45deg)
+    width: 110px
+    height: 110px
+    top: -55px
+    right: -55px
+    z-index: 5
+    transition: all 0.2s ease-out
+    .icon
+      position: absolute
+      transform: rotate(-45deg)
+      -webkit-transform: rotate(-45deg)
+      -webkit-backface-visibility: hidden
+      bottom: 8%
+      left: 40%
+  .textWrap
+    position: absolute
+    bottom: 1.25rem
+    width: 80%
+    left: 10%
+    color: #FFF
+    text-shadow: 0px 0px 10px rgba(35,31,32,0.5)
+    z-index: 4
+    @media (max-width:$mobile)
+      width: 90%
+      left: 5%
+    &:before
+      +pseudoStart
+      left: 0
+      top: -1rem
+      width: 50%
+      max-width: 105px
+      height: 5px
+      background: $bc2
+    .tag, .date
+      font-weight: 100
+      font-size: 0.77rem
+    .tag
+      display: inline-block
+    .date
+      display: inline-block
+    .title
+      display: block
+      font-weight: 900
+      line-height: 1.2em
+  .overlay
+    position: absolute
+    width: 100%
+    height: 50%
+    bottom: 0
+    left: 0
+    opacity: 0.9
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,231f20+100&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(35,31,32,0) 0%, rgba(35,31,32,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(35,31,32,0) 0%,rgba(35,31,32,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(35,31,32,0) 0%,rgba(35,31,32,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#231f20',GradientType=0 ); /* IE6-9 */
+    z-index: 2
+  img
+    display: block
+    height: 100%
+    left: 50%
+    transform: translateX(-50%)
+    position: relative
+    z-index: 1
+  @media (max-width:$tablet)
+    .title
+      font-size: 0.8rem
+  @media (max-width:$portrait)
+    width: calc(50% - 10px)
+    padding-bottom: calc(50% - 10px)
+  @media (max-width:$mobile)
+    width: calc(100% - 10px)
+    padding-bottom: calc(60% - 10px)
+
+//Tag and picture alignment/styles for articles/news
+.article-thumbnail-container, .post-thumbnail-container
+  width: 100%
+  max-width: 1190px
+  text-align: center
+  font-size: 0
+  @media (max-width:$mobile)
+    display: none
+.article-thumbnail-container
+  margin: -30px auto 0
+.post-thumbnail-container
+  margin: 1rem auto
+  display: table
+  @media (max-width:$mobile)
+    width: 90%
+    margin-left: 5%
+    padding-bottom: 2rem
+.list-component-picture
+  text-align: center
+.attribution-and-tag-container
+  font-size: 1rem
+.story-description-container
+  font-size: 1rem
+  line-height: 1.5rem
+.nllWrap
+  width: 100%
+  float: left
+  margin-top: 2rem
+  padding-bottom: 6rem
+  @media (max-width:$mobile)
+    padding-bottom: 2rem
+
+//Article list page
+.filters
+  width: 95%
+  max-width: 1190px
+  margin: 0 auto 2rem
+  display: table
+  font-size: 1rem
+  .filterSearch
+    input[type="text"]
+      width: calc(100% - 7rem)
+      @media (max-width:$mobile)
+        width: calc(100% - 6rem)
+  &.schedule, &.players
+    margin-bottom: 0
+    width: 100%
+    fieldset
+      margin-bottom: 1.5rem
+  &.players
+    fieldset
+      select
+        min-width: auto
+  @media (max-width:$mobile)
+    input, select
+      width: 100%
+      margin-bottom: 0.5rem
+  input, select
+    display: inline-block
+    border: 0
+    outline: 0
+    -webkit-appearance: none
+    -moz-appearance: none
+    font-weight: 700
+    -ms-appearance: none
+    appearance: none
+    font-size: 0.9rem
+    vertical-align: middle
+  input:not([type="submit"]), select
+    color: $bc1
+    padding: 1rem 1.5rem
+  input[type="submit"]
+    background-color: $bc1
+    padding: 1rem
+    color: #FFF
+    cursor: pointer
+    transition: background-color 0.3s ease-out
+    &:hover
+      background-color: $bc1_dark
+  select
+    padding-right: 3.5rem
+    background-image: url('#{$root}btn/filterArrow.png')
+    background-repeat: no-repeat
+    background-position: right 1.5rem center
+    margin-right: 0.5rem
+  input[value="APPLY"]
+    padding-left: 4rem
+    padding-right: 4rem
+  .filterOpts
+    span
+      font-weight: 900
+      margin-right: 1rem
+      @media (max-width:$mobile)
+        margin-bottom: 1rem
+    float: left
+  @media (max-width:$mobile)
+    .filterSearch
+      float: left
+      width: 100%
+      input[type="submit"]
+        width: auto
+  span
+    display: inline-block
+    vertical-align: middle
+    margin-right: 0.5rem
+    font-weight: 700
+  .linkFilters
+    display: inline-block
+    vertical-align: middle
+    span
+      margin: 0 0.5rem
+    a
+      display: inline-block
+      vertical-align: middle
+      color: $bc1
+      text-decoration: none
+      font-weight: 700
+      transition: color 0.2s ease-out
+      &:hover
+        color: $bc1_dark
+      &.current
+        text-transform: uppercase
+  fieldset
+    width: 100%
+    display: block
+    padding: 0
+    margin: 0
+    border: 0
+    outline: 0
+    select
+      min-width: 30%
+
+//Filter search
+.filterSearch
+  float: none
+  overflow: hidden
+  text-align: right
+  font-size: 0
+  input
+    font-size: 0.9rem
+    display: inline-block
+    border: 0
+    outline: 0
+    appearance: none
+    -webkit-appearance: none
+    -ms-appearance: none
+    -moz-appearance: none
+    vertical-align: middle
+    padding: 1rem 1.5rem
+  input[type="text"]
+    width: calc(100% - 6rem)
+  input[type="submit"]
+    background: $bc1
+    padding: 1rem 1.5rem
+    background-image: url('#{$root}btn/filterSearch.png')
+    background-repeat: no-repeat
+    background-position: center
+    cursor: pointer
+    transition: background-color 0.2s ease-out
+    &:hover
+      background-color: $bc1_dark
+
+.story-grid-container:not(.homefeed)
+  .dynamic-thumbnail-container
+    width: 110%
+    margin-left: -5%
+    margin-top: -30px
+.article-preview
+  position: relative
+  padding: 1rem 0
+.header-text-container
+  width: 95%
+  max-width: 1190px
+  padding: 2rem 0 1rem
+  margin: 0 auto
+  .filterSearch
+    width: 40%
+    float: right
+    font-style: italic
+    @media (max-width:$tablet)
+      width: 90%
+      text-align: left
+      float: left
+      margin: 2rem 0 1rem
+    @media (max-width:$mobile)
+      width: 100%
+
+//Stats page styling
+.stat-listing, .player-listing
+  +buildGrid((50),10px)
+  font-size: 0
+  max-width: 97.5%
+  @media (max-width: $tablet)
+    max-width: 110%
+  @media (max-width:$mobile)
+    max-width: 105%
+    margin: 0 0 0 -2.5%
+  & + .stats-all
+    margin-top: 2.5rem
+.player-dets
+  width: 100%
+  margin: 0.5rem 0 0
+  display: table
+  p
+    width: 30%
+    display: block
+    float: left
+.stat-block.player-tile
+  a
+    font-size: 1rem
+    color: $bc1
+    font-weight: 900
+    display: inline-block
+    text-decoration: none
+    margin: 0.75rem 1rem 0 0
+    +bigArrow
+.stat-spot
+  width: calc(100% - 30px)
+  padding: 20px 15px
+  margin-bottom: 10px
+  background: #FFF
+  label
+    font-weight: 900
+    text-transform: uppercase
+    font-size: 1.15rem
+    text-align: left
+    display: block
+    margin-bottom: 20px
+  h4
+    margin: 0
+  p
+    margin: 0.15rem 0
+    font-size: 0.9rem
+  &.top-spot
+    border-left: 5px solid $bc1
+    font-size: 0
+    .stat-image, .stat-text
+      display: inline-block
+      vertical-align: top
+    .number
+      font-size: 1.66rem
+      color: $bc1
+      font-weight: 900
+    .stat-image
+      width: 28%
+      padding-bottom: 28%
+      margin-right: 5%
+      background-size: cover
+      background-position: top center
+      background-repeat: no-repeat
+    .stat-text
+      text-align: left
+      font-size: 1rem
+      width: 67%
+    .stat-value
+      h5, p
+        margin: 0
+        display: inline-block
+        vertical-align: middle
+        color: $bc1
+      h5
+        font-size: 2.66rem
+        margin-right: 0.5rem
+      p
+        font-size: 1.33rem
+        text-transform: uppercase
+  &.sub-spot
+    border-left: 5px solid $bc3
+    font-size: 0
+    text-align: left
+    .stat-info, .number, .stat-value
+      display: inline-block
+      vertical-align: top
+      font-size: 1rem
+    .number
+      width: 9%
+      font-size: 1.33rem
+      font-weight: 900
+      margin-right: 3%
+    .stat-info
+      width: 65%
+      margin-right: 3%
+    .stat-value
+      width: 20%
+      h5, p
+        margin: 0
+        text-align: center
+        color: $bc1
+      h5
+        font-size: 1.66rem
+      p
+        font-size: 0.9rem
+.stat-block
+  display: inline-block
+  vertical-align: top
+  text-align: right
+  width: 100%
+  &.team
+    .stat-image
+      background-size: contain
+      background-position: center
+    .top-spot
+      .stat-value
+        margin-top: 0.5rem
+        p
+          font-size: 1.1rem
+  .btn
+    display: inline-block
+    margin: 0
+
+//Aggregate page styling
+.feed
+  background: #f2f2f2
+  width: 100%
+  padding-bottom: 8rem
+  border-top: 70px solid $bc3
+  float: left
+  @media (max-width:$mobile)
+    padding-bottom: 2rem
+  .header-text
+    font-size: 3rem
+    font-weight: 900
+    text-transform: uppercase
+    position: relative
+    padding-bottom: 0.5rem
+    margin-bottom: 1rem
+    &:after
+      +pseudoStart
+      bottom: 0
+      left: 0
+      width: 100px
+      height: 5px
+      background: #000
+    h1
+      font-size: 1em
+      margin: 0
+      display: inline-block
+  .story-and-feed-container
+    max-width: 1190px
+    width: 95%
+    margin: 0 auto
+
+  //Schedule and stats-speficic styling
+  &.schedule
+    .header-text-container
+      margin-top: 3rem
+  &.schedule, &.stats, &.players
+    border-top: 100px solid $bc3
+    .post-thumbnail-container
+      margin-top: 0
+    .score-feed
+      margin-top: -3rem
+    .header-text-container
+      padding-top: 0
+    .nll-bar
+      display: inline-block
+      vertical-align: top
+      .header-text-container
+        margin-left: 0
+    .stats-all
+      h4
+        display: inline-block
+        vertical-align: top
+        font-weight: 900
+        font-size: 1.25rem
+        margin: -0.25rem 0.5rem 0 0
+      a
+        margin-left: 0.5rem
+        +bigArrow
+        color: $bc1
+        font-weight: 900
+        text-decoration: none
+    .content-wrap
+      max-width: 1190px
+      display: table
+      font-size: 0
+      +buildGrid((70)(30), 0px)
+      @media (max-width:$tablet)
+        .w70
+          width: calc(100% - 7px)
+          @media (max-width: $mobile)
+            width: calc(100% - 10px)
+            display: block
+            margin: 0 auto
+        .w30
+          width: 100%
+          .sidebar-thumbnail
+            width: 32%
+            padding-bottom: 25%
+            @media (max-width:$mobile)
+              width: calc(100% - 10px)
+              padding-bottom: 60%
+      .related-sidebar
+        font-size: 1rem
+  &.stats, &.players
+    .content-wrap
+      margin-top: 3rem
+
+.game-score
+  text-align: center
+  margin: 0 auto 1rem
+  .score-label
+    font-size: 1rem
+    font-weight: 900
+    text-transform: uppercase
+  .score-numbers
+    font-size: 4.6rem
+    max-width: 410px
+    margin: 0 auto
+    text-align: center
+    @media (max-width:$mobile)
+      font-size: 13vw
+    @media (max-width: 500px)
+      font-size: 17vw
+    .home, .away
+      display: inline-block
+      width: calc(50% - 1em)
+      &.winner
+        font-weight: 900
+
+//General article link block styling
+.story-thumbnail
+  display: inline
+.thumbnail-link
+  display: inline-block
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  width: 30%
+  margin-left: 1rem
+  transform: none
+  @media (max-width:$portrait)
+    width: calc(100% - 2rem)
+    margin-bottom: 1rem
+
+//Article preview strip (as seen on news page/search results
+.article-preview
+  width: calc(100% - 7px)
+  background: #FFF
+  margin: 0 0 1rem
+  border-left: 7px solid $bc1
+  img
+    position: relative
+    max-width: 100%
+    height: auto
+  .story-thumbnail
+    color: #FFF
+  .overlay
+    display: none
+  .textWrap
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    width: 50%
+    left: inherit
+    bottom: inherit
+    margin-left: 2rem
+    color: $bc3_dark
+    text-shadow: none
+    padding: 2rem 0
+    @media (max-width:$portrait)
+      margin-left: 1rem
+      width: calc(100% - 2rem)
+    .article-icons
+      margin-bottom: 0.75rem
+      display: block
+      width: 100%
+    .article-meta
+      display: block
+      width: 100%
+      margin-bottom: 0.75rem
+    .tile-first-tag-name
+      color: $bc1
+      font-weight: 900
+      font-style: italic
+      margin-left: 0.5rem
+      font-size: 1rem
+    .date
+      font-size: 1rem
+      display: inline-block
+    .tag
+      display: inline-block
+      span
+        font-weight: 500
+    .story-short-description
+      width: 100%
+      font-size: 1rem
+      font-weight: 100
+      position: relative
+      display: inline-block
+    &:before
+      display: none
+    .date
+      font-style: italic
+    .title
+      font-size: 1.3rem
+      margin: 0.5rem 0
+      font-weight: 900
+      text-transform: uppercase
+      a
+        text-decoration: none
+        color: $bc3_dark
+        transition: color 0.2s ease-out
+        &:hover
+          color: $bc1
+
+  //Player-specific styling
+  &.player
+    text-align: center
+    .thumbnail-link
+      width: auto
+      margin: 0 auto
+    .textWrap
+      width: 100%
+      margin: 0 auto
+    .title
+      margin: 0
+      a
+        font-size: 1.5rem
+        margin: 0
+        line-height: 1em
+    .teamName
+      font-size: 1.1rem
+      text-transform: uppercase
+      margin: 0.5rem 0 0
+      line-height: 1em
+      font-weight: 900
+      color: $bc1
+    .number
+      font-size: 1.2rem
+      line-height: 1em
+      margin: 0 0 0.5rem
+      color: $bc1
+      font-weight: 900
+      text-transform: uppercase
+.player-container
+  display: inline-block
+  vertical-align: top
+.player-list
+  text-align: center
+  +buildGrid((33.333), 10px)
+
+//Player landing page styling
+.player-wrap
+  max-width: 95%
+  @media (max-width:$tablet)
+    max-width: 100%
+    margin-top: -1rem
+    margin-bottom: 2rem
+  .player-details
+    padding: 40px 25px
+    width: calc(100% - 55px)
+    background: #FFF
+    border-left: 5px solid $bc1
+    font-size: 0
+    margin-bottom: 2.5rem
+    .player-headshot, .player-text
+      display: inline-block
+      vertical-align: top
+    .player-headshot
+      width: 35%
+      padding-bottom: 35%
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+      margin-right: 5%
+      @media (max-width:$mobile)
+        width: 100%
+        padding-bottom: 100%
+        margin-bottom: 2rem
+    .player-text
+      font-size: 1rem
+      width: 60%
+      @media (max-width:$mobile)
+        width: 100%
+      h1,h2
+        margin: 0
+      h1
+        font-size: 1.66rem
+        margin-bottom: 0.25rem
+      h2
+        font-size: 1rem
+      p
+        margin: 0.25rem 0
+      h1, h2
+        text-transform: uppercase
+      h2
+        color: $bc1
+    .player-stats
+      margin-top: 0.5rem
+  .player-social
+    text-align: right
+    margin-top: 2rem
+    @media (max-width:$mobile)
+      text-align: left
+    a
+      text-decoration: none
+      color: $bc1
+      @media (max-width:$mobile)
+        display: table
+        &:nth-child(1)
+          margin-bottom: 1rem
+      span
+        width: 32px
+        height: 30px
+        display: inline-block
+        vertical-align: middle
+        transition: opacity 0.2s ease-out
+        background-image:url(#{$root}btn/player-social.png)
+      &.twitter
+        span
+          background-position: -32px 0
+      &:nth-child(1)
+        margin-right: 1rem
+      &:hover
+        span
+          opacity: 0.7
+  .copy-block
+    h3
+      margin: 2rem 0 1rem
+    p
+      line-height: 1.5rem
+      margin: 0 0 1rem
+
+//Stat table
+.season-stat-table
+  display: block
+  width: 100%
+  .table-label
+    background: $bc3_dark
+    margin-top: 2rem
+    color: #FFF
+    width: calc(100% - 1.5rem)
+    text-transform: uppercase
+    padding: 1rem 0.75rem
+    h3
+      margin: 0
+      font-size: 1rem
+  .table-overflow
+    width: 100%
+    max-width: 95vw
+    overflow: auto
+  table
+    text-align: left
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+    border: 0
+    outline: 0
+    font-size: 0.9rem
+    td, th
+      padding: 0.5rem 0.7rem
+      border-right: 1px solid #bfbfbf
+    td:first-child, th:first-child
+      padding-left: 0.75rem
+    td:last-child, th:last-child
+      padding-right: 0.75rem
+      border-right: 0
+    tr:first-child:nth-child(odd)
+      background: $bc1
+      color: #FFF
+      text-transform: uppercase
+    tr:nth-child(odd)
+      background: #e6e6e6
+    tr:nth-child(even)
+      background: #FFF
+
+//Schedule page repeating blocks
+.schedule-tile
+  font-size: 1rem
+  width: calc(95% - 6px)
+  position: relative
+  background: #FFF
+  border-left: 6px solid $bc1
+  margin-bottom: 1rem
+  @media (max-width:$mobile)
+    width: calc(100% - 6px)
+    padding-bottom: 1rem
+    text-align: center
+  .team-wrap
+    margin-top: 1rem
+    margin-bottom: 1rem
+    width: 42%
+    @media (max-width:$mobile)
+      display: table
+      width: 100%
+  .at
+    display: block
+    width: 20%
+    text-align: center
+    margin: 0 0 1rem 1rem
+    font-weight: 900
+    @media (max-width:$mobile)
+      width: 100%
+      margin: 1rem 0
+  .tile-header
+    background: $bc3
+    display: inline-block
+    padding: 0.5rem 1rem
+    width: calc(100% - 2rem)
+    .dt
+      float: left
+    .place
+      float: right
+    .dt, .place
+      @media (max-width:$mobile)
+        float: left
+        width: 100%
+  .team-wrap, .viewing, .linkage
+    display: inline-block
+    vertical-align: middle
+  .viewing
+    width: 20%
+    font-size: 0.8rem
+    margin-left: 0.5rem
+    @media (max-width:$mobile)
+      width: 100%
+      text-align: center
+      margin: 0
+    p
+      margin: 0 0 1.5rem
+  .linkage
+    position: absolute
+    top: calc(50% + 1rem)
+    transform: translateY(-50%)
+    -webkit-transform: translateY(-50%)
+    right: 0.75rem
+    @media (max-width:$mobile)
+      position: relative
+      right: inherit
+      transform: none
+      top: inherit
+.team-wrap
+  font-size: 1rem
+  .logo, .dets
+    display: inline-block
+    vertical-align: middle
+  .logo
+    margin: 0 0.5rem 0 1rem
+    width: 20%
+    @media (max-width:$mobile)
+      margin-left: 0
+    img
+      max-width: 80px
+      width: 100%
+      height: auto
+  .dets
+    width: calc(80% - 2rem)
+  .logo, .dets
+    @media (max-width:$mobile)
+      width: 100%
+      display: block
+  .loc, .name
+    display: block
+    text-transform: uppercase
+  .loc
+    font-size: 0.9rem
+  .name
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 1.3rem
+  .standings
+    display: block
+    p, span, a
+      font-size: 0.8rem
+    p
+      margin: 0
+      display: inline-block
+    span
+      display: inline-block
+      margin: 0 0.25rem
+    a
+      color: $bc1
+      text-decoration: none
+      font-weight: 700
+      transition: color 0.2s ease-out
+      &:hover
+        color: $bc1_dark
+
+//Matchup Header
+.matchup
+  width: 90%
+  @media (max-width: $tablet)
+    width: 100%
+  .matchup-time-loc
+    width: 100%
+    text-align: center
+    font-size: 1rem
+    margin: 1rem auto 2rem
+    h3,p
+      margin: 0
+    h3
+      text-transform: uppercase
+      font-size: 1.3rem
+      margin-bottom: 0.25rem
+    p
+      font-size: 0.9rem
+    span
+      font-weight: 100
+      text-transform: initial
+  .matchup-split
+    margin-bottom: 2rem
+    font-size: 0
+  .at
+    display: inline-block
+    vertical-align: top
+    margin-top: 1rem
+    font-size: 1rem
+    font-weight: 900
+    width: 8%
+    text-align: center
+  .team-wrap
+    display: inline-block
+    vertical-align: top
+    width: 46%
+    @media (max-width: $mobile)
+      width: 100%
+      text-align: center
+  .logo
+    width: 30%
+  .dets
+    width: 60%
+  @media (max-width: $mobile)
+    .logo, .dets
+      width: 100%
+    .logo
+      margin-bottom: 0.5rem
+    .at
+      width: 100%
+      margin-bottom: 2rem
+    h3
+      span
+        width: 100%
+        display: block
+  .standings
+    a, p, span
+      font-size: 0.9rem
+  .leaders
+    padding-top: 1rem
+    border-top: 1px solid $bc3
+    width: 90%
+    margin: 1rem auto 0
+    font-size: 1rem
+    text-align: center
+    p
+      margin: 0 auto 0.25rem
+      font-size: 0.8rem
+    span
+      color: $bc3_dark
+      font-weight: 600
+    a
+      color: $bc1
+      font-weight: 600
+      text-decoration: none
+      transition: color 0.2s ease-out
+      &:hover
+        color: $bc1_dark
+
+//Countdown Clock
+.countdown
+  margin-bottom: 1rem
+  display: table
+  width: 100%
+.timer
+  border-top: 5px solid $bc1
+  background-image: url('#{$root}backgrounds/timer-backing-large.png')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  color: #FFF
+  .timer-header
+    font-size: 1rem
+    text-align: center
+    margin-top: 1rem
+    h3
+      margin: 0
+      text-transform: uppercase
+.countdown-ctas
+  .btn
+    margin: 0
+    width: calc(50% - 4rem)
+    float: left
+    @media (max-width: $mobile)
+      width: calc(100% - 4rem)
+.clock
+  width: 100%
+  max-width: 335px
+  margin: 0 auto
+  text-align: center
+  .days,.hours,.minutes,.seconds
+    font-size: 1rem
+    width: 20%
+    display: inline-block
+    position: relative
+    margin: 1rem 0 2rem
+    text-align: center
+  .days
+    width: 30%
+  .on,.off
+    font-family: 'Clock'
+    font-weight: 500
+    font-size: 3rem
+    width: 100%
+    float: left
+    text-align: center
+    display: inline-block
+  .on
+    color: $bc2
+    position: relative
+    z-index: 2
+  .off
+    color: $bc3_dark
+    position: absolute
+    left: 0
+    z-index: 1
+  p
+    margin: 0
+    font-size: 0.9rem
+.countdown-listing-links
+  font-size: 0.8rem
+  margin: 0.25rem auto
+  display: table
+  color: $bc3_dark
+  text-align: center
+  a
+    color: $bc1
+    text-decoration: none
+    font-weight: 600
+    transition: color 0.2s ease-out
+    &:hover
+      color: $bc1_dark
+  span
+    display: inline-block
+    margin: 0 0.25rem
+  @media (max-width: $mobile)
+    span
+      width: 100%
+      font-size: 0
+
+//Live Game
+.schedule-in-progress
+  .btn.play
+    background-size: 5% 70%
+//Game Recap
+.match-recap-block
+  margin: 0 auto 4rem
+  .btn
+    display: table
+  iframe
+    margin: 0 auto 1rem
+    display: table
+    max-width: 100%
+//Stat tables
+.rule-header
+  font-size: 1.4rem
+  text-align: center
+  text-transform: uppercase
+  font-weight: 900
+  &.tp
+    margin-top: 4rem
+    margin-bottom: -2rem
+    @media (max-width:$mobile)
+      margin-top: 0
+      margin-bottom: 0
+    h4
+      margin-bottom: 0
+  &:before
+    content: ''
+    display: block
+    position: relative
+    width: 100px
+    height: 5px
+    background: $bc3_dark
+    margin: 2rem auto 1rem
+.stat-table
+  width: 100%
+  font-size: 1rem
+  border: 0
+  outline: 0
+  border-spacing: 0
+  border-collapse: collapse
+  margin: 1rem auto
+  &.head-to-head
+    max-width: 400px
+    th,td
+      &:nth-child(1)
+        text-align: right
+        width: 20%
+      &:nth-child(2)
+        text-align: center
+        width: 60%
+        padding: 0 2rem
+      &:nth-child(3)
+        text-align: left
+        width: 20%
+      &.winner
+        font-weight: 900
+    th
+      padding: 0.5rem 0
+    td
+      padding: 1rem 0
+
+//Top Players
+.top-players
+  background: $bc3_dark
+  width: 100%
+  display: table
+  float: left
+  padding-bottom: 8rem
+  @media (max-width:$mobile)
+    padding-bottom: 4rem
+  @media (max-width:600px)
+    padding-bottom: 3rem
+  .scaler
+    margin-top: -4rem
+  .cat
+    font-weight: 900
+    margin-left: 5px
+    @media (max-width: $mobile)
+      color: #FFF
+      font-size: 1.5rem
+.top-players-section
+  width: 50%
+  display: inline-block
+  vertical-align: top
+  float: left
+  @media (max-width: $mobile)
+    width: 100%
+    margin-top: 1rem
+    &:first-of-type
+      margin-top: 6rem
+  &:nth-child(3), &:nth-child(4)
+    margin-top: 1rem
+    .cat
+      color: #FFF
+.top-player
+  width: calc(50% - 10px)
+  float: left
+  margin: 1rem 5px
+  @media (max-width: 600px)
+    width: calc(100% - 10px)
+    margin-bottom: 0
+  a:hover
+    .headshot:after
+      height: 10px
+    h3
+      color: inherit
+  a, .headshot
+    width: 100%
+    text-decoration: none
+    margin: 0
+  .headshot
+    position: relative
+    transition: all 0.2s ease-out
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      width: 100%
+      height: 5px
+      left: 0
+      bottom: 0
+      background-color: inherit
+      transition: height 0.2s ease-out
+    img
+      width: 100%
+      display: block
+  .player-details
+    width: 90%
+    margin: 1rem auto
+    h3, p
+      margin: 0
+      color: #FFF
+      transition: color 0.2s ease-out
+    .player-breakdown
+      width: auto
+      max-width: calc(100% - 80px)
+      display: inline-block
+      vertical-align: middle
+    img
+      width: auto
+      max-width: 80px
+      float: right
+      margin-top: 0.5rem
+
+
+//CTA buttons
+@keyframes alarm
+  0%
+    transform: rotate(0deg)
+  33%
+    transform: rotate(10deg)
+  66%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(-10deg)
+@-webkit-keyframes alarm
+  0%
+    -webkit-transform: rotate(0deg)
+  33%
+    -webkit-transform: rotate(10deg)
+  66%
+    -webkit-transform: rotate(0deg)
+  100%
+    -webkit-transform: rotate(-10deg)
+.btn
+  display: block
+  padding: 1rem 2rem 1rem 2rem
+  font-size: 0.9rem
+  margin: 0.5rem auto
+  background: #000
+  color: #FFF
+  position: relative
+  text-transform: uppercase
+  font-weight: 700
+  text-decoration: none
+  text-align: center
+  transition: all 0.2s ease-out
+  &.red
+    background: $bc1
+  &:after
+    content: '›'
+    display: inline-block
+    position: relative
+    left: 0.5rem
+    font-size: 2rem
+    top: 0
+    vertical-align: top
+    line-height: 0.5em
+    transition: left 0.2s ease-out
+  &:hover
+    background: $bc1_dark
+    &:after
+      left: 1rem
+  &.gold
+    background: $bc2
+    color: $bc3_dark
+    &:hover
+      background: $bc2_dark
+  &.gray
+    background: $bc3
+    color: $bc3_dark
+    &:hover
+      background: #928e8e
+  &.play
+    &:after
+      margin: -0.5rem 0 -0.2rem 0.2rem
+      vertical-align: middle
+      position: relative
+      width: 0.75em
+      height: 0.75em
+      content: ''
+      background-image: url(#{$root}btn/btn_play_icon.png)
+      background-repeat: no-repeat
+      background-size: contain
+    &:hover
+      background-color: $bc2_dark
+      background-position: right 0.7rem center
+  &.reminder
+    padding-right: 2rem
+    &:after
+      font-size: 0
+      width: 1.1rem
+      height: 1.1rem
+      padding-left: 0
+      margin-left: 0rem
+      transform-origin: bottom center
+      -webkit-transform-origin: bottom center
+      background-image: url(#{$root}btn/btn_reminder_icon.png)
+      background-repeat: no-repeat
+      background-size: contain
+    &:hover
+      background-color: $bc2_dark
+      &:after
+        left: 0.5rem
+        animation: alarm 0.2s forwards infinite
+
+
+//Loader button
+.loadMore
+  font-size: 1rem
+  background: $bc2
+  float: right
+  font-size: 1rem
+  color: $bc3_dark
+  text-transform: uppercase
+  font-weight: 900
+  text-decoration: none
+  position: relative
+  margin-top: 10px
+  padding: 1rem
+  text-align: center
+  width: calc(50% - 40px)
+  transition: color 0.3s ease-out, background 0.3s ease-out
+  @media (max-width:$mobile)
+    width: auto
+    float: none
+    display: table
+    margin: 1rem auto
+  span
+    position: relative
+    margin-left: 0.5rem
+    left: 0
+    transition: left 0.3s ease-out
+  &:hover
+    background: $bc2_dark
+    span
+      left: 0.5rem
+.scaler
+  max-width: 1190px
+  width: 95%
+  margin: 0 auto
+  .nll-bar
+    font-size: 1rem
+
+//Stats landing page
+.nll-bar.stats
+    .stats-wrap
+      width: 95%
+      @media (max-width:$mobile)
+        width: 100%
+    .table-label
+      margin-top: 0
+    .season-stat-table
+      margin-bottom: 2rem
+    .stats-text
+      margin-bottom: 2rem
+      h3
+        margin: 0
+
+//Newsletter Subscription Box
+.subscribe-box
+  padding: 2rem 3rem
+  display: table
+  background: $bc3
+  position: relative
+  label
+    display: block
+    width: 100%
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 1rem
+    color: #FFF
+    margin-bottom: 1rem
+  input
+    display: inline-block
+    vertical-align: top
+  input[type="email"], input[type="text"]
+    padding: 0.8rem 1rem
+    border: 0
+    outline: 0
+    appearance: none
+    -webkit-appearance: none
+    width: calc(100% - 8.5rem)
+  input[type="submit"]
+    background: $bc4
+    color: #FFF
+    padding: 0.8rem 1rem
+    text-transform: uppercase
+    font-weight: 900
+    font-size: 0.9rem
+    border: 0
+    outline: 0
+    appearance: none
+    -webkit-appearance: none
+    cursor: pointer
+    transition: color 0.3s ease-out, background 0.3s ease-out
+    &:hover
+      background: $bc4_dark
+
+//Footer
+.footer-container
+  width: 100%
+  background: $bc1
+  float: left
+  padding-top: 0rem
+  border-bottom: 5px solid $bc2
+  @media (max-width:$mobile)
+    padding-top: 2rem
+  .subscribe-box
+    top: -5rem
+    width: calc(100% - 6rem)
+    max-width: 400px
+    margin-bottom: -2rem
+    @media (max-width:$mobile)
+      display: none
+.tertiary-nav
+  margin-top: 3rem
+  a, span
+    color: #FFF
+    text-decoration: none
+    font-size: 12px
+  a
+    &:hover
+      text-decoration: underline
+  span
+    font-weight: 100
+.footer-pages
+  +buildGrid((25),10px, 0)
+  max-width: 60%
+.footer-linkage
+  width: 100%
+  max-width: 1100px
+  margin: 0 auto
+.footer-branding
+  width: 40%
+  float: left
+  @media (max-width:$mobile)
+    width: 100%
+    text-align: center
+    img
+      max-width: 80%
+  .footer-social
+    margin-top: 2rem
+    a
+      display: inline-block
+      width: 42px
+      height: 32px
+      background: url(#{$root}footer/footer_social.png)
+      transition: opacity 0.3s ease-out
+      &:hover
+        opacity: 0.6
+    a:not(:last-child)
+      margin-right: 2rem
+      @media (max-width:$mobile)
+        margin-right: 0.5rem
+    .twitter
+      background-position: -42px 0
+    .instagram
+      background-position: -84px 0
+    .youtube
+      background-position: -126px 0
+.footer-copyright-container
+  width: 100%
+  float: left
+  text-align: center
+  color: $bc3
+  small
+    display: block
+    font-size: 12px
+    margin: 0.25rem auto 1rem
+.footer-tags-pages-container
+  width: 95%
+  max-width: 1170px
+  margin: 0 auto
+  .page-list
+    list-style-type: none
+    padding: 0
+    display: inline-block
+    vertical-align: top
+    @media (max-width:$mobile)
+      display: none
+    li
+      margin-bottom: 0.75rem
+    li:empty
+      display: none
+    a, span
+      display: table
+      color: #e5e5e5
+      font-weight: 900
+      font-size: 1rem
+      text-decoration: none
+      margin: 0
+    a
+      &:hover
+        text-decoration: underline
+      small
+        font-size: 1rem
+    span
+      margin-bottom: 0.2rem
+    span ~ a
+      font-weight: 500
+      font-size: 0.9rem
+      margin-bottom: 0.2rem
+
+@media print
+  body
+    margin: 50px
+  .navbar, .right-sidebar, .post-thumbnail-container, .footer-container, .article-footer, .fb-comments
+    display: none!important
+  .single-article
+    border-top: 0!important
+    border-bottom: 0!important

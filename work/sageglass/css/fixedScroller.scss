@@ -1,0 +1,275 @@
+@import 'globals.scss';
+
+/*Fading Scroller*/
+.scrollFadeWrap{
+	width:100%;
+	position:relative;
+
+	.fader{
+		position:relative;
+		width:100%;
+		height:80vh;
+		float:left;
+		display:block;
+		overflow:hidden;
+	}
+	.fixedBGs{
+		position:absolute;
+		top:0;
+		width:100%;
+		z-index:0;
+		-webkit-transform: translateZ(0);
+	}
+	.fixedBGs{
+		.fbg1{
+			.fadeTip{
+				top:30%;
+				right:15%;
+			}
+		}
+	}
+
+	#possibilities{
+		height:100vh;
+
+		.framedBox .framedText{
+			color:#000;
+			text-shadow:none;
+
+			p{
+				text-shadow:none;
+			}
+		}
+
+	}
+	.fixedBG{
+		background-repeat:no-repeat;
+		background-position:center top;
+		background-size:cover;
+		position:relative;
+		width:100%;
+		height:100vh;
+		float:left;
+		top:0;
+		left:0;
+
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:0;
+			background:#000;
+			width:100%;
+			height:100%;
+			opacity:0.2;
+		}
+
+		&:last-of-type{
+			&:before{
+				opacity:0.1;
+			}
+		}
+	}
+	.fixedBGs.locked{
+		position:fixed;
+		height:100%;
+
+		.fixedBG{
+			position:absolute;
+			opacity:0;
+			-webkit-transition:opacity 1s ease-out;
+			transition:opacity 1s ease-out;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+			z-index:0;
+		}
+		.fixedBG.current{
+			z-index:1;
+			opacity:1;
+		}
+	}
+	.fadeTip{
+		position:absolute;
+		color:#FFF;
+		top:37%;
+		right:22%;
+		z-index:2;
+		width:225px;
+		background:rgba(0,0,0,0.3);
+		text-align:right;
+
+		p{
+			margin:1em;
+		}
+		.leftBorder,.rightBorder{
+			position:absolute;
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+
+			&:before,&:after{
+				content:'';
+				width:14px;
+				height:13px;
+				position:absolute;
+				display:block;
+			}
+		}
+		.leftBorder:before{
+			top:0;
+			left:0;
+			border-top:2px solid #FFF;
+			border-left:2px solid #FFF;
+		}
+		.leftBorder:after{
+			bottom:0;
+			left:0;
+			border-left:2px solid #FFF;
+			border-bottom:2px solid #FFF;
+		}
+		.rightBorder:before{
+			top:0;
+			right:0;
+			border-right:2px solid #FFF;
+			border-top:2px solid #FFF;
+		}
+		.rightBorder:after{
+			bottom:0;
+			right:0;
+			border-right:2px solid #FFF;
+			border-bottom:2px solid #FFF;
+		}
+		.tail{
+			position:absolute;
+			bottom:0;
+			left:0;
+			width:100px;
+			height:2px;
+			background:#FFF;
+			transform-origin:left center;
+			-webkit-transform-origin:left center;
+			transform:rotate(160deg);
+			-webkit-transform:rotate(160deg);
+		}
+		.tail2{
+			right:-30px;
+			left:inherit;
+			width:30px;
+			transform:rotate(35deg);
+			-webkit-transform:rotate(35deg);
+		}
+		.tail:after{
+			content:'';
+			width:15px;
+			height:15px;
+			position:absolute;
+			bottom:-8px;
+			right:-18px;
+			display:block;
+			border:2px solid #FFF;
+			border-radius:15px;
+		}
+	}
+}
+.framedBox{
+	color:#FFF;
+	margin-left:5%;
+	display:inline-block;
+	position:relative;
+
+	a {
+		display: table;
+		margin: 1rem 0 0.5rem!important;
+		text-shadow: none;
+		font-size: 0.9rem;
+	}
+
+	&:before,&:after{
+		content:'';
+		position:absolute;
+		left:10rem;
+		height:100vh;
+		width:1px;
+		background:#7f98a7;
+	}
+	&:before{
+		top:-100vh;
+	}
+	&:after{
+		bottom:-100vh;
+	}
+
+	.framedIcon,.framedText{
+		display:inline-block;
+		position:relative;
+		vertical-align:middle;
+	}
+	.boxConstraint{
+		display:block;
+		overflow:hidden;
+	}
+	.framedText{
+		padding:1rem 0 1rem 3rem;
+		text-shadow:0px 0px 50px rgba(0,0,0,0.5);
+		max-width:25rem;
+
+		&:before,&:after{
+			content:'';
+			display:block;
+			position:absolute;
+			left:-46px;
+			height:5px;
+			width:calc(31% + 3rem);
+			border-right:4px solid $sageYellow;
+		}
+		&:before{
+			top:0;
+			border-top:4px solid $sageYellow;
+		}
+		&:after{
+			bottom:0;
+			border-bottom:4px solid $sageYellow;
+		}
+
+		h3{
+			font-size:2.6rem;
+			text-transform:uppercase;
+			font-weight:500;
+			margin:0 0 0.5rem;
+			letter-spacing:-0.1rem;
+			line-height:0.9em;
+			padding-right:2rem;
+		}
+		p{
+			margin:0;
+			max-width:370px;
+			text-shadow:0px 0px 20px rgba(0,0,0,0.6);
+		}
+	}
+	.framedIcon{
+		width:88px;
+
+		img{
+			max-width:100%;
+		}
+
+		&:before,&:after{
+			content:'';
+			display:block;
+			position:absolute;
+			width:4px;
+			background:$sageYellow;
+			height:100vh;
+			left:calc(50% - 2px);
+		}
+		&:before{
+			top:calc(-100vh - 15px);
+		}
+		&:after{
+			bottom:calc(-100vh - 15px);
+		}
+	}
+}

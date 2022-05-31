@@ -1,0 +1,697 @@
+/*-------------Animations------------*/
+//Bounce for corner vignettes
+@keyframes cornerBounce{
+  from{
+    transform: scale(1.2);
+    opacity: 0;
+    margin: 15px;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+//Top nav bar
+@keyframes bounceUp{
+  0%{
+    top: 0;
+  }
+  60%{
+    top: -7px;
+  }
+  100%{
+    top: -5px;
+  }
+}
+@keyframes bounceDown{
+  0%{
+    top: 18px;
+  }
+  60%{
+    top: 25px;
+  }
+  100%{
+    top: 23px;
+  }
+}
+
+@keyframes collapseTop{
+  0%{
+    top: -5px;
+  }
+  35%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  70%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 12px;
+    transform: rotate(45deg);
+  }
+}
+@keyframes collapseBottom{
+  0%{
+    top: 23px;
+  }
+  35%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  70%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes collapseTop2{
+  0%{
+    top: 0;
+  }
+  50%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 12px;
+    transform: rotate(45deg);
+  }
+}
+@keyframes collapseBottom2{
+  0%{
+    top: 18px;
+  }
+  50%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes uncollapseTop2{
+  0%{
+    top: 12px;
+    transform: rotate(45deg);
+  }
+  50%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 0px;
+  }
+}
+@keyframes uncollapseBottom2{
+  0%{
+    top: 12px;
+    transform: rotate(-45deg);
+  }
+  50%{
+    top: ~'calc(50% - 2px)';
+    transform: rotate(0deg);
+  }
+  100%{
+    top: 18px;
+  }
+}
+
+@keyframes bounceUpOut{
+  0%{
+    top: -5px;
+  }
+  60%{
+    top: 2px;
+  }
+  100%{
+    top: 0px;
+  }
+}
+@keyframes bounceDownOut{
+  0%{
+    top: 23px;
+  }
+  60%{
+    top: 15px;
+  }
+  100%{
+    top: 18px;
+  }
+}
+
+//Scroll CTA
+@keyframes discover{
+  0%{
+    top: -110%;
+  }
+  30%{
+    top: 0%;
+  }
+  50%{
+    top: 0%;
+  }
+  90%{
+    top: 110%;
+  }
+  100%{
+    top: 110%;
+  }
+}
+
+//Assign this as an animation to sections that need them
+//The JS will add a class to elements with animTrigger on load so they can be targetted up front without needing to re-check whenever you scroll
+@keyframes animTrigger{}
+
+//Sectional animations
+@keyframes driftIn{
+  from{
+    opacity: 0;
+    transform: translateY(2em);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//News item animations
+@keyframes slideIn{
+  from{
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*-------------Mixins------------*/
+//Scroll CTA
+.can-scroll{
+  position: absolute;
+  width: ~'calc(90% - 0.25em)';
+  top: ~'calc(100% - 3rem)';
+  left: ~'calc(5% + 0.25em)';
+  margin: 0 auto;
+  letter-spacing: 0.25em;
+  text-align: center;
+  z-index: 5;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  @media (max-height: 450px){
+    bottom: 1rem;
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+  }
+  p{
+    .kerning(0.25em);
+    font-size: 0.9rem;
+  }
+  .scrolly{
+    position: absolute;
+    width: 2px;
+    height: 70px;
+    overflow: hidden;
+    left: 50%;
+    top: -15px;
+    transform: translateY(-100%);
+    &:before{
+      .pseudoStart;
+      position: absolute;
+      width: 2px;
+      height: 70px;
+      background: #FFF;
+      top: -100%;
+      animation: discover 2.5s ease-out infinite;
+    }
+  }
+}
+
+
+//Stagger transitions when there are lots of siblings, it looks cool
+//Usage: .delayT(n)
+//n = how many elements need to be offset
+.delayT(@n, @i: 1) when (@i =< @n) {
+  &:nth-child(@{i}) {
+    transition-delay: (@i * 0.05s);
+  }
+  .delayT(@n, (@i + 1));
+}
+//Same for animations
+.delayA(@n, @i: 1) when (@i =< @n) {
+  &:nth-child(@{i}) {
+    animation-delay: (@i * 0.15s);
+  }
+  .delayA(@n, (@i + 1));
+}
+
+.stepDelay(@i: 1) when (@i <= 6){
+  .stepDelay(@i + 1);
+  @offset: @i - 1;
+  #icon@{i}, #line@{offset}, #diagram-text@{i}{
+    transition: all 0.75s ease-in-out;
+    transition-delay: 1+@i*0.2s;
+  }
+}
+
+//Only do animations if you see the desktop layout
+//iOS scrolling only triggers scroll events when you let go - so hiding/animating in content is not a great idea there
+@media (min-width: @tablet){
+  html:not(.touchevents){
+    //Full image headers/hero
+    .hero{
+      animation: animTrigger 0s linear;
+      h1{
+        opacity: 0;
+        transition: opacity 1.5s 0.5s ease-out;
+      }
+      h2{
+        opacity: 0;
+        transition: opacity 1s 1.25s ease-out;
+      }
+      .can-scroll{
+        opacity: 0;
+        transition: opacity 1s 1.5s ease-out;
+      }
+      .double-text{
+        h2{
+          transition-delay: 0.5s;
+        }
+        .right-text{
+          p{
+            &:before, &:after{
+              animation-delay: 0.5s!important;
+            }
+          }
+        }
+
+      }
+      &:not(.tall) h1:after{
+        max-width: 0;
+        transition: max-width 0.5s 0.75s ease-out;
+      }
+    }
+    .hero[data-animated="true"]{
+      h1, h2{
+        opacity: 1;
+      }
+      .can-scroll{
+        opacity: 1;
+      }
+      .double-text{
+        .right-text{
+          p{
+            .tlBorder;
+            .brBorder;
+            &:before, &:after{
+              border-color: #FFF;
+            }
+          }
+        }
+      }
+      &:not(.tall) h1:after{
+        max-width: 225px;
+      }
+    }
+
+    //Splt image/text
+    .split{
+      animation: animTrigger 0s linear;
+      .text-wrap{
+        font-size: 3rem;
+      }
+      .split-image{
+        font-size: 1rem;
+      }
+      .text-wrap, .split-image{
+        opacity: 0;
+      }
+      &.small{
+        h2:after{
+          width: 0;
+          transition: width 0.35s 1.5s ease-out;
+        }
+      }
+      &[data-animated="true"]{
+        .text-wrap, .split-image{
+          animation: driftIn 2s ease-out forwards;
+        }
+        &.small{
+          h2:after{
+            width: 110px;
+          }
+        }
+        &:not(.small).left{
+          .split-text{
+            .blBorder;
+          }
+        }
+        &:not(.small).right{
+          .split-text{
+            .brBorder;
+          }
+        }
+      }
+    }
+
+    //Centered text block
+    .center-text{
+      animation: animTrigger 0s linear;
+      h3{
+        opacity: 0;
+        transition: opacity 1s 0.2s ease-out;
+        &:after{
+          transition: width 0.5s 0.5s ease-out;
+          width: 0;
+        }
+      }
+      p{
+        opacity: 0;
+        transition: opacity 0.5s 0.5s ease-out;
+      }
+      img{
+        opacity: 0;
+        transform: scale(0.1);
+        transition: all 0.6s ease-out;
+      }
+      &[data-animated="true"]{
+        h3, p{
+          opacity: 1;
+        }
+        h3{
+          &:after{
+            width: 121px;
+          }
+        }
+        img{
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+
+    .steps{
+      .diagram{
+        .icon, .line, p{
+          opacity: 0;
+          transition: opacity 0.3s 1s ease-out;
+        }
+        .stepDelay();
+      }
+      &[data-animated="true"]{
+        .diagram{
+          .icon, .line, p{
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+
+    //Icon grid
+    .icon-grid{
+      animation: animTrigger 0s linear;
+      .icon-area{
+        opacity: 0;
+        transform: translateY(25%);
+        transition: all 0.3s ease-out;
+        .delayT(20);
+      }
+      &[data-animated="true"]{
+        .icon-area{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+    .partner-logos{
+      animation: animTrigger 0s linear;
+      h3{
+        opacity: 0;
+        transition: opacity 1s ease-out;
+      }
+      p{
+        opacity: 0;
+        transition: opacity 1s 0.35s ease-out;
+      }
+      .logos-header{
+        &:after{
+          width: 0;
+          transition: width 0.5s 0.75s ease-out;
+        }
+      }
+      .logo{
+        opacity: 0;
+        transform: translateY(2rem);
+        transition: all 0.3s ease-out;
+        .delayT(35);
+        /*&:nth-child(-n+14){
+          transition-delay: 0.1s;
+        }
+        &:nth-child(n+15){
+          transition-delay: 0.3s;
+        }*/
+      }
+      &[data-animated="true"]{
+        h3{
+          opacity: 1;
+        }
+        p{
+          opacity: 1;
+        }
+        .logos-header{
+          &:after{
+            width: 121px;
+          }
+        }
+        .logo{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    //Full background image
+    .fullImage{
+      animation: animTrigger 0s linear;
+      h3, img{
+        opacity: 0;
+        transition: opacity 1s 0.25s ease-out;
+      }
+      p{
+        opacity: 0;
+        transition: opacity 1s 0.5s ease-out;
+      }
+      .cta{
+        opacity: 0;
+        transition: opacity 1s 0.75s ease-out, background 0.2s ease-out;
+      }
+      &.stripe{
+        p{
+          transition-delay: 0.5s;
+        }
+        .stripe-text{
+          &:before, &:after{
+            width: 0px;
+            transition: width 0.3s 0.75s ease-out;
+          }
+        }
+        .cta{
+          opacity: 0;
+          transition: opacity 0.5s 0.75s ease-out, background 0.2s ease-out;
+        }
+      }
+      &.right{
+        h4{
+          opacity: 0;
+          transition: opacity 0.75s ease-out;
+        }
+      }
+      &[data-animated="true"]{
+        h3, h4, img, p, .cta{
+          opacity: 1;
+        }
+        &.stripe{
+          .stripe-text{
+            &:before, &:after{
+              width: 150px;
+            }
+          }
+          .cta{
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    //Side by side text
+    .horiz-text{
+      animation: animTrigger 0s linear;
+      h3, .right-text{
+        opacity: 0;
+        transition: opacity 0.75s ease-out;
+      }
+      h3{
+        transition-delay: 0.5s;
+      }
+      .right-text{
+        transition-delay: 1s;
+      }
+      .text-wrap{
+        &:before{
+          width: 0;
+          transition: width 0.3s ease-out;
+          transition-delay: 1.5s;
+        }
+      }
+      &[data-animated="true"]{
+        h3, .right-text{
+          opacity: 1;
+        }
+        .text-wrap{
+          &:before{
+            width: 98px;
+          }
+        }
+      }
+    }
+
+    //Text columns
+    .text-columns{
+      animation: animTrigger 0s linear;
+      .text-col{
+        opacity: 0;
+        transform: translateY(2rem);
+        transition: all 0.5s ease-out;
+        &:nth-child(2){
+          transition-delay: 0.25s;
+        }
+        &:nth-child(3){
+          transition-delay: 0.5s;
+        }
+        &:nth-child(4){
+          transition-delay: 0.75s;
+        }
+        &:nth-child(5){
+          transition-delay: 1s;
+        }
+        &:nth-child(6){
+          transition-delay: 1.25s;
+        }
+        &:nth-child(7){
+          transition-delay: 1.5s;
+        }
+        &:nth-child(8){
+          transition-delay: 1.75s;
+        }
+        &:nth-child(9){
+          transition-delay: 2s;
+        }
+        &:nth-child(10){
+          transition-delay: 2.25s;
+        }
+      }
+      &[data-animated="true"]{
+        .text-col{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    //Contact page footer
+    .contact-split{
+      animation: animTrigger 0s linear;
+      .contact-block{
+        opacity: 0;
+        transform: translateY(2rem);
+        transition: all 0.5s ease-out;
+        &:nth-child(3){
+          transition-delay: 0.25s;
+        }
+      }
+      &[data-animated="true"]{
+        .contact-block{
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .blog-post{
+      .scaler:before, .post-body .scaler:after{
+        animation-delay: 0s!important;
+      }
+      header .tag:after, .post-meta:before{
+        width: 0;
+        transition: width 0.5s ease-out;
+      }
+      .post-meta:before{
+        transition-delay: 0.2s;
+      }
+      &[data-animated="true"]{
+        header .tag:after, .post-meta:before{
+          width: 250px;
+        }
+      }
+    }
+
+    //Blog posts
+    .blog-grid{
+      animation: animTrigger 0s linear;
+      .blog-item{
+        opacity: 0;
+      }
+      &[data-animated="true"]{
+        .blog-item{
+          animation: slideIn 0.6s ease-out forwards;
+          .delayA(20);
+        }
+      }
+    }
+
+
+
+    //Contact page
+    .contact-header{
+      animation: animTrigger 0s linear;
+      h1{
+        opacity: 0;
+        transition: opacity 1s 0.25s ease-out;
+      }
+      &:after{
+        opacity: 0;
+        max-width: 0;
+        transition: all 0.5s 0.5s ease-out;
+      }
+      & ~ section{
+        opacity: 0;
+        transition: opacity 1s 0.75s ease-out;
+      }
+      &[data-animated="true"]{
+        h1{
+          opacity: 1;
+        }
+        &:after{
+          opacity: 1;
+          max-width: 230px;
+        }
+        & ~ section{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  //End media query
+}

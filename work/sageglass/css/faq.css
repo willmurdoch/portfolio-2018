@@ -1,0 +1,163 @@
+.bracketTop, .bracketBottom {
+	position: relative;
+}
+
+.bracketTop:before {
+	content: '';
+	display: block;
+	margin: 0;
+	width: 85px;
+	height: 5px;
+	border-top: 6px solid #3b393a;
+	border-left: 6px solid #3b393a;
+	border-right: 6px solid #3b393a;
+}
+
+.bracketBottom:after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 85px;
+	height: 30px;
+	border-bottom: 6px solid #3b393a;
+	border-left: 6px solid #3b393a;
+	border-right: 6px solid #3b393a;
+}
+
+.center .bracketTop:before, .center .bracketTop:after, .center .bracketBottom:before, .center .bracketBottom:after {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.faqBlock {
+	padding: 4rem 0;
+	text-align: center;
+}
+
+.faqBlock ul {
+	width: 100%;
+	display: block;
+	padding: 0;
+	list-style-type: none;
+	margin: 3rem auto 2rem;
+	max-width: 915px;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	text-align: left;
+}
+
+.faqBlock li {
+	margin-bottom: 1.5rem;
+	position: relative;
+	padding: 0 1rem 0.5rem;
+}
+
+.faqBlock li:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 5px;
+	background: transparent;
+	left: 50%;
+	margin-left: -25px;
+	transition: background 0.3s ease-out;
+}
+
+.faqBlock li:before {
+	top: -1rem;
+}
+
+.faqBlock li.opened:before {
+	background: #ffd503;
+}
+
+.faqBlock li.opened + li:before {
+	background: #ffd503;
+}
+
+.faqBlock li:last-child {
+	margin-bottom: 0;
+}
+
+.faqBlock .bracketTop:before {
+	margin: 0 auto 1rem;
+}
+
+.faqBlock .question {
+	font-size: 1.5rem;
+}
+
+.faqBlock .question:before, .faqBlock .answer:before {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	vertical-align: middle;
+	font-size: 2.6rem;
+	font-weight: 900;
+	margin-right: 1rem;
+}
+
+.faqBlock .question p, .faqBlock .answer p {
+	width: calc(100% - 5rem);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.faqBlock .question .answerText, .faqBlock .answer .answerText {
+	width: calc(100% - 5rem);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.faqBlock .question .answerText ul, .faqBlock .answer .answerText ul {
+	list-style-type: disc;
+	padding-left: 2rem;
+	margin: 1rem 0;
+}
+
+.faqBlock .question .answerText ul li, .faqBlock .answer .answerText ul li {
+	margin: 0;
+}
+
+.faqBlock .question .answerText p, .faqBlock .answer .answerText p {
+	width: 100%;
+}
+
+.faqBlock .question {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+	transition: color 0.3s ease-out;
+}
+
+.faqBlock .question:before {
+	content: 'Q:';
+}
+
+.faqBlock .question:hover {
+	color: #ffd503;
+}
+
+.faqBlock .answer {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.4s;
+}
+
+.faqBlock .answer:before {
+	content: 'A:';
+}
+
+.faqBlock p {
+	margin: 0;
+}
+
+.hero + .faqBlock h3 {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+.faqBlock:nth-child(odd) {
+	background: #ebeae8;
+}

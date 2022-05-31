@@ -1,0 +1,32 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="509.8px"
+	 height="108px" viewBox="0 0 509.8 108" style="overflow:visible;enable-background:new 0 0 509.8 108;">
+<style type="text/css">
+	.st0{fill:none;stroke:#2680DA;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:#2680DA;}
+	@keyframes draw {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+	@keyframes pop{
+		to {
+			opacity: 1;
+		}
+	}
+	.st0 {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: draw 2s 1s ease-out forwards;
+	}
+	.st1{
+		opacity: 0;
+		animation: pop 0.2s 1.75s linear forwards;
+	}
+</style>
+<defs>
+</defs>
+<path class="st0" d="M0,3h423.8c39.8,0,72,32.2,72,72v27.9"/>
+<path class="st1" d="M509.3,90.1H504c-0.2,0-0.4,0.1-0.4,0.3l-7.8,12.5l-7.8-12.5c-0.1-0.2-0.2-0.3-0.4-0.3h-5.3
+	c-0.3,0-0.5,0.2-0.5,0.5c0,0,0,0.1,0.1,0.2l10.5,16.9c0.1,0.2,0.2,0.3,0.4,0.3h0.8h4.5h0.8c0.2,0,0.4-0.1,0.4-0.3l10.5-16.9
+	c0.1-0.1,0.1-0.2,0.1-0.2C509.8,90.3,509.6,90.1,509.3,90.1z"/>
+</svg>

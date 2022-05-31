@@ -1,0 +1,126 @@
+@import 'globals.scss';
+
+.faqBlock{
+  padding:4rem 0;
+  text-align:center;
+
+  ul{
+    width:100%;
+    display:block;
+    padding:0;
+    list-style-type:none;
+    margin:3rem auto 2rem;
+    max-width:915px;
+    font-size:1.2rem;
+    line-height:1.5rem;
+    text-align:left;
+  }
+  li{
+    margin-bottom:1.5rem;
+    position:relative;
+    padding:0 1rem 0.5rem;
+
+    &:before{
+      content:'';
+      display:block;
+      position:absolute;
+      width:50px;
+      height:5px;
+      background:transparent;
+      left:50%;
+      margin-left:-25px;
+      transition:background 0.3s ease-out;
+    }
+    &:before{
+      top:-1rem;
+    }
+  }
+  li.opened{
+    &:before{
+      background:$sageYellow;
+    }
+    & + li{
+      &:before{
+        background:$sageYellow;
+      }
+    }
+  }
+  li:last-child{
+    margin-bottom:0;
+  }
+  .bracketTop:before{
+    margin:0 auto 1rem;
+  }
+  .question{
+    font-size:1.5rem;
+  }
+  .question,.answer{
+    &:before{
+      display:inline-block;
+      vertical-align:middle;
+      position:relative;
+      vertical-align:middle;
+      font-size:2.6rem;
+      font-weight:900;
+      margin-right:1rem;
+    }
+    p{
+      width:calc(100% - 5rem);
+      display:inline-block;
+      vertical-align:middle;
+    }
+    .answerText{
+      width:calc(100% - 5rem);
+      display:inline-block;
+      vertical-align:middle;
+
+      ul{
+        list-style-type:disc;
+        padding-left:2rem;
+        margin:1rem 0;
+
+        li{
+          margin:0;
+        }
+      }
+
+      p{
+        width:100%;
+      }
+    }
+  }
+  .question{
+    font-weight:600;
+    margin-bottom:0.5rem;
+    cursor:pointer;
+    transition:color 0.3s ease-out;
+
+    &:before{
+      content:'Q:';
+    }
+  }
+  .question:hover{
+    color:$sageYellow;
+  }
+  .answer{
+    overflow:hidden;
+    max-height:0;
+    transition:max-height 0.4s;
+
+    &:before{
+      content:'A:';
+    }
+  }
+  p{
+    margin:0;
+  }
+}
+.hero + .faqBlock{
+  h3{
+    transform:none!important;
+    opacity:1!important;
+  }
+}
+.faqBlock:nth-child(odd){
+  background:#ebeae8;
+}

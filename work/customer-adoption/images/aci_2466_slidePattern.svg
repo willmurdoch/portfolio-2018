@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="219.95px" height="219.95px" viewBox="0 0 219.95 219.95" style="enable-background:new 0 0 219.95 219.95;">
+  <style type="text/css">
+  	.st0{fill:none;stroke:#90eaeb;stroke-width:5.9014;stroke-miterlimit:10;}
+  	.st1{fill:none;stroke:#25d6da;stroke-width:5.9014;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:12,18;}
+  	.st2{fill:none;stroke:#90eaeb;stroke-width:5.9014;stroke-miterlimit:10;}
+  </style>
+  <ellipse transform="matrix(0.2298 -0.9732 0.9732 0.2298 -22.3256 191.7401)" class="st0" cx="109.97" cy="109.97" rx="107.02" ry="107.02"/>
+  <ellipse transform="matrix(0.2298 -0.9732 0.9732 0.2298 -22.3256 191.7401)" class="st1" cx="109.97" cy="109.97" rx="71.02" ry="71.02"/>
+  <path class="st2" d="M109.97,145c-19.31,0-35.02-15.71-35.02-35.02c0-19.31,15.71-35.02,35.02-35.02
+  	c19.31,0,35.02,15.71,35.02,35.02C145,129.29,129.29,145,109.97,145z"/>
+</svg>

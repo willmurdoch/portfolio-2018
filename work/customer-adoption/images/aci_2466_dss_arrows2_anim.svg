@@ -1,0 +1,33 @@
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="287.42px" height="94.65px" viewBox="0 0 287.42 94.65" style="enable-background:new 0 0 287.42 94.65;">
+<style type="text/css">
+	.st0{fill:none;stroke:#3A9ED4;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:#3A9ED4;}
+	@keyframes draw {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+	@keyframes pop{
+		to {
+			opacity: 1;
+		}
+	}
+	.st0 {
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: draw 2s 1s ease-out forwards;
+	}
+	.st1{
+		opacity: 0;
+		animation: pop 0.2s 1.35s linear forwards;
+	}
+</style>
+<defs>
+</defs>
+<path class="st0" d="M0,4h186.44c45.83,0,82.98,37.15,82.98,82.98l0,0"/>
+<path class="st1" d="M286.78,71.68h-6.81c-0.25,0-0.47,0.15-0.57,0.36l-9.98,16.11l-9.98-16.11c-0.1-0.21-0.32-0.36-0.57-0.36h-6.81
+	c-0.35,0-0.64,0.28-0.64,0.63c0,0.05,0.01,0.15,0.07,0.29l13.45,21.69c0.1,0.21,0.32,0.36,0.57,0.36h1.01h5.8h1.01
+	c0.25,0,0.47-0.15,0.57-0.36l13.45-21.69c0.07-0.14,0.07-0.24,0.07-0.29C287.42,71.96,287.13,71.68,286.78,71.68z"/>
+</svg>

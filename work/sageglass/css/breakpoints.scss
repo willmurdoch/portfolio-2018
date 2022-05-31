@@ -1,0 +1,51 @@
+@import 'globals.scss';
+
+/*Width Assignments*/
+.split{
+	width:50%;
+	display:inline-block;
+}
+.w6,.w5,.w3,.w25,.w2{
+	display:inline-block;
+	vertical-align:top;
+}
+.w6{
+	width:59%;
+	margin-right:6%;
+}
+.w5{
+	width:44%;
+	margin:0 2.5% 2rem;
+}
+.w3{
+	width:29%;
+	margin:0 2% 2rem;
+}
+.w25{
+	width:20%;
+	margin:0 1.5%;
+}
+.w2{
+	width:16%;
+	margin:0 1.5% 2rem;
+}
+
+@media (max-width:1000px){
+	.w5,.split{
+		width:100%;
+	}
+	.w5{
+		margin:0 auto 2rem;
+	}
+	.w25, .w2{
+		width:44%;
+		margin:0 2.5% 2em;
+	}
+}
+@media (max-width:600px){
+	.w3, .w25, .w2, .w6{
+		width:90%;
+		margin:0 auto 2em;
+		display:table;
+	}
+}

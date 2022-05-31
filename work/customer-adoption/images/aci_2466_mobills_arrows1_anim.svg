@@ -1,0 +1,57 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1049 555.9" style="enable-background:new 0 0 1049 555.9;">
+<style type="text/css">
+	.st0{fill:none;stroke:#132744;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#2680DA;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:#26D7DA;}
+	.st3{fill:#132744;}
+	.st4{fill:#2680DA;}
+	.st5{fill:none;stroke:#26D7DA;stroke-width:6;stroke-miterlimit:10;}
+	@keyframes draw {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@keyframes pop{
+		to {
+			opacity: 1;
+		}
+	}
+	.st0, .st1, .st5 {
+	  stroke-dasharray: 1500;
+	  stroke-dashoffset: 1500;
+	  animation: draw 2s 0.5s ease-out forwards;
+	}
+	.st0{
+		stroke-dasharray: 500;
+		stroke-dashoffset: 500;
+		animation-duration: 1s!important;
+	}
+	.st2, .st3, .st4{
+		opacity: 0;
+		animation: pop 0.2s linear forwards;
+	}
+	.st2{
+		animation-delay: 1.95s;
+	}
+	.st3{
+		animation-delay: 1.25s;
+	}
+	.st4{
+		animation-delay: 1.5s;
+	}
+</style>
+<path class="st0" d="M1049,90l-143.4,0.6c-46.2,0.5-83.4,38.1-83.4,84.3v43.6c0,42.5-34.5,77-77,77l0,0h-31.8"/>
+<line class="st1" x1="1048.8" y1="18" x2="6" y2="18"/>
+<path class="st2" d="M122.8,534.5h-6c-0.2,0-0.4,0.1-0.5,0.3l-8.9,14.3l-8.9-14.3c-0.1-0.2-0.3-0.3-0.5-0.3h-6
+	c-0.3,0-0.6,0.2-0.6,0.6c0,0,0,0.1,0.1,0.3l12,19.3c0.1,0.2,0.3,0.3,0.5,0.3h0.9h5.2h0.9c0.2,0,0.4-0.1,0.5-0.3l12-19.3
+	c0.1-0.1,0.1-0.2,0.1-0.3C123.3,534.7,123.1,534.5,122.8,534.5z"/>
+<path class="st3" d="M725.3,309v-5.3c0-0.2-0.1-0.4-0.3-0.4l-12.5-7.8l12.5-7.8c0.2-0.1,0.3-0.2,0.3-0.4V282c0-0.3-0.2-0.5-0.5-0.5
+	c0,0-0.1,0-0.2,0.1L707.7,292c-0.2,0.1-0.3,0.2-0.3,0.4v0.8v4.5v0.8c0,0.2,0.1,0.4,0.3,0.4l16.9,10.5c0.1,0.1,0.2,0.1,0.2,0.1
+	C725.1,309.5,725.3,309.3,725.3,309z"/>
+<path class="st4" d="M18.9,31.5v-5.3c0-0.2-0.1-0.4-0.3-0.4L6.1,18l12.5-7.8c0.2-0.1,0.3-0.2,0.3-0.4V4.5c0-0.3-0.2-0.5-0.5-0.5
+	c0,0-0.1,0-0.2,0.1L1.3,14.5C1.1,14.6,1,14.8,1,15v0.8v4.5V21c0,0.2,0.1,0.4,0.3,0.4l16.9,10.5c0.1,0.1,0.2,0.1,0.2,0.1
+	C18.7,32,18.9,31.8,18.9,31.5z"/>
+<path class="st5" d="M1048.7,54.8l-676.2,1.8c-44.1,0.1-79.8,35.9-79.8,80v230.3c0,35.7-29.2,64.5-64.9,64l-48.8-0.1
+	c-39.2-0.5-71.3,31.1-71.3,70.3v47.7"/>
+</svg>

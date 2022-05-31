@@ -1,0 +1,52 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 509.2 651.9" style="enable-background:new 0 0 509.2 651.9;">
+<style type="text/css">
+	.st0{fill:none;stroke:#2680DA;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#132744;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#26D7DA;stroke-width:6;stroke-miterlimit:10;}
+	.st3{fill:#26D7DA;}
+	.st4{fill:#132744;}
+	@keyframes draw {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@keyframes pop{
+		to {
+			opacity: 1;
+		}
+	}
+	.st0, .st1, .st2 {
+	  stroke-dasharray: 1500;
+	  stroke-dashoffset: 1500;
+	  animation: draw 3s 0.5s ease-out forwards;
+	}
+	.st0{
+		animation-duration: 1.5s!important;
+		stroke-dasharray: 500px;
+		stroke-dashoffset: 500px
+	}
+	.st0{
+		animation-duration: 4s;
+	}
+	.st3, .st4{
+		opacity: 0;
+		animation: pop 0.2s linear forwards;
+	}
+	.st3{
+		animation-delay: 1.75s;
+	}
+	.st4{
+		animation-delay: 1.2s;
+	}
+</style>
+<line class="st0" x1="0.3" y1="2.5" x2="194.1" y2="2.5"/>
+<path class="st1" d="M0.3,74.5h65.3c24.3,0,44,19.7,44,44v358.1c0,28.7,7.8,55.6,21.4,78.7"/>
+<path class="st2" d="M0.3,38.5h74.6c39.1,0,70.7,31.7,70.7,70.7v367.3c0,66.3,53.7,120,120,120H443"/>
+<path class="st3" d="M428.3,581.1v6c0,0.2,0.1,0.4,0.3,0.5l14.3,8.9l-14.3,8.9c-0.2,0.1-0.3,0.3-0.3,0.5v6c0,0.3,0.2,0.6,0.6,0.6
+	c0,0,0.1,0,0.3-0.1l19.3-12c0.2-0.1,0.3-0.3,0.3-0.5V599v-5v-0.9c0-0.2-0.1-0.4-0.3-0.5l-19.3-12c-0.1-0.1-0.2-0.1-0.3-0.1
+	C428.6,580.5,428.3,580.8,428.3,581.1z"/>
+<path class="st4" d="M136.7,537.4l-4.7,2.5c-0.2,0.1-0.3,0.3-0.3,0.5l-0.9,14.7l-12.8-7.4c-0.1-0.1-0.4-0.1-0.5,0l-4.7,2.5
+	c-0.2,0.1-0.3,0.4-0.2,0.7c0,0,0.1,0.1,0.2,0.2L130,561c0.1,0.1,0.4,0.1,0.5,0l0.7-0.4l4-2.1l0.7-0.4c0.2-0.1,0.3-0.3,0.3-0.5
+	l1.2-19.8c0-0.1,0-0.2-0.1-0.2C137.3,537.4,137,537.3,136.7,537.4z"/>
+</svg>

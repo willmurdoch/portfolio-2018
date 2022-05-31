@@ -1,5 +1,5 @@
 <?php include ('includes/header.php'); ?>
-<section id="projects">
+<div id="projects">
   <?php
   $json = file_get_contents('projects.json');
   $projects = json_decode($json, true);
@@ -40,11 +40,11 @@
         <h3><?php echo $project['title']; ?></h3>
         <p><?php echo $project['description']; ?></p>
         <?php if(isset($project['link'])): ?>
-          <a class="cta" href="<?php echo $project['link']; ?>" target="_blank"><p>Visit Site</p><span><p>Visit Site</p></span></a>
+          <a class="cta" href="<?php echo $project['link']; ?>" target="_blank"><p class="regText">See the work</p><p class="hoverText"><span>See the work</span></p></a>
         <?php endif; ?>
       </div>
       <span class="circle"></span>
     </article>
   <?php endforeach; ?>
-</section>
+</div>
 <?php include ('includes/footer.php'); ?>

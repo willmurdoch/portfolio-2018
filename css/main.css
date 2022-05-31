@@ -99,17 +99,20 @@ p {
   transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out;
 }
 
-.cta p {
+.cta p.regText, .cta p.hoverText {
   text-transform: lowercase;
   font-weight: 900;
   margin: 0;
   line-height: 1em;
-  color: #ef5442;
-  padding: 0.65em 1em;
   white-space: nowrap;
 }
 
-.cta span {
+.cta p.regText {
+  color: #ef5442;
+  padding: 0.65em 1em;
+}
+
+.cta p.hoverText {
   position: absolute;
   background: #ef5442;
   width: 3px;
@@ -120,11 +123,13 @@ p {
   transition: width 0.2s ease-out;
 }
 
-.cta span p {
+.cta p.hoverText span {
+  display: block;
+  padding: 0.65em 1em;
   color: #FFF;
 }
 
-.cta:hover span {
+.cta:hover p.hoverText {
   width: 100%;
 }
 
@@ -320,7 +325,7 @@ header .linkedin {
   background: rgba(239, 84, 66, 0.1);
   z-index: 0;
   backface-visibility: hidden;
-  perspective: 1000;
+  perspective: 1000px;
   transform-origin: 50% 49%;
   transform: translateX(-50%) translateY(-50%) translateZ(0);
   animation: spin 10s linear infinite;
@@ -447,7 +452,7 @@ header .linkedin {
 
 .project .imageWrap .desktop, .project .imageWrap .mobile {
   backface-visibility: hidden;
-  perspective: 1000;
+  perspective: 1000px;
 }
 
 .project .imageWrap .device {

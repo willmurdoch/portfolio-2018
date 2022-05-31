@@ -1,0 +1,32 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319.2 88.42">
+  <defs>
+    <style>
+      @keyframes draw {
+    	  to {
+    	    stroke-dashoffset: 0;
+    	  }
+    	}
+      @keyframes pop{
+    		to {
+    			opacity: 1;
+    		}
+    	}
+      .cls-1{
+        fill:none;
+        stroke:#2580da;
+        stroke-miterlimit:10;
+        stroke-width:6px;
+        stroke-dasharray: 1200;
+    	  stroke-dashoffset: 1200;
+    	  animation: draw 1.5s 1.2s linear forwards;
+      }
+      .cls-2{
+        fill:#2580da;
+        opacity: 0;
+        animation: pop 0.3s 1.5s linear forwards;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1008.22,322.91h223.2a80,80,0,0,1,80,80V403" transform="translate(-1008.22 -319.91)"/>
+  <path class="cls-2" d="M1326.85,387.9h-6a.57.57,0,0,0-.51.32l-8.87,14.32-8.88-14.32a.56.56,0,0,0-.51-.32h-6a.57.57,0,0,0-.5.82l12,19.28a.58.58,0,0,0,.51.32h7a.56.56,0,0,0,.51-.32l12-19.28a.73.73,0,0,0,.06-.26A.57.57,0,0,0,1326.85,387.9Z" transform="translate(-1008.22 -319.91)"/>
+</svg>

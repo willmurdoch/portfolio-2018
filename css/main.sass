@@ -104,15 +104,16 @@ p
   margin: 1.5rem 0 0
   text-decoration: none
   transition: color 0.1s ease-out, background 0.1s ease-out, border-color 0.1s ease-out
-  p
+  p.regText, p.hoverText
     text-transform: lowercase
     font-weight: 900
     margin: 0
     line-height: 1em
+    white-space: nowrap
+  p.regText
     color: $wmColor1
     padding: 0.65em 1em
-    white-space: nowrap
-  span
+  p.hoverText
     position: absolute
     background: $wmColor1
     width: 3px
@@ -121,9 +122,11 @@ p
     left: 0
     overflow: hidden
     transition: width 0.2s ease-out
-    p
+    span
+      display: block
+      padding: 0.65em 1em
       color: #FFF
-  &:hover span
+  &:hover p.hoverText
     width: 100%
 
 header
@@ -270,7 +273,7 @@ $titleExtrudes: 4
     background: rgba($wmColor1, 0.1)
     z-index: 0
     backface-visibility: hidden
-    perspective: 1000
+    perspective: 1000px
     transform-origin: 50% 49%
     transform: translateX(-50%) translateY(-50%) translateZ(0)
     animation: spin 10s linear infinite
@@ -353,7 +356,7 @@ $titleExtrudes: 4
       transition: all 0.2s ease-out
     .desktop, .mobile
       backface-visibility: hidden
-      perspective: 1000
+      perspective: 1000px
     .device
       position: absolute
     .shine

@@ -1,0 +1,515 @@
+@import 'globals.scss';
+
+.contact{
+	.hero.static{
+		padding:1rem 0;
+		.headline{
+			text-align:center;
+		}
+	}
+	.hero + .textGrid{
+		padding-bottom:0rem;
+	}
+
+	.textGrid{
+		h4{
+			font-size:1.4rem;
+		}
+		a{
+			color:#000;
+			font-weight:700;
+			text-decoration:underline;
+		}
+		a:hover{
+			color:$sageYellow;
+		}
+		header{
+			p{
+				white-space:nowrap;
+			}
+		}
+		a[href*="tel:"]{
+			display:inline-block;
+			margin-top:0.5rem;
+			color:#000;
+			font-weight:500;
+			text-decoration:none;
+		}
+	}
+}
+.webform-component-checkboxes{
+	label:not(.option){
+		display:none;
+	}
+	input[type="checkbox"], label.option{
+		display:inline-block;
+		vertical-align:middle;
+		float:none;
+	}
+	input[type="checkbox"]{
+		width:1.5rem;
+		height:1.5rem;
+		margin-right:1rem;
+	}
+	label.option{
+		margin:0;
+		width:auto;
+	}
+}
+.node-type-webform{
+	.textGrid + .contactForm{
+		margin-top:-2rem;
+	}
+	.webform-submit{
+		display:block;
+		background-color:$sageYellow;
+		border:1px solid $sageYellow;
+		color:$sageBlack;
+		width:130px;
+		padding:1.1em 2em;
+		border:0;
+		outline:0;
+		outline-offset:0;
+		-webkit-appearance:none;
+		font-weight:600;
+		text-transform:uppercase;
+		margin:3rem auto 2rem;
+		transition:background-color 0.3s ease-out, color 0.3s ease-out;
+
+		&:hover{
+			color:$sageYellow;
+			background-color:$sageBlack;
+		}
+	}
+	form{
+		display:table;
+		width:95%;
+		max-width:1024px;
+		margin:0 auto;
+		color:$sageGray1;
+
+		label{
+			width:100%;
+		}
+		input[type="text"],input[type="email"],input[type="telephone"]{
+			width:calc(100% - 2rem);
+		}
+		label{
+			display:block;
+			font-weight:700;
+			text-transform:uppercase;
+			margin-bottom:0.5rem;
+			font-size:1.1rem;
+		}
+		input[type="text"], input[type="email"],input[type="telephone"], textarea{
+			border:0;
+			padding:1rem 1rem;
+			outline:1px solid #4c4b4c;
+			outline-offset:0;
+		}
+		textarea{
+			height:5rem;
+		}
+		select{
+			width:100%;
+			border:0;
+			padding:1rem 1rem;
+			outline:1px solid #4c4b4c;
+			background:#FFF url(../img/ddArrow.png) 98.5% center no-repeat;
+			outline-offset:0;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+		}
+		select.converted{
+			display:none;
+		}
+
+		.dropDown{
+			height:3rem;
+			cursor:pointer;
+			width:100%;
+			outline:1px solid #4c4b4c;
+			position:relative;
+			z-index:1;
+			background:#FFF;
+
+			.listConstraint{
+				height:3rem;
+				width:100%;
+				overflow:hidden;
+				position:absolute;
+				outline:1px solid #000;
+				box-shadow:0px 0px 20px rgba(0,0,0,0);
+				transition:all 0.5s;
+
+				.default{
+					display:table;
+					width:100%;
+					height:3rem;
+					float:left;
+
+					p{
+						margin:0;
+						display:table-cell;
+						vertical-align:middle;
+						padding:0 1rem;
+					}
+				}
+				&:before, &:after{
+					content:'';
+					position:absolute;
+					width:3rem;
+					height:3rem;
+					top:0;
+					right:0;
+					z-index:1;
+
+				}
+				&:before{
+					border-left:1px solid #000;
+					border-bottom:1px solid #000;
+					background:#FFF;
+					transition:background 0.3s ease-out;
+				}
+				&:after{
+					background:url(../img/ddArrow.png) center no-repeat;
+					transition:all 0.3s ease-out;
+				}
+
+				&[style*="height"]{
+					box-shadow:0px 10px 20px rgba(0, 0, 0, 0.3);
+
+					&:before{
+						background:$sageYellow;
+					}
+					&:after{
+						transform:rotate(180deg);
+					}
+				}
+			}
+			ul{
+				width:100%;
+				display:inline-block;
+				max-height:15rem;
+				overflow-y:auto;
+				background:#FFF;
+				margin:0;
+				padding:0;
+				border-top:1px solid #000;
+				position:relative;
+
+				li{
+					list-style-type:none;
+					height:3rem;
+					width:calc(100% - 2rem);
+					border-bottom:1px solid #000;
+					padding:0 1rem;
+					display:table;
+					transition:background 0.3s;
+
+					&:hover{
+						background:$sageYellow;
+					}
+					p{
+						margin:0;
+						display:table-cell;
+						vertical-align:middle;
+					}
+
+					&:last-of-type{
+						border-bottom:0;
+					}
+				}
+			}
+		}
+		.dropDown.ddOpen{
+			z-index:3;
+		}
+	}
+	.webform-layout-box.horiz > * + *{
+		margin-left:0;
+	}
+	.form-item{
+		width:100%;
+		float:left;
+
+		.description{
+			margin-left:0.75rem;
+			color:#a1a1a1;
+			position:absolute;
+			margin-top:0.2rem;
+		}
+		input[type="text"],input[type="email"],input[type="telephone"]{
+			width:calc(100% - 2rem);
+		}
+	}
+}
+.contactForm{
+	padding-bottom:4rem;
+
+	form{
+		display:table;
+		width:95%;
+		max-width:1024px;
+		margin:0 auto;
+		color:$sageGray1;
+	}
+	fieldset{
+		border:0;
+		outline:0;
+		margin:0 0 1rem;
+		padding:0;
+		width:100%;
+	}
+	fieldset.split{
+		width:48.75%;
+		float:left;
+
+		label{
+			width:97.5%;
+		}
+		input[type="text"],input[type="email"],input[type="telephone"]{
+			width:calc(100% - 2rem);
+		}
+		&.right{
+			margin-left:2.5%;
+		}
+	}
+	label{
+		width:100%;
+		display:block;
+		font-weight:700;
+		text-transform:uppercase;
+		margin-bottom:0.5rem;
+		font-size:1.1rem;
+	}
+	input[type="text"], input[type="email"],input[type="telephone"], textarea{
+		width:calc(100% - 2rem);
+		max-width:calc(1024px - 2rem);
+		border:0;
+		padding:1rem 1rem;
+		outline:1px solid #4c4b4c;
+		outline-offset:0;
+	}
+	textarea{
+		height:5rem;
+	}
+	select{
+		width:100%;
+		border:0;
+		padding:1rem 1rem;
+		outline:1px solid #4c4b4c;
+		background:#FFF url(../img/ddArrow.png) 98.5% center no-repeat;
+		outline-offset:0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	select.converted{
+		display:none;
+	}
+
+	.dropDown{
+		height:3rem;
+		cursor:pointer;
+		width:100%;
+		outline:1px solid #4c4b4c;
+		position:relative;
+		z-index:1;
+
+		.listConstraint{
+			height:3rem;
+			width:100%;
+			overflow:hidden;
+			position:absolute;
+			outline:1px solid #000;
+			box-shadow:0px 0px 20px rgba(0,0,0,0);
+			transition:all 0.5s;
+
+			.default{
+				display:table;
+				width:100%;
+				height:3rem;
+				float:left;
+
+				p{
+					margin:0;
+					display:table-cell;
+					vertical-align:middle;
+					padding:0 1rem;
+				}
+			}
+			&:before, &:after{
+				content:'';
+				position:absolute;
+				width:3rem;
+				height:3rem;
+				top:0;
+				right:0;
+				z-index:1;
+
+			}
+			&:before{
+				border-left:1px solid #000;
+				border-bottom:1px solid #000;
+				background:#FFF;
+				transition:background 0.3s ease-out;
+			}
+			&:after{
+				background:url(../img/ddArrow.png) center no-repeat;
+				transition:all 0.3s ease-out;
+			}
+
+			&[style*="height"]{
+				box-shadow:0px 10px 20px rgba(0, 0, 0, 0.3);
+
+				&:before{
+					background:$sageYellow;
+				}
+				&:after{
+					transform:rotate(180deg);
+				}
+			}
+		}
+		ul{
+			width:100%;
+			display:inline-block;
+			max-height:15rem;
+			overflow-y:auto;
+			background:#FFF;
+			margin:0;
+			padding:0;
+			border-top:1px solid #000;
+			position:relative;
+
+			li{
+				list-style-type:none;
+				height:3rem;
+				width:calc(100% - 2rem);
+				border-bottom:1px solid #000;
+				padding:0 1rem;
+				display:table;
+				transition:background 0.3s;
+
+				&:hover{
+					background:$sageYellow;
+				}
+				p{
+					margin:0;
+					display:table-cell;
+					vertical-align:middle;
+				}
+
+				&:last-of-type{
+					border-bottom:0;
+				}
+			}
+		}
+	}
+	.dropDown.ddOpen{
+		z-index:3;
+
+	}
+	.contact-text{
+		resize:none;
+	}
+
+	.contact-submit{
+		display:block;
+		background-color:$sageYellow;
+		border:1px solid $sageYellow;
+		width:130px;
+		padding:10px 0px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	& + .textGrid{
+		padding-top:0;
+	}
+}
+
+.repPicker{
+	margin-bottom: 2rem;
+	margin-top: -2rem!important;
+
+	&:after{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 50px;
+		height: 5px;
+		background: $sageYellow;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		bottom: 0;
+	}
+	.scaler{
+		max-width: 800px;
+	}
+	.contactForm{
+		padding-bottom: 2rem;
+	}
+}
+.myRep{
+	text-align: center;
+	display: none;
+	padding-bottom: 2rem;
+	opacity: 0;
+	transition: opacity 0.75s ease-out;
+	h3{
+		font-size: 2.5rem;
+		margin-bottom: 0.25rem;
+	}
+	a{
+		display: inline-block;
+		color: #4e4c4d;
+		&:hover{
+			color: $sageYellow;
+		}
+	}
+	span{
+		display: inline-block;
+		margin: 0 0.5rem;
+	}
+}
+
+@media screen and (max-width:600px){
+	.contactForm {
+		fieldset.split{
+			width:100%;
+
+			&.right{
+				margin-left:0;
+			}
+
+			&:nth-child(even){
+				label,input[type="text"],input[type="email"],input[type="telephone"]{
+					margin-left:0;
+				}
+			}
+			input[type="text"],input[type="email"],input[type="telephone"]{
+				width:calc(100% - 2rem);
+			}
+		}
+	}
+	/*.node-type-webform {
+		.webform-component-textfield, .webform-component-phone, .webform-component-email{
+			width:100%;
+
+			.description{
+				position:relative;
+				margin-left:0;
+			}
+
+			&:nth-child(even){
+				label,input[type="text"],input[type="email"],input[type="telephone"]{
+					margin-left:0;
+				}
+			}
+			input[type="text"],input[type="email"],input[type="telephone"]{
+				width:calc(100% - 2rem);
+			}
+		}
+	}*/
+}

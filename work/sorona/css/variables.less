@@ -1,0 +1,110 @@
+/*-------------Variables--------------*/
+@soronaBlue: #43b9eb;
+@soronaBlack: #1c1c1c;
+@soronaGray: #f4f4f4;
+@tablet: 1024px;
+@mobile: 800px;
+@contentCap: 1600px;
+
+//Mixins - these are chunks of CSS that you can store and use where needed, to keep excess code down
+//Reset form elements
+.resetInput{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 0;
+}
+//Mandatory pseudo declarations
+.pseudoStart{
+  content: '';
+  display: block;
+}
+//Kerning - offsets extra space on the last letter, adjusts pseudo elements to compensate
+.kerning(@space){
+  position: relative;
+  letter-spacing: @space;
+  right: -@space/2;
+  &:before, &:after{
+    right: @space/2;
+  }
+}
+
+//Hardware acceleration
+.accelerate{
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+//Blue bottom borders
+.blueBorder(@width, @height, @margin){
+  &:after{
+    .pseudoStart;
+    position: relative;
+    width: @width;
+    height: @height;
+    background: @soronaBlue;
+    margin: @margin;
+  }
+}
+
+//Corner borders - one for each corner
+//General styles for all corner borders
+.tlBorder, .trBorder, .blBorder, .brBorder{
+  position: relative;
+  padding-bottom: 37px;
+  &:before, &:after{
+    .pseudoStart;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    margin: 15px;
+    transform: scale(1.2);
+    animation: cornerBounce 1s cubic-bezier(.87,-1.00,.49,1.44) 1.25s forwards;
+    transition: top 0.2s ease-out, bottom 0.2s ease-out, right 0.2s ease-out;
+    @media (max-width:@mobile){
+      display: none;
+    }
+  }
+}
+//Top-left
+.tlBorder{
+  &:before{
+    border-left: 4px solid #000;
+    border-top: 4px solid #000;
+    top: 0px;
+    left: 0px;
+  }
+}
+//Top-right
+.trBorder{
+  &:before{
+    .pseudoStart;
+    border-right: 4px solid #000;
+    border-top: 4px solid #000;
+    top: 0px;
+    right: 0px;
+  }
+}
+//Bottom-left
+.blBorder{
+  &:after{
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+//Bottom-right
+.brBorder{
+  &:after{
+    border-right: 4px solid #000;
+    border-bottom: 4px solid #000;
+    bottom: 0px;
+    right: 0px;
+  }
+}

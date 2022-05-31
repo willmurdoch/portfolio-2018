@@ -1,0 +1,52 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="951.67px" height="603.3px" viewBox="0 0 951.67 603.3" style="enable-background:new 0 0 951.67 603.3;">
+<style type="text/css">
+	@keyframes draw {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@keyframes pop{
+		to {
+			opacity: 1;
+		}
+	}
+	.st0, .st1, .st2 {
+	  stroke-dasharray: 1500;
+	  stroke-dashoffset: 1500;
+	  animation: draw 2s 1.55s ease-out forwards;
+	}
+	.st0{fill:none;stroke:#132744;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#2680DA;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#26D7DA;stroke-width:6;stroke-miterlimit:10;}
+	.st3{fill:#26D7DA;}
+	.st4{fill:#132744;}
+	.st5{fill:#2680DA;}
+	.st3, .st4, .st5{
+		opacity: 0;
+		animation: pop 0.2s linear forwards;
+	}
+	.st5{
+		animation-delay: 2.45s;
+	}
+	.st3{
+		animation-delay: 3s;
+	}
+	.st4{
+		animation-delay: 2s;
+	}
+</style>
+<path class="st0" d="M230.9,76C145.5,76,76,145.5,76,230.9s69.5,154.9,154.9,154.9"/>
+<path class="st1" d="M230.9,4C29.4,4.2-71.8,248.8,70.5,391.3c42.8,42.8,99.8,66.4,160.4,66.4h270.7"/>
+<path class="st2" d="M230.9,40C125.5,40,40,125.5,40,230.9l0,0c0,105.4,85.5,190.9,190.9,190.9H739c78.7,0,142.5,63.8,142.5,142.5
+	l0,0v38.4"/>
+<path class="st3" d="M896.9,582.3h-6c-0.2,0-0.4,0.1-0.5,0.3l-8.9,14.3l-8.9-14.3c-0.1-0.2-0.3-0.3-0.5-0.3h-6
+	c-0.3,0-0.6,0.2-0.6,0.6c0,0,0,0.1,0.1,0.3l12,19.3c0.1,0.2,0.3,0.3,0.5,0.3h0.9h5.2h0.9c0.2,0,0.4-0.1,0.5-0.3l12-19.3
+	c0.1-0.1,0.1-0.2,0.1-0.3C897.5,582.5,897.2,582.3,896.9,582.3z"/>
+<path class="st4" d="M218,372.3v5.3c0,0.2,0.1,0.4,0.3,0.4l12.5,7.8l-12.5,7.8c-0.2,0.1-0.3,0.2-0.3,0.4v5.3c0,0.3,0.2,0.5,0.5,0.5
+	c0,0,0.1,0,0.2-0.1l16.9-10.5c0.2-0.1,0.3-0.2,0.3-0.4v-0.8v-4.5v-0.8c0-0.2-0.1-0.4-0.3-0.4l-16.9-10.5c-0.1-0.1-0.2-0.1-0.2-0.1
+	C218.2,371.8,218,372,218,372.3z"/>
+<path class="st5" d="M488.8,444.2v5.3c0,0.2,0.1,0.4,0.3,0.4l12.5,7.8l-12.5,7.8c-0.2,0.1-0.3,0.2-0.3,0.4v5.3
+	c0,0.3,0.2,0.5,0.5,0.5c0,0,0.1,0,0.2-0.1l16.9-10.5c0.2-0.1,0.3-0.2,0.3-0.4V460v-4.5v-0.8c0-0.2-0.1-0.4-0.3-0.4l-16.9-10.5
+	c-0.1-0.1-0.2-0.1-0.2-0.1C489,443.7,488.8,443.9,488.8,444.2z"/>
+</svg>

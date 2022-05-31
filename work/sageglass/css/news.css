@@ -1,0 +1,49 @@
+.headline-links {
+	margin-top: 2rem;
+}
+
+.news-headers {
+	font-size: 1.75rem;
+	color: black;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.nh-message {
+	color: black;
+	font-size: 1.1rem;
+}
+
+.nh-links {
+	font-size: 1.1rem;
+	color: black;
+	background-color: white;
+	border: 1px solid white;
+	height: 50px;
+	padding: 0 20px;
+	font-weight: bold;
+}
+
+.news-headline {
+	color: black;
+}
+
+.news-trend {
+	min-height: 200px;
+	background: #FFF;
+	padding: 4rem 0;
+}
+
+.postWrap {
+	margin-bottom: 0px !important;
+}
+
+.news-date {
+	color: #ababab !important;
+	line-height: 1em;
+	margin-bottom: 6px;
+}
+
+.border-space {
+	height: 30px;
+}

@@ -1,0 +1,51 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 458 292" style="enable-background:new 0 0 458 292;">
+<style type="text/css">
+	.st0{fill:#26D7DA;}
+	.st1{fill:#2680DA;}
+	.st2{fill:#132744;}
+	.st3{fill:none;stroke:#132744;stroke-width:6;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#2680DA;stroke-width:6;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#26D7DA;stroke-width:6;stroke-miterlimit:10;}
+	@keyframes draw {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	@keyframes pop{
+		to {
+			opacity: 1;
+		}
+	}
+	.st3, .st4, .st5 {
+	  stroke-dasharray: 1000;
+	  stroke-dashoffset: 1000;
+	  animation: draw 2.5s 0.85s ease-out forwards;
+	}
+	.st0, .st1, .st2{
+		opacity: 0;
+		animation: pop 0.2s linear forwards;
+	}
+	.st2{
+		animation-delay: 1.45s;
+	}
+	.st1{
+		animation-delay: 1.1s;
+	}
+	.st0{
+		animation-delay: 1.65s;
+	}
+</style>
+<path class="st0" d="M456,265.7h-6c-0.2,0-0.4,0.1-0.5,0.3l-8.9,14.3l-8.9-14.3c-0.1-0.2-0.3-0.3-0.5-0.3h-6c-0.3,0-0.6,0.2-0.6,0.6
+	c0,0,0,0.1,0.1,0.3l12,19.3c0.1,0.2,0.3,0.3,0.5,0.3h0.9h5.2h0.9c0.2,0,0.4-0.1,0.5-0.3l12-19.3c0.1-0.1,0.1-0.2,0.1-0.3
+	C456.5,266,456.3,265.7,456,265.7z"/>
+<path class="st1" d="M215.8,7.3v5.3c0,0.2,0.1,0.4,0.3,0.4l12.5,7.8l-12.5,7.8c-0.2,0.1-0.3,0.2-0.3,0.4v5.3c0,0.3,0.2,0.5,0.5,0.5
+	c0,0,0.1,0,0.2-0.1l16.9-10.5c0.2-0.1,0.3-0.2,0.3-0.4V23v-4.5v-0.8c0-0.2-0.1-0.4-0.3-0.4L216.5,6.9c-0.1-0.1-0.2-0.1-0.2-0.1
+	C216,6.8,215.8,7.1,215.8,7.3z"/>
+<path class="st2" d="M412.1,179.8l-5.1,1.3c-0.2,0-0.3,0.2-0.4,0.4l-4.4,14.1l-10.6-10.2c-0.1-0.1-0.3-0.2-0.5-0.2l-5.1,1.3
+	c-0.3,0.1-0.4,0.3-0.4,0.6c0,0,0,0.1,0.1,0.2l14.3,13.8c0.1,0.1,0.3,0.2,0.5,0.2l0.8-0.2l4.4-1.1l0.8-0.2c0.2,0,0.3-0.2,0.4-0.4
+	l6-18.9c0-0.1,0-0.2,0-0.2C412.7,179.9,412.4,179.8,412.1,179.8z"/>
+<path class="st3" d="M99.5,92.8h177.1c61.9,0,113.8,44.2,125.5,102.8"/>
+<line class="st4" x1="99.5" y1="20.8" x2="228.6" y2="20.8"/>
+<path class="st5" d="M99.5,56.8h177.1c90.6,0,164,73.4,164,164v62.3"/>
+</svg>

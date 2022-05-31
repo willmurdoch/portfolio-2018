@@ -1,0 +1,21 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 521.9 372.9" style="enable-background:new 0 0 521.9 372.9;">
+<style type="text/css">
+	@keyframes draw {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+	.st0, .st1, .st2 {
+	  stroke-dasharray: 1000;
+	  stroke-dashoffset: 1000;
+	  animation: draw 1.5s ease-in forwards;
+	}
+	.st0{fill:none;stroke:#2680DA;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#26D7DA;stroke-width:6;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#132744;stroke-width:6;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M446.9,0v113.9c0,101.5-82.5,184-184,184h-37.1"/>
+<path class="st1" d="M482.9,0v113.9c0,121.5-98.5,220-220,220h-37.1"/>
+<path class="st2" d="M518.9,0v113.9c0,68.4-26.6,132.7-75,181s-112.6,75-181,75H0"/>
+</svg>

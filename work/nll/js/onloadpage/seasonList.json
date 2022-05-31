@@ -1,0 +1,1508 @@
+[
+	{
+		"name": "NLL 2017 Season",
+		"id": "15914",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/bandits.png"
+			},
+			{
+				"name": "Georgia",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/swarm.png"
+			},
+			{
+				"name": "New England",
+				"mascot": "Black Wolves",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/wolves.png"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/knighthawks.png"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/rock.png"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/roughnecks.png"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/mammoth.png"
+			},
+			{
+				"name": "Saskatchewan",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/rush.png"
+			},
+			{
+				"name": "Vancouver",
+				"mascot": "Stealth",
+				"id": "523492",
+				"logo": "http://www.pointstreak.com/logos/league230/stealth.png"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2016",
+		"id": "15797",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/bandits.png"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/roughnecks.png"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/mammoth.png"
+			},
+			{
+				"name": "Georgia",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/swarm.png"
+			},
+			{
+				"name": "New England",
+				"mascot": "Black Wolves",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/wolves.png"
+			},
+			{
+				"name": "Saskatchewan",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/rush.png"
+			}
+		]
+	},
+	{
+		"name": "NLL 2016 Season",
+		"id": "14886",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/bandits.png"
+			},
+			{
+				"name": "Georgia",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/swarm.png"
+			},
+			{
+				"name": "New England",
+				"mascot": "Black Wolves",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/wolves.png"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/knighthawks.png"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/rock.png"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/roughnecks.png"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/mammoth.png"
+			},
+			{
+				"name": "Saskatchewan",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/rush.png"
+			},
+			{
+				"name": "Vancouver",
+				"mascot": "Stealth",
+				"id": "523492",
+				"logo": "http://www.pointstreak.com/logos/league230/stealth.png"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2015",
+		"id": "14244",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2015 Season",
+		"id": "13569",
+		"teams": [
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Vancouver",
+				"mascot": "Stealth",
+				"id": "523492",
+				"logo": "http://www.pointstreak.com/logos/league230/team529300.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/team529292.gif"
+			},
+			{
+				"name": "New England",
+				"mascot": "",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/team523453.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2014",
+		"id": "13568",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2014 Season",
+		"id": "13566",
+		"teams": [
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Vancouver",
+				"mascot": "Stealth",
+				"id": "523492",
+				"logo": "http://www.pointstreak.com/logos/league230/team530548.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2013",
+		"id": "13565",
+		"teams": [
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			},
+			{
+				"name": "Washington",
+				"mascot": "",
+				"id": "529730",
+				"logo": "http://www.pointstreak.com/logos/league230/team529730.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2013 Season",
+		"id": "13563",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Washington",
+				"mascot": "",
+				"id": "529730",
+				"logo": "http://www.pointstreak.com/logos/league230/team529730.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2012",
+		"id": "13562",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2012 Season",
+		"id": "13560",
+		"teams": [
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Washington",
+				"mascot": "",
+				"id": "529730",
+				"logo": "http://www.pointstreak.com/logos/league230/team529730.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2011",
+		"id": "13556",
+		"teams": [
+			{
+				"name": "Boston",
+				"mascot": "Blazers",
+				"id": "142808",
+				"logo": "http://www.pointstreak.com/logos/league230/team142808.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			},
+			{
+				"name": "Washington",
+				"mascot": "",
+				"id": "529730",
+				"logo": "http://www.pointstreak.com/logos/league230/team529730.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2011 Season",
+		"id": "13554",
+		"teams": [
+			{
+				"name": "Boston",
+				"mascot": "Blazers",
+				"id": "142808",
+				"logo": "http://www.pointstreak.com/logos/league230/team142808.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Washington",
+				"mascot": "",
+				"id": "529730",
+				"logo": "http://www.pointstreak.com/logos/league230/team529730.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2010",
+		"id": "13553",
+		"teams": [
+			{
+				"name": "Boston",
+				"mascot": "Blazers",
+				"id": "142808",
+				"logo": "http://www.pointstreak.com/logos/league230/team142808.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Orlando",
+				"mascot": "Titans",
+				"id": "530085",
+				"logo": "http://www.pointstreak.com/logos/league230/team530165.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			},
+			{
+				"name": "Washington",
+				"mascot": "",
+				"id": "529730",
+				"logo": "http://www.pointstreak.com/logos/league230/team530170.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2010 Season",
+		"id": "4905",
+		"teams": [
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Washington",
+				"mascot": "",
+				"id": "529730",
+				"logo": "http://www.pointstreak.com/logos/league230/team529730.gif"
+			},
+			{
+				"name": "Boston",
+				"mascot": "Blazers",
+				"id": "142808",
+				"logo": "http://www.pointstreak.com/logos/league230/team142808.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Orlando",
+				"mascot": "Titans",
+				"id": "530085",
+				"logo": "http://www.pointstreak.com/logos/league230/team530085.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2009",
+		"id": "4139",
+		"teams": [
+			{
+				"name": "Boston",
+				"mascot": "Blazers",
+				"id": "142808",
+				"logo": "http://www.pointstreak.com/logos/league230/team142808.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "New York",
+				"mascot": "Titans",
+				"id": "55916",
+				"logo": "http://www.pointstreak.com/logos/league230/team55916.gif"
+			},
+			{
+				"name": "Portland",
+				"mascot": "LumberJax",
+				"id": "38726",
+				"logo": "http://www.pointstreak.com/logos/league230/team38726.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/team86541.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2009 Season",
+		"id": "3260",
+		"teams": [
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Portland",
+				"mascot": "LumberJax",
+				"id": "38726",
+				"logo": "http://www.pointstreak.com/logos/league230/team38726.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/team86541.gif"
+			},
+			{
+				"name": "Boston",
+				"mascot": "Blazers",
+				"id": "142808",
+				"logo": "http://www.pointstreak.com/logos/league230/team142808.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "New York",
+				"mascot": "Titans",
+				"id": "55916",
+				"logo": "http://www.pointstreak.com/logos/league230/team55916.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2008",
+		"id": "2890",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "New York",
+				"mascot": "Titans",
+				"id": "55916",
+				"logo": "http://www.pointstreak.com/logos/league230/team55916.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Portland",
+				"mascot": "Lumberjax",
+				"id": "38726",
+				"logo": "http://www.pointstreak.com/logos/league230/team38726.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/team86541.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL 2008 Season",
+		"id": "1995",
+		"teams": [
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Portland",
+				"mascot": "Lumberjax",
+				"id": "38726",
+				"logo": "http://www.pointstreak.com/logos/league230/team38726.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/team86541.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Chicago",
+				"mascot": "Shamrox",
+				"id": "55915",
+				"logo": "http://www.pointstreak.com/logos/league230/team55915.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "New York",
+				"mascot": "Titans",
+				"id": "55916",
+				"logo": "http://www.pointstreak.com/logos/league230/team55916.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Pre-season 2008",
+		"id": "2158",
+		"teams": [
+			{
+				"name": "Maroon",
+				"mascot": "",
+				"id": "95415",
+				"logo": "http://www.pointstreak.com/logos/noteamlogo.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "107558",
+				"logo": "http://www.pointstreak.com/logos/noteamlogo.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "107557",
+				"logo": "http://www.pointstreak.com/logos/noteamlogo.gif"
+			},
+			{
+				"name": "White",
+				"mascot": "",
+				"id": "95414",
+				"logo": "http://www.pointstreak.com/logos/noteamlogo.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2007",
+		"id": "1841",
+		"teams": [
+			{
+				"name": "Arizona",
+				"mascot": "Sting",
+				"id": "25951",
+				"logo": "http://www.pointstreak.com/logos/league230/arizona.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/sanjose.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Regular Season 2007",
+		"id": "1322",
+		"teams": [
+			{
+				"name": "Arizona",
+				"mascot": "Sting",
+				"id": "25951",
+				"logo": "http://www.pointstreak.com/logos/league230/arizona.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Portland",
+				"mascot": "Lumberjax",
+				"id": "38726",
+				"logo": "http://www.pointstreak.com/logos/league230/team38726.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/sanjose.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Chicago",
+				"mascot": "Shamrox",
+				"id": "55915",
+				"logo": "http://www.pointstreak.com/logos/league230/team55915.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "New York",
+				"mascot": "Titans",
+				"id": "55916",
+				"logo": "http://www.pointstreak.com/logos/league230/team55916.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2006",
+		"id": "1231",
+		"teams": [
+			{
+				"name": "Arizona",
+				"mascot": "Sting",
+				"id": "25951",
+				"logo": "http://www.pointstreak.com/logos/league230/arizona.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Portland",
+				"mascot": "Lumberjax",
+				"id": "38726",
+				"logo": "http://www.pointstreak.com/logos/league230/team38726.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Regular Season 2006",
+		"id": "977",
+		"teams": [
+			{
+				"name": "Arizona",
+				"mascot": "Sting",
+				"id": "25951",
+				"logo": "http://www.pointstreak.com/logos/league230/arizona.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Edmonton",
+				"mascot": "Rush",
+				"id": "38725",
+				"logo": "http://www.pointstreak.com/logos/league230/team38725.gif"
+			},
+			{
+				"name": "Portland",
+				"mascot": "Lumberjax",
+				"id": "38726",
+				"logo": "http://www.pointstreak.com/logos/league230/team38726.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/sanjose.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Playoffs 2005",
+		"id": "748",
+		"teams": [
+			{
+				"name": "Arizona",
+				"mascot": "Sting",
+				"id": "25951",
+				"logo": "http://www.pointstreak.com/logos/league230/arizona.gif"
+			},
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			}
+		]
+	},
+	{
+		"name": "NLL Regular Season 2005",
+		"id": "686",
+		"teams": [
+			{
+				"name": "Buffalo",
+				"mascot": "Bandits",
+				"id": "25955",
+				"logo": "http://www.pointstreak.com/logos/league230/buffalo.gif"
+			},
+			{
+				"name": "Minnesota",
+				"mascot": "Swarm",
+				"id": "25956",
+				"logo": "http://www.pointstreak.com/logos/league230/minnesota.gif"
+			},
+			{
+				"name": "Philadelphia",
+				"mascot": "Wings",
+				"id": "25957",
+				"logo": "http://www.pointstreak.com/logos/league230/philidelphia.gif"
+			},
+			{
+				"name": "Rochester",
+				"mascot": "Knighthawks",
+				"id": "25958",
+				"logo": "http://www.pointstreak.com/logos/league230/rochestor.gif"
+			},
+			{
+				"name": "Toronto",
+				"mascot": "Rock",
+				"id": "25959",
+				"logo": "http://www.pointstreak.com/logos/league230/toronto.gif"
+			},
+			{
+				"name": "Anaheim",
+				"mascot": "Storm",
+				"id": "25950",
+				"logo": "http://www.pointstreak.com/logos/league230/anahiem.gif"
+			},
+			{
+				"name": "Arizona",
+				"mascot": "Sting",
+				"id": "25951",
+				"logo": "http://www.pointstreak.com/logos/league230/arizona.gif"
+			},
+			{
+				"name": "Calgary",
+				"mascot": "Roughnecks",
+				"id": "25952",
+				"logo": "http://www.pointstreak.com/logos/league230/calgary.gif"
+			},
+			{
+				"name": "Colorado",
+				"mascot": "Mammoth",
+				"id": "25953",
+				"logo": "http://www.pointstreak.com/logos/league230/colorado.gif"
+			},
+			{
+				"name": "San Jose",
+				"mascot": "Stealth",
+				"id": "25954",
+				"logo": "http://www.pointstreak.com/logos/league230/sanjose.gif"
+			}
+		]
+	}
+]
