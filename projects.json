@@ -31,7 +31,7 @@
   {
     "title": "Xfinity Mobile Phone Cleanse",
     "description": "A site built for Xfinity to promote healthier smartphone habits. I built this site as static HTML/CSS using JSON to easily manage content.",
-    "link": "https://www.xfinity.com/mobile/landing/phone-cleanse",
+    "link": "work/mobile-cleanse",
     "desktop": "images/work/phone_cleanse_desktop.jpg",
     "desktop_video": "images/work/phone_cleanse_desktop.mp4",
     "mobile": "images/work/phone_cleanse_mobile.jpg"
